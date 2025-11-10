@@ -1,0 +1,60 @@
+:root {
+}
+
+.textMedium {
+    font-size: 60px;
+    color: rgb(255, 255, 255);
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    margin-left: 40px;
+    align-self: stretch;
+}
+
+.textFlowing {
+    color: rgb(255, 255, 255);
+    margin-top: 10px;
+    margin-right: 0;
+    margin-bottom: 0;
+    margin-left: 40px;
+    font-size: 45px;
+    text-overflow: clip;
+    white-space: normal;
+    -unity-text-align: middle-center;
+}
+
+.containerWithBottomBorder {
+    border-bottom-width: 10px;
+    border-left-color: rgb(0, 0, 0);
+    border-right-color: rgb(0, 0, 0);
+    border-top-color: rgb(0, 0, 0);
+    border-bottom-color: rgb(0, 0, 0);
+}
+
+.button {
+    height: 60%;
+    width: 30%;
+    background-image: url("project://database/Assets/SimplePixelUI/artwork/colorCustomizible/rounded/buttons/button_rounded_CC.png?fileID=2800000&guid=434fa6af2ca63ad4ba4ea00b9270653b&type=3#button_rounded_CC");
+    font-size: 60px;
+    color: rgb(255, 255, 255);
+    -unity-font-definition: url("project://database/Assets/Fonts/JazzCreateBubble.ttf?fileID=12800000&guid=58b647c5b2ec4184e9a07a561cdf0644&type=3#JazzCreateBubble");
+}
+
+.Button_Icon {
+    position: absolute;
+    width: 75px;
+    height: 75px;
+    overflow: visible;
+    background-image: url("project://database/Assets/SimplePixelUI/artwork/halfcustomizible/square/Buttons/button_small_1.png?fileID=2800000&guid=3ec822cb93351794ea0f21230f0d5d03&type=3#button_small_1");
+    transform-origin: center;
+    right: 0;
+    bottom: 0;
+    left: 35px;
+    top: 20px;
+    padding-right: 2px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    padding-left: 2px;
+    -unity-font-definition: initial;
+    -unity-background-image-tint-color: rgb(0, 138, 255);
+}
