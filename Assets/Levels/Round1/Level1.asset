@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c3fe08cc939d0a049b50d0e116ef76ae, type: 3}
+  m_Name: Level1
+  m_EditorClassIdentifier: Assembly-CSharp::LevelData
+  MapAsset: {fileID: 9197481963319205126, guid: 7f759dc692a12f54a9a268a53cb94b88, type: 3}
+  HighDangerPropability: 20
+  MediumDangerPropability: 40
+  LostAtHighDangerOutcome: 1200
+  LostAtMediumDangerOutcome: 500
+  HighOutcomeDescription: "Es kam zu besonders starken Regenf\xE4llen"
+  MediumOutcomeDescription: "Es hat kr\xE4ftig geregnet"
+  LowOutcomeDescription: Es hat ein bisschen geregnet

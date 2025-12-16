@@ -1,55 +1,65 @@
+using System;
 using System.Collections.Generic;
 using System.IO;
-using UnityEditor;
+using System.Linq;
 using UnityEngine;
+using UnityEngine.UIElements;
 
 public class GameManager : MonoBehaviour
 {
-    public static GameManager Instance { get; private set; }
+    public static event Action<List<ConsequencePreview>, List<DecisionData>, VisualTreeAsset> RoundStarted;
 
-    [SerializeField] private int SuggestionAmount = 4;
+    private string _path;
+    private string[] directories;
+    private int _currentRound;
 
-    private List<SuggestionData> _chosenSuggestions;
+    private List<ConsequencePreview> _consequences = new List<ConsequencePreview>();
+    private List<DecisionData> _decisions = new List<DecisionData>();
+    private LevelData _levelData;
 
-    private void Awake()
+    private List<OutcomeData> _outcomes = new List<OutcomeData>();
+
+    void Start()
     {
-        Instance = this;
+        _path = Path.Combine("Assets", "Levels");
+        directories = Directory.GetDirectories(_path);
+        UIManager.DecisionMade += OnDecisionMade;
+        StartNewRound();
     }
 
-    private void Start()
+    private void OnDestroy()
     {
-        _chosenSuggestions = new List<SuggestionData>();
-        List<SuggestionData> allSuggestions = new List<SuggestionData>();
-        string[] assetNames = AssetDatabase.FindAssets("", new[] { Path.Combine("Assets", "Suggestions") });
-        foreach (string assetName in assetNames)
-        {
-            string pathToSO = AssetDatabase.GUIDToAssetPath(assetName);
-            allSuggestions.Add(AssetDatabase.LoadAssetAtPath<SuggestionData>(pathToSO));
-        }
-
-        for(int i = 0; i < SuggestionAmount; i++)
-        {
-            GetRandomSuggestion(allSuggestions);
-        }
-
-        SuggestionUIManager.Instance.FillUI(_chosenSuggestions[0]);
+        UIManager.DecisionMade -= OnDecisionMade;        
     }
 
-    public void SubmitSuggestionAnswer(bool approved)
+    private void StartNewRound()
     {
-        Debug.Log(approved);
-    }
-
-    private void GetRandomSuggestion(List<SuggestionData> suggestions)
-    {
-        int randomIndex = Random.Range(0, suggestions.Count);
-        if (_chosenSuggestions.Contains(suggestions[randomIndex]))
+        if (_currentRound < directories.Length)
         {
-            GetRandomSuggestion(suggestions);
+            // Get Files and distribute Data.
+            _levelData = CustomUtils.GetSOAssets<LevelData>(directories[_currentRound])[0];
+            _consequences = CustomUtils.GetSOAssets<ConsequencePreview>(Path.Combine(directories[_currentRound], "Consequences"));
+            _decisions = CustomUtils.GetSOAssets<DecisionData>(Path.Combine(directories[_currentRound], "Decisions"));
+
+            RoundStarted.Invoke(_consequences, _decisions, _levelData.MapAsset);
+
+            _currentRound++;
         }
         else
         {
-            _chosenSuggestions.Add(suggestions[randomIndex]);
+            // Start evaluation
+            Debug.Log("Evaluation");
         }
+    }
+
+    private void OnDecisionMade(DangerLevel dangerLevel)
+    {
+        _outcomes.Add(new OutcomeData()
+        {
+            Outcome = dangerLevel,
+            Decision = _decisions.FirstOrDefault(a => a.DangerLevel == dangerLevel),
+            Level = _levelData
+        });
+        StartNewRound();
     }
 }

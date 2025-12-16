@@ -1,0 +1,76 @@
+:root {
+}
+
+.indicator_bar {
+    flex-grow: 1;
+    height: 5px;
+    position: absolute;
+    align-self: center;
+    width: 1436px;
+    right: 24px;
+    bottom: auto;
+    left: 76px;
+    top: auto;
+    background-color: rgb(0, 99, 255);
+}
+
+.indicator_nob {
+    flex-grow: 1;
+    background-image: url("project://database/Assets/CorePro/Flat%20Pack/Shapes/Circle%20512x512/Circle%20%20%200t%20%20Stroke%200.png?fileID=2800000&guid=c007d1881774bdc409a6bd0d7b1df34a&type=3#Circle   0t  Stroke 0");
+    align-content: auto;
+    flex-direction: column-reverse;
+    justify-content: flex-start;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    top: -13px;
+    left: 1271px;
+    width: 25px;
+    height: 25px;
+    background-color: rgba(188, 188, 188, 0);
+}
+
+.color_red {
+    background-color: rgb(219, 32, 33);
+}
+
+.color_red Button {
+    -unity-background-image-tint-color: rgb(219, 32, 33);
+}
+
+.color_orange {
+    background-color: rgb(225, 153, 88);
+}
+
+.color_orange Button {
+    -unity-background-image-tint-color: rgb(225, 153, 88);
+}
+
+.color_yellow {
+    background-color: rgb(244, 232, 42);
+}
+
+.color_yellow Button {
+    -unity-background-image-tint-color: rgb(244, 232, 42);
+}
+
+.modal_entry {
+    flex-grow: 1;
+    background-color: rgba(30, 171, 220, 0);
+    background-image: url("project://database/Assets/CorePro/Flat%20Pack/Shapes/Rectangle%20512x512%20black%20frame/Rectangle%20512x512%20I%20Round%2015px/Rectangle%20%2015r%20%200t%20%205s.png?fileID=2800000&guid=e0f8ff2b4ad15e94ab332ecfc486ed00&type=3#Rectangle  15r  0t  5s");
+    -unity-background-image-tint-color: rgba(42, 160, 199, 0.67);
+    width: 100%;
+    flex-direction: column;
+    align-self: center;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    top: 0;
+    height: 100%;
+    align-items: auto;
+    flex-wrap: nowrap;
+    flex-basis: auto;
+    margin-top: 0;
+    margin-bottom: 0;
+    flex-shrink: 1;
+}

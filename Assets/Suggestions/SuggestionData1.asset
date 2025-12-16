@@ -13,8 +13,13 @@ MonoBehaviour:
   m_Name: SuggestionData1
   m_EditorClassIdentifier: Assembly-CSharp::SuggestionData
   Maps:
-  - {fileID: 4104829600022518583, guid: ef5751636446cc94b8123bcecec9bae0, type: 3}
+  - {fileID: -8916226910383172946, guid: 3d96d32788241144fb93cc3e2bb0d969, type: 3}
   DangerPropability: 70
   SuggestionDescription: "Wir w\xFCrden vorsichtshalber Sands\xE4cke aufstellen wollen"
-  Cost: 50000
-  Lost: 1000000
+  Explanation: "Bei akkut drohendem Hochwasser ist das Aufstellen von Sands\xE4cken
+    nur einer der wichtigen Ma\xDFnahmen, die getroffen werden m\xFCssen."
+  NegativeHappinessImpact: 70
+  PositiveHappinessImpact: 60
+  UnneccessaryActionHappinessImpact: 15
+  Cost: 50
+  Lost: 1000

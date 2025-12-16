@@ -13,9 +13,14 @@ MonoBehaviour:
   m_Name: SuggestionData3
   m_EditorClassIdentifier: Assembly-CSharp::SuggestionData
   Maps:
-  - {fileID: 5489603897890573923, guid: a758099088b575d4781475f027939434, type: 3}
+  - {fileID: 2808399913298776779, guid: ee6e365834e287641bb45c17b2dbe07d, type: 3}
   DangerPropability: 35
   SuggestionDescription: "Die Autobahnbr\xFCcke m\xFCsste gesperrt werden, die \xDCberschwemmung
     im Tal k\xF6nnte die St\xFCtzpfeiler angreifen."
+  Explanation: "Eine einsturzgef\xE4hrdete Br\xFCcke darf im Ernstfall nicht befahren
+    werden."
+  NegativeHappinessImpact: 100
+  PositiveHappinessImpact: 80
+  UnneccessaryActionHappinessImpact: 30
   Cost: 30000
   Lost: 1200000

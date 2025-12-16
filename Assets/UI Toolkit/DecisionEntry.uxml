@@ -1,0 +1,8 @@
+<ui:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/UI%20Toolkit/WeatherMapStyles.uss?fileID=7433441132597879392&amp;guid=541fc910459ef3e408a8d20e8fdc2cf4&amp;type=3#WeatherMapStyles" />
+    <ui:VisualElement name="Entry" class="modal_entry" style="flex-grow: 1;">
+        <ui:Button parse-escape-sequences="false" name="Button_Choose" style="position: absolute; height: 13%; width: 7%; top: 42%; left: 5%; background-image: url(&quot;project://database/Assets/SimplePixelUI/artwork/halfcustomizible/square/Buttons/button_small_1.png?fileID=2800000&amp;guid=3ec822cb93351794ea0f21230f0d5d03&amp;type=3#button_small_1&quot;);" />
+        <ui:Label text="&#10;" name="DangerLevel" style="flex-grow: 1; flex-shrink: 1; min-width: 81%; max-height: 27%; top: 4%; right: 2%; font-size: 50px; -unity-text-align: upper-left; -unity-font-definition: url(&quot;project://database/Assets/Fonts/JazzCreateBubble.ttf?fileID=12800000&amp;guid=58b647c5b2ec4184e9a07a561cdf0644&amp;type=3#JazzCreateBubble&quot;); background-size: 100% 100%;" />
+        <ui:Label text="&#10;" name="Text" style="flex-grow: 1; flex-shrink: 1; min-width: 81%; max-height: 100%; top: 9%; right: 2%; font-size: 50px; -unity-text-align: upper-left; -unity-font-definition: url(&quot;project://database/Assets/Fonts/JazzCreateBubble.ttf?fileID=12800000&amp;guid=58b647c5b2ec4184e9a07a561cdf0644&amp;type=3#JazzCreateBubble&quot;);" />
+    </ui:VisualElement>
+</ui:UXML>

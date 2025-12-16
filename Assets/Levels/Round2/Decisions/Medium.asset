@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6624c453b7265c5438418c32259f4aff, type: 3}
+  m_Name: Medium
+  m_EditorClassIdentifier: Assembly-CSharp::DecisionData
+  DangerLevel: 1
+  Contents:
+  - ActionDescription: "Sands\xE4cke aufstellen 2"
+    LowDangerOutcome: "Sands\xE4cke Low 2"
+    MediumDangerOutcome: "Sands\xE4cke Medium 2"
+    HighDangerOutcome: "Sands\xE4cke High 2"
+  - ActionDescription: THW mobilisieren 2
+    LowDangerOutcome: THW Low 2
+    MediumDangerOutcome: THW Medium 2
+    HighDangerOutcome: THW High 2
+  Cost: 1200
+  LostReduction: 300

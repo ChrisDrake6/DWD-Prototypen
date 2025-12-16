@@ -1,0 +1,4 @@
+<ui:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/UI%20Toolkit/SuggestionStyleSheet.uss?fileID=7433441132597879392&amp;guid=1b2bf54181163dc4e870ae1b2a52adb0&amp;type=3#SuggestionStyleSheet" />
+    <ui:VisualElement name="BackGround" enabled="true" style="flex-grow: 1; background-image: url(&quot;project://database/Assets/CatlandsGames/9FreeBackgrounds/BackgroundsPNG/Background9.png?fileID=2800000&amp;guid=a8fe78df500a9db4b8376682c1da56d3&amp;type=3#Background9&quot;); -unity-font-definition: url(&quot;project://database/Assets/Fonts/JazzCreateBubble.ttf?fileID=12800000&amp;guid=58b647c5b2ec4184e9a07a561cdf0644&amp;type=3#JazzCreateBubble&quot;);" />
+</ui:UXML>

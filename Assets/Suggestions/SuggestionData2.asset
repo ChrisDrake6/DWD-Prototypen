@@ -13,8 +13,13 @@ MonoBehaviour:
   m_Name: SuggestionData2
   m_EditorClassIdentifier: Assembly-CSharp::SuggestionData
   Maps:
-  - {fileID: -1862659592480336195, guid: ff59e403dc9f226439840d74dcc77804, type: 3}
-  DangerPropability: 56
+  - {fileID: 2621629892452951829, guid: c3e92b8b95264384aa580e36efbe8bcd, type: 3}
+  DangerPropability: 30
   SuggestionDescription: Wir sollten eine bundesweite Unwetterwarnung ausgeben.
-  Cost: 2000
-  Lost: 190000
+  Explanation: "Eine Warnung auszugeben ist eine kosteng\xFCnstige erste Ma\xDFnahme,
+    die selten eine schlechte Idee ist."
+  NegativeHappinessImpact: 80
+  PositiveHappinessImpact: 20
+  UnneccessaryActionHappinessImpact: 0
+  Cost: 20
+  Lost: 190
