@@ -1,0 +1,8 @@
+<ui:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/UI%20Toolkit/WeatherMapStyles.uss?fileID=7433441132597879392&amp;guid=541fc910459ef3e408a8d20e8fdc2cf4&amp;type=3#WeatherMapStyles" />
+    <ui:VisualElement name="OutcomeEntry" style="flex-grow: 0; background-image: url(&quot;project://database/Assets/CorePro/Flat%20Pack/Shapes/Rectangle%20512x512%20black%20frame/Rectangle%20512x512%20I%20Round%20Top%2005px/Rectangle%20%2005rt%20%200t%20%205s.png?fileID=2800000&amp;guid=dc5a3198fda4f1c42a80930e5f31c57a&amp;type=3#Rectangle  05rt  0t  5s&quot;); -unity-background-image-tint-color: rgb(92, 151, 236); width: auto;">
+        <ui:Label name="OutcomeDescription" class="text_medium" style="-unity-font-definition: url(&quot;project://database/Assets/Fonts/JazzCreateBubble.ttf?fileID=12800000&amp;guid=58b647c5b2ec4184e9a07a561cdf0644&amp;type=3#JazzCreateBubble&quot;); font-size: 50px; left: 1%; color: rgb(255, 255, 255);" />
+        <ui:Label text="Sie haben entschieden:" class="text_medium" style="margin-bottom: 1%;" />
+        <ui:VisualElement name="SubEntryList" style="flex-grow: 1; margin-left: 3%;" />
+    </ui:VisualElement>
+</ui:UXML>

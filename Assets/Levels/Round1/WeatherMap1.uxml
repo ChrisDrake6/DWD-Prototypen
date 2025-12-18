@@ -1,6 +1,6 @@
 <ui:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
     <Style src="project://database/Assets/UI%20Toolkit/WeatherMapStyles.uss?fileID=7433441132597879392&amp;guid=541fc910459ef3e408a8d20e8fdc2cf4&amp;type=3#WeatherMapStyles" />
-    <ui:VisualElement name="WeatherMap" style="flex-grow: 1; background-image: url(&quot;project://database/Assets/Images/Maps/Pegel1.png?fileID=2800000&amp;guid=3d96d32788241144fb93cc3e2bb0d969&amp;type=3#Pegel1&quot;); width: 80%; height: auto; align-self: center; margin-top: 0; margin-bottom: 0; max-height: 80%; margin-right: 0; margin-left: 0; top: 4%;">
+    <ui:VisualElement name="WeatherMap" class="MainWindow" style="background-image: url(&quot;project://database/Assets/Images/Maps/Pegel1.png?fileID=2800000&amp;guid=3d96d32788241144fb93cc3e2bb0d969&amp;type=3#Pegel1&quot;);">
         <ui:VisualElement name="Indicator" class="Indicator_Bar indicator_bar color_red" style="left: 76px; top: 168px;">
             <ui:Button name="Indicator_Nob" selectable="true" enable-rich-text="true" class="indicator_nob" />
         </ui:VisualElement>
@@ -10,6 +10,6 @@
         <ui:VisualElement name="Indicator" class="Indicator_Bar indicator_bar color_yellow" style="left: 76px; top: 238px;">
             <ui:Button name="Indicator_Nob" selectable="true" enable-rich-text="true" class="indicator_nob" />
         </ui:VisualElement>
-        <ui:Button text="Entscheidung treffen" name="Button_Decision" style="bottom: -102%; right: auto; left: auto; align-self: center; width: 46%; height: 8%;" />
+        <ui:Button text="Entscheidung treffen" name="Button_Decision" class="button_main" style="bottom: -102%; right: auto; left: auto; align-self: center; width: 46%; height: 8%;" />
     </ui:VisualElement>
 </ui:UXML>

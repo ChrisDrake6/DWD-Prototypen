@@ -356,10 +356,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::UIManager
   ui: {fileID: 1623453364}
-  mapAsset: {fileID: 9197481963319205126, guid: 0890c22303c2ead4a966c8f0c60ef41a, type: 3}
   modalContainerAsset: {fileID: 9197481963319205126, guid: 8f55f6eb066df354897fc427df242b35, type: 3}
   previewEntryAsset: {fileID: 9197481963319205126, guid: 0c024a58c42b0f7468e743818e4c34d2, type: 3}
   decisionEntryAsset: {fileID: 9197481963319205126, guid: 1706f4d405c24924ba6f6fd0dd7749fc, type: 3}
+  outcomeOverviewAsset: {fileID: 9197481963319205126, guid: 26d0c648fb26a2d4ca501fa3a9b045ce, type: 3}
+  outcomeEntryAsset: {fileID: 9197481963319205126, guid: 98475f9666ab6b74a930feb2ebd8aa8f, type: 3}
+  outcomeSubEntryAsset: {fileID: 9197481963319205126, guid: 9952b46a6d78fb841bb8ecb6d5c82bee, type: 3}
 --- !u!1 &2023416331
 GameObject:
   m_ObjectHideFlags: 0

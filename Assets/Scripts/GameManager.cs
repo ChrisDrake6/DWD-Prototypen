@@ -8,6 +8,7 @@ using UnityEngine.UIElements;
 public class GameManager : MonoBehaviour
 {
     public static event Action<List<ConsequencePreview>, List<DecisionData>, VisualTreeAsset> RoundStarted;
+    public static event Action<List<OutcomeData>> LastDecisionMade;
 
     private string _path;
     private string[] directories;
@@ -47,19 +48,37 @@ public class GameManager : MonoBehaviour
         }
         else
         {
-            // Start evaluation
-            Debug.Log("Evaluation");
+            LastDecisionMade.Invoke(_outcomes);
         }
     }
 
     private void OnDecisionMade(DangerLevel dangerLevel)
     {
+        // Calculate outcome
+        DangerLevel outcome = DangerLevel.low;
+        Dictionary<DangerLevel, float> propabilities = new Dictionary<DangerLevel, float>() 
+        { 
+            { DangerLevel.medium, _levelData.MediumDangerPropability},
+            { DangerLevel.high, _levelData.HighDangerPropability}
+        };
+        propabilities.OrderBy(a => a.Value);
+        float d100 = UnityEngine.Random.Range(0, 100);
+        foreach (KeyValuePair<DangerLevel, float> prop in propabilities)
+        {
+            if (prop.Value <= d100) 
+            { 
+                outcome = prop.Key; 
+                break;
+            }
+        }
+
         _outcomes.Add(new OutcomeData()
         {
-            Outcome = dangerLevel,
+            Outcome = outcome,
             Decision = _decisions.FirstOrDefault(a => a.DangerLevel == dangerLevel),
             Level = _levelData
         });
+
         StartNewRound();
     }
 }

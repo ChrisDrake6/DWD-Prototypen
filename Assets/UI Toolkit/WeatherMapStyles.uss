@@ -74,3 +74,39 @@
     margin-bottom: 0;
     flex-shrink: 1;
 }
+
+.main_window {
+    flex-grow: 1;
+    background-image: url("project://database/Assets/Images/Maps/Pegel1.png?fileID=2800000&guid=3d96d32788241144fb93cc3e2bb0d969&type=3#Pegel1");
+    width: 80%;
+    height: auto;
+    align-self: center;
+    margin-top: 0;
+    margin-bottom: 0;
+    max-height: 80%;
+    margin-right: 0;
+    margin-left: 0;
+    top: 4%;
+}
+
+.text_medium {
+    font-size: 50px;
+    -unity-font-definition: url("project://database/Assets/Fonts/JazzCreateBubble.ttf?fileID=12800000&guid=58b647c5b2ec4184e9a07a561cdf0644&type=3#JazzCreateBubble");
+    left: 1%;
+    color: rgb(255, 255, 255);
+}
+
+.MainWindow {
+    max-height: 80%;
+    flex-grow: 1;
+    width: 80%;
+    top: 4%;
+    align-self: center;
+}
+
+.button_main {
+    background-image: url("project://database/Assets/SimplePixelUI/artwork/gray/square/Buttons/button_1.png?fileID=2800000&guid=94fc7c772ff3e3e4e82e2104009827fe&type=3#button_1");
+    color: rgb(255, 255, 255);
+    -unity-font-definition: url("project://database/Assets/Fonts/JazzCreateBubble.ttf?fileID=12800000&guid=58b647c5b2ec4184e9a07a561cdf0644&type=3#JazzCreateBubble");
+    font-size: 41px;
+}

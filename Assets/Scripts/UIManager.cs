@@ -10,6 +10,9 @@ public class UIManager : MonoBehaviour
     [SerializeField] private VisualTreeAsset modalContainerAsset;
     [SerializeField] private VisualTreeAsset previewEntryAsset;
     [SerializeField] private VisualTreeAsset decisionEntryAsset;
+    [SerializeField] private VisualTreeAsset outcomeOverviewAsset;
+    [SerializeField] private VisualTreeAsset outcomeEntryAsset;
+    [SerializeField] private VisualTreeAsset outcomeSubEntryAsset;
 
     public static event Action<DangerLevel> DecisionMade;
 
@@ -18,6 +21,7 @@ public class UIManager : MonoBehaviour
     private VisualElement _modalContainer;
     private Button _buttonClose;
     private Button _buttonDecision;
+    private Button _buttonRequestEvaluation;
 
     private List<Button> _indicatorButtons;
     private List<ConsequencePreview> _consequences = new List<ConsequencePreview>();
@@ -28,24 +32,19 @@ public class UIManager : MonoBehaviour
     void OnEnable()
     {
         GameManager.RoundStarted += OnNewDataIncoming;
+        GameManager.LastDecisionMade += ShowOutcomes;
         _backGround = ui.rootVisualElement.Q<VisualElement>("BackGround");
     }
 
     private void OnDisable()
     {        
         GameManager.RoundStarted -= OnNewDataIncoming;
+        GameManager.LastDecisionMade -= ShowOutcomes;
     }
 
     private void OnNewDataIncoming(List<ConsequencePreview> consequences, List<DecisionData> decisions, VisualTreeAsset mapAsset)
     {
-        if (_weatherMap != null)
-        {
-            _backGround.Clear();
-            _indicatorButtons[0].clicked -= OnHighDangerButtonClicked;
-            _indicatorButtons[1].clicked -= OnMediumDangerButtonClicked;
-            _indicatorButtons[2].clicked -= OnLowDangerButtonClicked;
-            _buttonDecision.clicked -= OnShowDecisionsClick;
-        }
+        RemoveWeatherMap();
 
         _consequences = consequences;
         _decisions = decisions.OrderByDescending(a => a.DangerLevel).ToList();
@@ -59,6 +58,18 @@ public class UIManager : MonoBehaviour
 
         _buttonDecision = _weatherMap.Q<Button>("Button_Decision");
         _buttonDecision.clicked += OnShowDecisionsClick;
+    }
+
+    private void RemoveWeatherMap()
+    {
+        if (_weatherMap != null)
+        {
+            _backGround.Clear();
+            _indicatorButtons[0].clicked -= OnHighDangerButtonClicked;
+            _indicatorButtons[1].clicked -= OnMediumDangerButtonClicked;
+            _indicatorButtons[2].clicked -= OnLowDangerButtonClicked;
+            _buttonDecision.clicked -= OnShowDecisionsClick;
+        }
     }
 
     private void OnHighDangerButtonClicked()
@@ -169,5 +180,70 @@ public class UIManager : MonoBehaviour
     {
         OnCloseDecisionsClick();
         DecisionMade.Invoke(DangerLevel.low);
+    }
+
+    private void ShowOutcomes(List<OutcomeData> outcomes)
+    {
+        RemoveWeatherMap();
+
+        // Assemble Outcome Overview
+        VisualElement overviewContainer = outcomeOverviewAsset.Instantiate().Q<VisualElement>("OverviewContainer");
+        _backGround.Add(overviewContainer);
+        _buttonRequestEvaluation = overviewContainer.Q<Button>("Button_RequestEvaluation");
+        _buttonRequestEvaluation.clicked += TriggerEvaluation;
+
+        foreach (OutcomeData outcome in outcomes)
+        {
+            VisualElement outcomeEntry = outcomeEntryAsset.Instantiate().Q<VisualElement>("OutcomeEntry");
+            overviewContainer.Add(outcomeEntry);
+
+            Label outcomeDescription = outcomeEntry.Q<Label>("OutcomeDescription");
+            switch (outcome.Outcome) 
+            { 
+                case DangerLevel.high:
+                    outcomeDescription.text = outcome.Level.HighOutcomeDescription;
+                    break;
+
+                case DangerLevel.medium:
+                    outcomeDescription.text = outcome.Level.MediumOutcomeDescription;
+                    break;
+
+                case DangerLevel.low:
+                    outcomeDescription.text = outcome.Level.LowOutcomeDescription;
+                    break;
+            }
+
+            VisualElement subEntryList = outcomeEntry.Q<VisualElement>("SubEntryList");
+            foreach (DecisionDataEntry decisionEntry in outcome.Decision.Contents)
+            {
+                VisualElement outcomeSubEntry = outcomeSubEntryAsset.Instantiate().Q<VisualElement>("OutcomeSubEntry");
+                subEntryList.Add(outcomeSubEntry);
+
+                Label decision = outcomeSubEntry.Q<Label>("Decision");
+                decision.text = decisionEntry.ActionDescription;
+
+                Label decicionOutcome = outcomeSubEntry.Q<Label>("DecisionOutcome");
+                switch (outcome.Outcome)
+                {
+                    case DangerLevel.high:
+                        decicionOutcome.text = decisionEntry.HighDangerOutcome;
+                        break;
+
+                    case DangerLevel.medium:
+                        decicionOutcome.text = decisionEntry.MediumDangerOutcome;
+                        break;
+
+                    case DangerLevel.low:
+                        decicionOutcome.text = decisionEntry.LowDangerOutcome;
+                        break;
+                }
+            }
+        }
+    }
+
+    private void TriggerEvaluation()
+    {
+        //_buttonRequestEvaluation.clicked -= TriggerEvaluation;
+        Debug.Log("Show Evaluation");
     }
 }
