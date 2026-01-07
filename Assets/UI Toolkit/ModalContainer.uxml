@@ -2,6 +2,6 @@
     <Style src="project://database/Assets/UI%20Toolkit/WeatherMapStyles.uss?fileID=7433441132597879392&amp;guid=541fc910459ef3e408a8d20e8fdc2cf4&amp;type=3#WeatherMapStyles" />
     <ui:VisualElement name="ModalContainer" style="flex-grow: 1; background-image: url(&quot;project://database/Assets/Images/UIElements/Frame.png?fileID=2800000&amp;guid=667066bb5a64a004f9d78398363fa229&amp;type=3#Frame&quot;); width: 40%; align-self: center; height: 80%; margin-top: 0; margin-bottom: 0; position: absolute; top: 10%; flex-direction: column; justify-content: center; align-items: auto; align-content: auto;">
         <ui:Button enable-rich-text="false" selectable="true" name="Button_Cancel" style="align-self: flex-end; right: 25px; top: 25px; width: 40px; height: 40px; padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 0; background-color: rgba(255, 25, 0, 0); background-image: url(&quot;project://database/Assets/Images/UIElements/Box_Close.png?fileID=2800000&amp;guid=aac68640e98f7ef4bac5efd10949088e&amp;type=3#Box_Close&quot;); -unity-background-image-tint-color: rgb(255, 255, 255); position: absolute;" />
-        <ui:VisualElement name="EntryList" style="flex-grow: 1; width: 91%; align-self: center; max-height: 80%;" />
+        <ui:ScrollView name="EntryList" style="max-height: 80%; align-self: center; width: 92%; height: 108%;" />
     </ui:VisualElement>
 </ui:UXML>

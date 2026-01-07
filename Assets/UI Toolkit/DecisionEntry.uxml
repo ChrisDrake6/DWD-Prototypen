@@ -1,6 +1,6 @@
 <ui:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
     <Style src="project://database/Assets/UI%20Toolkit/WeatherMapStyles.uss?fileID=7433441132597879392&amp;guid=541fc910459ef3e408a8d20e8fdc2cf4&amp;type=3#WeatherMapStyles" />
-    <ui:VisualElement name="Entry" class="modal_entry" style="flex-grow: 1;">
+    <ui:VisualElement name="Entry" class="modal_entry">
         <ui:Button parse-escape-sequences="false" name="Button_Choose" style="position: absolute; height: 20%; width: 14%; top: 40%; left: 2%; background-image: url(&quot;project://database/Assets/Images/UIElements/Circle_Plain.png?fileID=2800000&amp;guid=3f9c7402168a9484d8dfb1625818da0e&amp;type=3#Circle_Plain&quot;); background-color: rgba(188, 188, 188, 0); -unity-background-scale-mode: scale-to-fit;" />
         <ui:Label text="&#10;" name="DangerLevel" class="text_medium" style="flex-grow: 1; flex-shrink: 1; min-width: 81%; max-height: 27%; top: 4%; right: 0%; font-size: 50px; -unity-text-align: upper-left; -unity-font-definition: url(&quot;project://database/Assets/Fonts/Kalam/Kalam-Regular.ttf?fileID=12800000&amp;guid=016b80f4b804f0f45870f0e8dda05e4f&amp;type=3#Kalam-Regular&quot;); background-size: 100% 100%; left: 0%;" />
         <ui:Label text="&#10;" name="Text" class="text_flowing" style="white-space: normal; max-width: 99%; left: 0%; min-width: 81%; max-height: 100%; min-height: 80%; top: 6%;" />

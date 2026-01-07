@@ -65,9 +65,8 @@
     align-items: auto;
     flex-wrap: nowrap;
     flex-basis: auto;
-    margin-top: 0;
-    margin-bottom: 0;
     flex-shrink: 1;
+    min-height: 100%;
 }
 
 .main_window {

@@ -95,7 +95,7 @@ public class UIManager : MonoBehaviour
         _buttonClose = _modalContainer.Q<Button>("Button_Cancel");
         _buttonClose.clicked += OnClosePreviewClick;
 
-        VisualElement previewList = _modalContainer.Q<VisualElement>("EntryList");
+        ScrollView previewList = _modalContainer.Q<ScrollView>("EntryList");
         foreach (ConsequencePreviewEntry entry in currentPreview.entries)
         {
             VisualElement previewUIElement = previewEntryAsset.Instantiate().Q<VisualElement>("Entry");
@@ -123,7 +123,7 @@ public class UIManager : MonoBehaviour
         _buttonClose = _modalContainer.Q<Button>("Button_Cancel");
         _buttonClose.clicked += OnCloseDecisionsClick;
 
-        VisualElement decisionList = _modalContainer.Q<VisualElement>("EntryList");
+        ScrollView decisionList = _modalContainer.Q<ScrollView>("EntryList");
         foreach (DecisionData decision in _decisions)
         {
             VisualElement decisionUIElement = decisionEntryAsset.Instantiate().Q<VisualElement>("Entry");
