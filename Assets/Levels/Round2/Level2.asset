@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c3fe08cc939d0a049b50d0e116ef76ae, type: 3}
   m_Name: Level2
   m_EditorClassIdentifier: Assembly-CSharp::LevelData
-  MapAsset: {fileID: 9197481963319205126, guid: 0890c22303c2ead4a966c8f0c60ef41a, type: 3}
+  MapAsset: {fileID: 9197481963319205126, guid: 0cd4b1fe540f9404f85d5f6f43e54079, type: 3}
   HighDangerPropability: 10
   MediumDangerPropability: 30
   LostAtHighDangerOutcome: 1200

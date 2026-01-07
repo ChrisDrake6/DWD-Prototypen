@@ -3,20 +3,15 @@
 
 .indicator_bar {
     flex-grow: 1;
-    height: 5px;
+    height: 0.6%;
     position: absolute;
     align-self: center;
-    width: 1436px;
-    right: 24px;
-    bottom: auto;
-    left: 76px;
-    top: auto;
     background-color: rgb(0, 99, 255);
 }
 
 .indicator_nob {
     flex-grow: 1;
-    background-image: url("project://database/Assets/CorePro/Flat%20Pack/Shapes/Circle%20512x512/Circle%20%20%200t%20%20Stroke%200.png?fileID=2800000&guid=c007d1881774bdc409a6bd0d7b1df34a&type=3#Circle   0t  Stroke 0");
+    background-image: url("project://database/Assets/Images/UIElements/Circle_Plain.png?fileID=2800000&guid=3f9c7402168a9484d8dfb1625818da0e&type=3#Circle_Plain");
     align-content: auto;
     flex-direction: column-reverse;
     justify-content: flex-start;
@@ -57,7 +52,7 @@
 .modal_entry {
     flex-grow: 1;
     background-color: rgba(30, 171, 220, 0);
-    background-image: url("project://database/Assets/CorePro/Flat%20Pack/Shapes/Rectangle%20512x512%20black%20frame/Rectangle%20512x512%20I%20Round%2015px/Rectangle%20%2015r%20%200t%20%205s.png?fileID=2800000&guid=e0f8ff2b4ad15e94ab332ecfc486ed00&type=3#Rectangle  15r  0t  5s");
+    background-image: url("project://database/Assets/Images/UIElements/Frame.png?fileID=2800000&guid=667066bb5a64a004f9d78398363fa229&type=3#Frame");
     -unity-background-image-tint-color: rgba(42, 160, 199, 0.67);
     width: 100%;
     flex-direction: column;
@@ -90,10 +85,10 @@
 }
 
 .text_medium {
-    font-size: 50px;
-    -unity-font-definition: url("project://database/Assets/Fonts/JazzCreateBubble.ttf?fileID=12800000&guid=58b647c5b2ec4184e9a07a561cdf0644&type=3#JazzCreateBubble");
-    left: 1%;
+    font-size: 45px;
+    -unity-font-definition: url("project://database/Assets/Fonts/Kalam/Kalam-Regular.ttf?fileID=12800000&guid=016b80f4b804f0f45870f0e8dda05e4f&type=3#Kalam-Regular");
     color: rgb(255, 255, 255);
+    left: 1%;
 }
 
 .MainWindow {
@@ -105,8 +100,15 @@
 }
 
 .button_main {
-    background-image: url("project://database/Assets/SimplePixelUI/artwork/gray/square/Buttons/button_1.png?fileID=2800000&guid=94fc7c772ff3e3e4e82e2104009827fe&type=3#button_1");
-    color: rgb(255, 255, 255);
-    -unity-font-definition: url("project://database/Assets/Fonts/JazzCreateBubble.ttf?fileID=12800000&guid=58b647c5b2ec4184e9a07a561cdf0644&type=3#JazzCreateBubble");
-    font-size: 41px;
+    background-image: url("project://database/Assets/Images/UIElements/Button.png?fileID=2800000&guid=bc133329dc83a1449953ab0d3044ba87&type=3#Button");
+    color: rgb(0, 0, 0);
+    -unity-font-definition: url("project://database/Assets/Fonts/Kalam/Kalam-Regular.ttf?fileID=12800000&guid=016b80f4b804f0f45870f0e8dda05e4f&type=3#Kalam-Regular");
+    font-size: 40px;
+}
+
+.text_flowing {
+    font-size: 40px;
+    -unity-text-align: upper-left;
+    -unity-font-definition: url("project://database/Assets/Fonts/Kalam/Kalam-Regular.ttf?fileID=12800000&guid=016b80f4b804f0f45870f0e8dda05e4f&type=3#Kalam-Regular");
+    white-space: normal;
 }

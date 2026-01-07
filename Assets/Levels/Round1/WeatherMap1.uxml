@@ -1,15 +1,17 @@
 <ui:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
     <Style src="project://database/Assets/UI%20Toolkit/WeatherMapStyles.uss?fileID=7433441132597879392&amp;guid=541fc910459ef3e408a8d20e8fdc2cf4&amp;type=3#WeatherMapStyles" />
-    <ui:VisualElement name="WeatherMap" class="MainWindow" style="background-image: url(&quot;project://database/Assets/Images/Maps/Pegel1.png?fileID=2800000&amp;guid=3d96d32788241144fb93cc3e2bb0d969&amp;type=3#Pegel1&quot;);">
-        <ui:VisualElement name="Indicator" class="Indicator_Bar indicator_bar color_red" style="left: 76px; top: 168px;">
-            <ui:Button name="Indicator_Nob" selectable="true" enable-rich-text="true" class="indicator_nob" />
+    <ui:VisualElement name="WeatherMap" style="flex-grow: 1; width: 80%; right: 0; bottom: 0; left: 0; top: 4%; align-self: center; max-height: 80%; background-image: url(&quot;project://database/Assets/Images/UIElements/Frame.png?fileID=2800000&amp;guid=667066bb5a64a004f9d78398363fa229&amp;type=3#Frame&quot;);">
+        <ui:VisualElement name="WeatherMapImage" class="MainWindow" style="background-image: url(&quot;project://database/Assets/Images/Maps/Pegel1.png?fileID=2800000&amp;guid=3d96d32788241144fb93cc3e2bb0d969&amp;type=3#Pegel1&quot;); width: 98%; max-height: 97%; top: 1%;">
+            <ui:VisualElement name="Indicator" class="Indicator_Bar indicator_bar color_red" style="left: 4.8%; top: 20%; width: 93.7%;">
+                <ui:Button name="Indicator_Nob" selectable="true" enable-rich-text="true" class="indicator_nob" />
+            </ui:VisualElement>
+            <ui:VisualElement name="Indicator" class="Indicator_Bar indicator_bar color_orange" style="left: 4.8%; top: 23.5%; width: 93.7%;">
+                <ui:Button name="Indicator_Nob" selectable="true" enable-rich-text="true" class="indicator_nob" />
+            </ui:VisualElement>
+            <ui:VisualElement name="Indicator" class="Indicator_Bar indicator_bar color_yellow" style="left: 4.8%; top: 28%; width: 93.7%;">
+                <ui:Button name="Indicator_Nob" selectable="true" enable-rich-text="true" class="indicator_nob" />
+            </ui:VisualElement>
+            <ui:Button text="Entscheidung treffen" name="Button_Decision" class="button_main" style="bottom: -103%; right: auto; left: auto; align-self: center; width: 46%; height: 8%; color: rgb(0, 0, 0);" />
         </ui:VisualElement>
-        <ui:VisualElement name="Indicator" class="Indicator_Bar indicator_bar color_orange" style="left: 76px; top: 201px;">
-            <ui:Button name="Indicator_Nob" selectable="true" enable-rich-text="true" class="indicator_nob" />
-        </ui:VisualElement>
-        <ui:VisualElement name="Indicator" class="Indicator_Bar indicator_bar color_yellow" style="left: 76px; top: 238px;">
-            <ui:Button name="Indicator_Nob" selectable="true" enable-rich-text="true" class="indicator_nob" />
-        </ui:VisualElement>
-        <ui:Button text="Entscheidung treffen" name="Button_Decision" class="button_main" style="bottom: -102%; right: auto; left: auto; align-self: center; width: 46%; height: 8%;" />
     </ui:VisualElement>
 </ui:UXML>

@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ConsequencePreview
   DangerLevel: 0
   entries:
-  - ProfileImage: {fileID: 1208040086343421634, guid: f9665f60c4a55904ea892c2585c0377b, type: 3}
+  - ProfileImage: {fileID: 7491907802156415290, guid: 1405fca40784d99499ef22044bd9fc0a, type: 3}
     Text: Haste das Spiel von Schalke gesehen?
-  - ProfileImage: {fileID: -1166598965428788863, guid: 9b8e053908d0e1b4ea406ff124de2882, type: 3}
+  - ProfileImage: {fileID: -2850196725305720190, guid: e5c860020823f4b4c8112e3c515792a0, type: 3}
     Text: "So viel Papierkram f\xFCr so einen Kinderkram..."
