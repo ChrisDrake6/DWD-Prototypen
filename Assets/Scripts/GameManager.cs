@@ -24,13 +24,13 @@ public class GameManager : MonoBehaviour
     {
         _path = Path.Combine("Assets", "Levels");
         directories = Directory.GetDirectories(_path);
-        UIManager.DecisionMade += OnDecisionMade;
+        DecisionsUIManager.DecisionMade += OnDecisionMade;
         StartNewRound();
     }
 
     private void OnDestroy()
     {
-        UIManager.DecisionMade -= OnDecisionMade;        
+        DecisionsUIManager.DecisionMade -= OnDecisionMade;        
     }
 
     private void StartNewRound()

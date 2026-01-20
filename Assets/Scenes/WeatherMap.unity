@@ -321,8 +321,10 @@ GameObject:
   m_Component:
   - component: {fileID: 1824079175}
   - component: {fileID: 1824079176}
+  - component: {fileID: 1824079177}
+  - component: {fileID: 1824079178}
   m_Layer: 0
-  m_Name: UiManager
+  m_Name: UiManagers
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -356,12 +358,39 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::UIManager
   ui: {fileID: 1623453364}
-  modalContainerAsset: {fileID: 9197481963319205126, guid: 8f55f6eb066df354897fc427df242b35, type: 3}
-  previewEntryAsset: {fileID: 9197481963319205126, guid: 59ea20189a5bcfb408c7177fbe889775, type: 3}
-  decisionEntryAsset: {fileID: 9197481963319205126, guid: 1706f4d405c24924ba6f6fd0dd7749fc, type: 3}
   outcomeOverviewAsset: {fileID: 9197481963319205126, guid: 26d0c648fb26a2d4ca501fa3a9b045ce, type: 3}
   outcomeEntryAsset: {fileID: 9197481963319205126, guid: 98475f9666ab6b74a930feb2ebd8aa8f, type: 3}
   outcomeSubEntryAsset: {fileID: 9197481963319205126, guid: 9952b46a6d78fb841bb8ecb6d5c82bee, type: 3}
+--- !u!114 &1824079177
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1824079174}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f20d71751bc6b1742b09b7ce2750496c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::DangerPreviewUIManager
+  ui: {fileID: 1623453364}
+  modalContainerAsset: {fileID: 9197481963319205126, guid: 8f55f6eb066df354897fc427df242b35, type: 3}
+  previewEntryAsset: {fileID: 9197481963319205126, guid: 59ea20189a5bcfb408c7177fbe889775, type: 3}
+--- !u!114 &1824079178
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1824079174}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ab4aacdd5c49ae64c82341b0a01c1f74, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::DecisionsUIManager
+  ui: {fileID: 1623453364}
+  modalContainerAsset: {fileID: 9197481963319205126, guid: 8f55f6eb066df354897fc427df242b35, type: 3}
+  decisionEntryAsset: {fileID: 9197481963319205126, guid: 1706f4d405c24924ba6f6fd0dd7749fc, type: 3}
 --- !u!1 &2023416331
 GameObject:
   m_ObjectHideFlags: 0
