@@ -1,0 +1,150 @@
+using System.Collections.Generic;
+using System;
+using System.IO;
+using Unity.VisualScripting;
+using UnityEditor;
+using UnityEngine;
+using UnityEngine.PlayerLoop;
+using UnityEngine.UIElements;
+using static UnityEngine.EventSystems.EventTrigger;
+
+public class HelperUIManager : MonoBehaviour
+{
+    [SerializeField] private UIDocument ui;
+    [SerializeField] private VisualTreeAsset helperAsset;
+    [SerializeField] private HelperData helperData;
+
+    public static event Action OnBoardingDone;
+
+    private VisualElement _backGround;
+    private VisualElement _helperContainer;
+    private VisualElement _helperProfile;
+    private VisualElement _speechBubble;
+    private VisualElement _image;
+    private Label _text;
+
+    private HelperDataEntry[] _currectHelperDataEntries;
+    private int _index = 0;
+    private bool _isOnBoarding = true;
+
+    private void OnEnable()
+    {
+        _backGround = ui.rootVisualElement.Q<VisualElement>("BackGround");
+        _helperContainer = helperAsset.Instantiate().Q<VisualElement>("HelperContainer");
+        _backGround.Add(_helperContainer);
+
+        _helperProfile = _helperContainer.Q<VisualElement>("HelperProfile");
+        _speechBubble = _helperContainer.Q<VisualElement>("SpeechBubble");
+        _image = _speechBubble.Q<VisualElement>("Image");
+        _text = _speechBubble.Q<Label>("Text");
+
+        _helperProfile.RegisterCallback<ClickEvent>(OnHelperClick);
+        _speechBubble.RegisterCallback<ClickEvent>(OnBubbleClick);
+
+        _currectHelperDataEntries = helperData.OnBoardingLines;
+        SetBubbleContent();
+
+        GameManager.RoundStarted += OnNewRoundStarted;
+        GameManager.LastDecisionMade += SetOutcomeLines;
+        WeatherMapUIManager.IndicatorClicked += SetDangerPreviewLines;
+        WeatherMapUIManager.DecisionButtonClicked += SetDecisionLines;
+        DangerPreviewUIManager.WindowClosed += SetWeatherMapLines;
+        DecisionsUIManager.WindowClosed += SetWeatherMapLines;
+    }
+
+    private void OnDisable()
+    {
+        _helperProfile.UnregisterCallback<ClickEvent>(OnHelperClick);
+        _speechBubble.UnregisterCallback<ClickEvent>(OnBubbleClick);
+
+        GameManager.RoundStarted -= OnNewRoundStarted;
+        GameManager.LastDecisionMade -= SetOutcomeLines;
+        WeatherMapUIManager.IndicatorClicked -= SetDangerPreviewLines;
+        WeatherMapUIManager.DecisionButtonClicked -= SetDecisionLines;
+        DangerPreviewUIManager.WindowClosed -= SetWeatherMapLines;
+        DecisionsUIManager.WindowClosed -= SetWeatherMapLines;
+    }
+
+    private void Update()
+    {
+        // TODO: REMOVE THIS
+        _helperContainer.BringToFront();
+    }
+
+    private void OnHelperClick(ClickEvent ev)
+    {
+        if (!_speechBubble.visible)
+        {
+            _speechBubble.visible = true;
+            SetBubbleContent();
+        }
+        else
+        {
+            HideBubble();
+        }
+    }
+
+    private void OnBubbleClick(ClickEvent ev)
+    {
+        if (_index < _currectHelperDataEntries.Length)
+        {
+            SetBubbleContent();
+        }
+        else
+        {
+            HideBubble();            
+        }
+    }
+
+    private void SetBubbleContent()
+    {
+        _text.text = _currectHelperDataEntries[_index].Text;
+        if (_currectHelperDataEntries[_index].Image != null)
+        {
+            _image.style.display = DisplayStyle.Flex;
+            _image.style.backgroundImage = new StyleBackground(_currectHelperDataEntries[_index].Image);
+
+        }
+        else
+        {
+            _image.style.display = DisplayStyle.None;
+        }
+        _index++;
+    }
+
+    private void HideBubble()
+    {
+        _speechBubble.visible = false;
+        _index = 0;
+        if(_isOnBoarding)
+        {
+            OnBoardingDone.Invoke();
+            _isOnBoarding = false;
+        }
+    }
+
+    private void OnNewRoundStarted(List<ConsequencePreview> consequences, List<DecisionData> decisions, VisualTreeAsset mapAsset)
+    {
+        SetWeatherMapLines();
+    }
+  
+    private void SetWeatherMapLines()
+    {
+        _currectHelperDataEntries = helperData.WeatherMapLines;
+    }
+
+    private void SetDangerPreviewLines(DangerLevel dangerLevel)
+    {
+        _currectHelperDataEntries = helperData.DangerPreviewLines;
+    }
+
+    private void SetDecisionLines()
+    {
+        _currectHelperDataEntries = helperData.DecisionLines;
+    }
+
+    private void SetOutcomeLines(List<OutcomeData> outcomes)
+    {
+        _currectHelperDataEntries = helperData.OutcomeLines;
+    }
+}

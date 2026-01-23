@@ -11,6 +11,7 @@ public class DecisionsUIManager : MonoBehaviour
     [SerializeField] private VisualTreeAsset decisionEntryAsset;
 
     public static event Action<DangerLevel> DecisionMade;
+    public static event Action WindowClosed;
 
     private VisualElement _backGround;
     private VisualElement _modalContainer;
@@ -85,6 +86,7 @@ public class DecisionsUIManager : MonoBehaviour
         _decisionButtons[1].clicked -= OnMediumAlertDecisionClick;
         _decisionButtons[2].clicked -= OnLowAlertDecisionClick;
         _backGround.Remove(_modalContainer);
+        WindowClosed.Invoke();
     }
 
     private void OnHighAlertDecisionClick()

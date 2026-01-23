@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
@@ -13,6 +14,8 @@ public class DangerPreviewUIManager : MonoBehaviour
     private VisualElement _modalContainer;
     private Button _buttonClose;
     List<ConsequencePreview> _consequences;
+
+    public static event Action WindowClosed;
 
     private void OnEnable()
     {
@@ -60,5 +63,6 @@ public class DangerPreviewUIManager : MonoBehaviour
     {
         _buttonClose.clicked -= OnClosePreviewClick;
         _backGround.Remove(_modalContainer);
+        WindowClosed.Invoke();
     }
 }
