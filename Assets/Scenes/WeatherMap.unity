@@ -325,6 +325,7 @@ GameObject:
   - component: {fileID: 1824079178}
   - component: {fileID: 1824079179}
   - component: {fileID: 1824079180}
+  - component: {fileID: 1824079181}
   m_Layer: 0
   m_Name: UiManagers
   m_TagString: Untagged
@@ -421,6 +422,20 @@ MonoBehaviour:
   ui: {fileID: 1623453364}
   helperAsset: {fileID: 9197481963319205126, guid: 2889f6db25ab37f48b38fc8871e6e573, type: 3}
   helperData: {fileID: 11400000, guid: cf430a2d0f99c004d9bc735004cb9734, type: 2}
+--- !u!114 &1824079181
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1824079174}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b987a4647562e89428ce2d3e087d761a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::TransitionUIManager
+  ui: {fileID: 1623453364}
+  transitionAsset: {fileID: 9197481963319205126, guid: 5bc0ff055cf5f5643b359346350e35df, type: 3}
 --- !u!1 &2023416331
 GameObject:
   m_ObjectHideFlags: 0

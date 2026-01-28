@@ -45,6 +45,7 @@ public class HelperUIManager : MonoBehaviour
         SetBubbleContent();
 
         GameManager.RoundStarted += OnNewRoundStarted;
+        GameManager.OutcomeCalculated += SetTransitionLines;
         GameManager.LastDecisionMade += SetOutcomeLines;
         WeatherMapUIManager.IndicatorClicked += SetDangerPreviewLines;
         WeatherMapUIManager.DecisionButtonClicked += SetDecisionLines;
@@ -58,6 +59,7 @@ public class HelperUIManager : MonoBehaviour
         _speechBubble.UnregisterCallback<ClickEvent>(OnBubbleClick);
 
         GameManager.RoundStarted -= OnNewRoundStarted;
+        GameManager.OutcomeCalculated -= SetTransitionLines;
         GameManager.LastDecisionMade -= SetOutcomeLines;
         WeatherMapUIManager.IndicatorClicked -= SetDangerPreviewLines;
         WeatherMapUIManager.DecisionButtonClicked -= SetDecisionLines;
@@ -123,7 +125,7 @@ public class HelperUIManager : MonoBehaviour
         }
     }
 
-    private void OnNewRoundStarted(List<ConsequencePreview> consequences, List<DecisionData> decisions, VisualTreeAsset mapAsset)
+    private void OnNewRoundStarted(LevelContentContainer levelData)
     {
         SetWeatherMapLines();
     }
@@ -131,6 +133,11 @@ public class HelperUIManager : MonoBehaviour
     private void SetWeatherMapLines()
     {
         _currectHelperDataEntries = helperData.WeatherMapLines;
+    }
+
+    private void SetTransitionLines(OutcomeData outcomeData) 
+    {
+        _currectHelperDataEntries = helperData.TransitionLines;
     }
 
     private void SetDangerPreviewLines(DangerLevel dangerLevel)

@@ -19,6 +19,7 @@ public class WeatherMapUIManager : MonoBehaviour
     void OnEnable()
     {
         GameManager.RoundStarted += OnNewDataIncoming;
+        GameManager.OutcomeCalculated += RemoveWeatherMap;
         GameManager.LastDecisionMade += RemoveWeatherMap;
         _backGround = ui.rootVisualElement.Q<VisualElement>("BackGround");
     }
@@ -26,14 +27,13 @@ public class WeatherMapUIManager : MonoBehaviour
     private void OnDisable()
     {        
         GameManager.RoundStarted -= OnNewDataIncoming;
+        GameManager.OutcomeCalculated -= RemoveWeatherMap;
         GameManager.LastDecisionMade -= RemoveWeatherMap;
     }
 
-    private void OnNewDataIncoming(List<ConsequencePreview> consequences, List<DecisionData> decisions, VisualTreeAsset mapAsset)
+    private void OnNewDataIncoming(LevelContentContainer levelData)
     {
-        RemoveWeatherMap(null);
-
-        _weatherMap = mapAsset.Instantiate().Q<VisualElement>("WeatherMap");
+        _weatherMap = levelData.LevelParameters.MapAsset.Instantiate().Q<VisualElement>("WeatherMap");
         _backGround.Add(_weatherMap);
 
         _indicatorButtons = _weatherMap.Query<Button>("Indicator_Nob").ToList();
@@ -67,10 +67,14 @@ public class WeatherMapUIManager : MonoBehaviour
         DecisionButtonClicked.Invoke();
     }
     
+    private void RemoveWeatherMap(OutcomeData outcome)
+    {
+        RemoveWeatherMap(new List<OutcomeData>());
+    }
     private void RemoveWeatherMap(List<OutcomeData> outcomes)
     {
         ClearModal();
-        if (_weatherMap != null)
+        if (_backGround.Q<VisualElement>("WeatherMap") != null)
         {
             _backGround.Remove(_weatherMap);
             _indicatorButtons[0].clicked -= OnHighDangerButtonClicked;

@@ -32,9 +32,9 @@ public class DecisionsUIManager : MonoBehaviour
         WeatherMapUIManager.DecisionButtonClicked -= OnShowDecisionsClick;
     }
 
-    private void OnNewDataIncoming(List<ConsequencePreview> consequences, List<DecisionData> decisions, VisualTreeAsset mapAsset)
+    private void OnNewDataIncoming(LevelContentContainer levelData)
     {
-        _decisions = decisions.OrderByDescending(a => a.DangerLevel).ToList();
+        _decisions = levelData.Decisions.OrderByDescending(a => a.DangerLevel).ToList();
     }
 
     private void OnShowDecisionsClick()

@@ -9,14 +9,32 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c3fe08cc939d0a049b50d0e116ef76ae, type: 3}
+  m_Script: {fileID: 11500000, guid: b28c5f3159596714f95bbe0b9c7d9096, type: 3}
   m_Name: Level2
   m_EditorClassIdentifier: Assembly-CSharp::LevelData
   MapAsset: {fileID: 9197481963319205126, guid: 0cd4b1fe540f9404f85d5f6f43e54079, type: 3}
-  HighDangerPropability: 10
+  HighDangerPropability: 20
   MediumDangerPropability: 30
-  LostAtHighDangerOutcome: 1200
-  LostAtMediumDangerOutcome: 500
-  HighOutcomeDescription: Es ist eine Hochwasserkatastrophe eingetreten
-  MediumOutcomeDescription: "Der Fluss ist ein wenig \xFCber die Ufer getreten"
-  LowOutcomeDescription: Der Fluss ist leicht angeschwollen
+  LostAtHighDangerOutcome: 20000
+  LostAtMediumDangerOutcome: 2000
+  HighOutcomeDescription: "Katastrophale \xDCberschwemmungen"
+  MediumOutcomeDescription: "Leichte \xDCberschw\xE4mmungen"
+  LowOutcomeDescription: "Keine \xDCberschwemmungen."
+  LowOutComeLowDecisionTransitionText: "Der Tag ist zwar ein bisschen nass, aber
+    man ihn trotzdem mit sch\xF6nen Dingen verbringen."
+  LowOutComeMediumDecisionTransitionText: "Gl\xFCcklicherweise erwiesen sich die
+    Warnungen der Kat-Sch\xFCtzer als unbegr\xFCndet."
+  LowOutComeHighDecisionTransitionText: "Kat-Schutz verbreitet Panik - Meterhohe
+    W\xE4lle an Sands\xE4cken und kein Tropfen Wasser zu sehen."
+  MediumOutComeLowDecisionTransitionText: "Leichte \xDCberschwemmungen trafen die
+    Bev\xF6lkerung unvorbereitet."
+  MediumOutComeMediumDecisionTransitionText: "Heute kam es zu leichen \xDCberschw\xE4mmungen,
+    aber der Kat-Schutz hat die Lage unter Kontrolle."
+  MediumOutComeHighDecisionTransitionText: "Mit Kanonen auf Spatzen: Kat-Schutz versch\xE4tzt
+    sich kr\xE4ftig in der Intensit\xE4t der doch eher kleinen \xDCberschw\xE4mmungen."
+  HighOutComeLowDecisionTransitionText: "Katastrophale \xDCberschwemmungen fordern
+    Todesopfer - Katschutz hat versagt."
+  HighOutComeMediumDecisionTransitionText: Es kam an mehreren Stellen zum Dammbruch
+    - die Reaktion des Kat-Schutzes war nicht schnell genug.
+  HighOutComeHighDecisionTransitionText: "Heldenhafter Einsatz! Mit einer Glanzleistung
+    in Zusammenarbeit wurde die Katastrophe durch die \xDCberschw\xE4mmungen abgewendet!"

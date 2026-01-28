@@ -30,9 +30,9 @@ public class DangerPreviewUIManager : MonoBehaviour
         WeatherMapUIManager.IndicatorClicked -= OnIndicatorClick;
     }
 
-    private void OnNewDataIncoming(List<ConsequencePreview> consequences, List<DecisionData> decisions, VisualTreeAsset mapAsset)
+    private void OnNewDataIncoming(LevelContentContainer levelData)
     {
-        _consequences = consequences;
+        _consequences = levelData.Consequences;
     }
 
     private void OnIndicatorClick(DangerLevel dangerLevel)
