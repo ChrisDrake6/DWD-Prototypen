@@ -34,7 +34,9 @@ public class OutcomeUIManager : MonoBehaviour
         foreach (OutcomeData outcome in outcomes)
         {
             VisualElement outcomeEntry = outcomeEntryAsset.Instantiate().Q<VisualElement>("OutcomeEntry");
-            overviewContainer.Add(outcomeEntry);
+            ScrollView entryList = overviewContainer.Q<ScrollView>("EntryList");
+
+            entryList.Add(outcomeEntry);
 
             Label outcomeDescription = outcomeEntry.Q<Label>("OutcomeDescription");
             switch (outcome.Outcome)

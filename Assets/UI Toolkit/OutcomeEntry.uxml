@@ -1,6 +1,6 @@
 <ui:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
     <Style src="project://database/Assets/UI%20Toolkit/WeatherMapStyles.uss?fileID=7433441132597879392&amp;guid=541fc910459ef3e408a8d20e8fdc2cf4&amp;type=3#WeatherMapStyles" />
-    <ui:VisualElement name="OutcomeEntry" style="flex-grow: 0; background-image: url(&quot;project://database/Assets/Images/UIElements/Frame.png?fileID=2800000&amp;guid=667066bb5a64a004f9d78398363fa229&amp;type=3#Frame&quot;); -unity-background-image-tint-color: rgb(92, 151, 236); width: auto;">
+    <ui:VisualElement name="OutcomeEntry" style="flex-grow: 0; background-image: url(&quot;project://database/Assets/Images/UIElements/Frame.png?fileID=2800000&amp;guid=667066bb5a64a004f9d78398363fa229&amp;type=3#Frame&quot;); -unity-background-image-tint-color: rgb(92, 151, 236); width: auto; margin-bottom: 3%;">
         <ui:Label name="OutcomeDescription" text="Label" class="text_medium" style="left: 1%; color: rgb(255, 255, 255); min-height: auto; -unity-font-style: bold;" />
         <ui:Label text="Sie haben entschieden:" class="text_medium" style="margin-bottom: 1%;" />
         <ui:VisualElement name="SubEntryList" style="flex-grow: 1; margin-left: 3%;" />
