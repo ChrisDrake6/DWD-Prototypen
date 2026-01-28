@@ -111,3 +111,44 @@
     -unity-font-definition: url("project://database/Assets/Fonts/Kalam/Kalam-Regular.ttf?fileID=12800000&guid=016b80f4b804f0f45870f0e8dda05e4f&type=3#Kalam-Regular");
     white-space: normal;
 }
+
+.interactable {
+    border-top-width: 0;
+    border-right-width: 0;
+    border-bottom-width: 0;
+    border-left-width: 0;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+.interactable:hover {
+    border-top-width: 5px;
+    border-right-width: 5px;
+    border-bottom-width: 5px;
+    border-left-width: 5px;
+    border-left-color: rgb(80, 226, 242);
+    border-right-color: rgb(80, 226, 242);
+    border-top-color: rgb(80, 226, 242);
+    border-bottom-color: rgb(80, 226, 242);
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+.interactable:active {
+    border-top-width: 5px;
+    border-right-width: 5px;
+    border-bottom-width: 5px;
+    border-left-width: 5px;
+    border-left-color: rgb(81, 253, 78);
+    border-right-color: rgb(81, 253, 78);
+    border-top-color: rgb(81, 253, 78);
+    border-bottom-color: rgb(81, 253, 78);
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
