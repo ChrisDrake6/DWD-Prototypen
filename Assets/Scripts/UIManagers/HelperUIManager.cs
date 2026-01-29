@@ -11,12 +11,10 @@ using static UnityEngine.EventSystems.EventTrigger;
 public class HelperUIManager : MonoBehaviour
 {
     [SerializeField] private UIDocument ui;
-    [SerializeField] private VisualTreeAsset helperAsset;
     [SerializeField] private HelperData helperData;
 
     public static event Action OnBoardingDone;
 
-    private VisualElement _backGround;
     private VisualElement _helperContainer;
     private VisualElement _helperProfile;
     private VisualElement _speechBubble;
@@ -29,10 +27,7 @@ public class HelperUIManager : MonoBehaviour
 
     private void OnEnable()
     {
-        _backGround = ui.rootVisualElement.Q<VisualElement>("BackGround");
-        _helperContainer = helperAsset.Instantiate().Q<VisualElement>("HelperContainer");
-        _backGround.Add(_helperContainer);
-
+        _helperContainer = ui.rootVisualElement.Q<VisualElement>("HelperContainer");
         _helperProfile = _helperContainer.Q<VisualElement>("HelperProfile");
         _speechBubble = _helperContainer.Q<VisualElement>("SpeechBubble");
         _image = _speechBubble.Q<VisualElement>("Image");
@@ -51,6 +46,7 @@ public class HelperUIManager : MonoBehaviour
         WeatherMapUIManager.DecisionButtonClicked += SetDecisionLines;
         DangerPreviewUIManager.WindowClosed += SetWeatherMapLines;
         DecisionsUIManager.WindowClosed += SetWeatherMapLines;
+        OutcomeUIManager.EvaluationTriggered += DisableHelper;
     }
 
     private void OnDisable()
@@ -65,12 +61,7 @@ public class HelperUIManager : MonoBehaviour
         WeatherMapUIManager.DecisionButtonClicked -= SetDecisionLines;
         DangerPreviewUIManager.WindowClosed -= SetWeatherMapLines;
         DecisionsUIManager.WindowClosed -= SetWeatherMapLines;
-    }
-
-    private void Update()
-    {
-        // TODO: REMOVE THIS
-        _helperContainer.BringToFront();
+        OutcomeUIManager.EvaluationTriggered -= DisableHelper;
     }
 
     private void OnHelperClick(ClickEvent ev)
@@ -153,5 +144,10 @@ public class HelperUIManager : MonoBehaviour
     private void SetOutcomeLines(List<OutcomeData> outcomes)
     {
         _currectHelperDataEntries = helperData.OutcomeLines;
+    }
+
+    private void DisableHelper(List<OutcomeData> outcomes)
+    {
+        _helperContainer.style.display = DisplayStyle.None;
     }
 }

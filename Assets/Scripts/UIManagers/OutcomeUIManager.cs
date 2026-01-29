@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UIElements;
@@ -9,8 +10,12 @@ public class OutcomeUIManager : MonoBehaviour
     [SerializeField] private VisualTreeAsset outcomeEntryAsset;
     [SerializeField] private VisualTreeAsset outcomeSubEntryAsset;
 
+    public static event Action<List<OutcomeData>> EvaluationTriggered;
+
     private VisualElement _backGround;
+    VisualElement _overviewContainer;
     private Button _buttonRequestEvaluation;
+    private List<OutcomeData> _outcomes;
 
     private void OnEnable()
     {
@@ -25,16 +30,17 @@ public class OutcomeUIManager : MonoBehaviour
 
     private void ShowOutcomes(List<OutcomeData> outcomes)
     {
+        _outcomes = outcomes;
         // Assemble Outcome Overview
-        VisualElement overviewContainer = outcomeOverviewAsset.Instantiate().Q<VisualElement>("OverviewContainer");
-        _backGround.Add(overviewContainer);
-        _buttonRequestEvaluation = overviewContainer.Q<Button>("Button_RequestEvaluation");
+        _overviewContainer = outcomeOverviewAsset.Instantiate().Q<VisualElement>("OverviewContainer");
+        _backGround.Add(_overviewContainer);
+        _buttonRequestEvaluation = _overviewContainer.Q<Button>("Button_RequestEvaluation");
         _buttonRequestEvaluation.clicked += TriggerEvaluation;
 
         foreach (OutcomeData outcome in outcomes)
         {
             VisualElement outcomeEntry = outcomeEntryAsset.Instantiate().Q<VisualElement>("OutcomeEntry");
-            ScrollView entryList = overviewContainer.Q<ScrollView>("EntryList");
+            ScrollView entryList = _overviewContainer.Q<ScrollView>("EntryList");
 
             entryList.Add(outcomeEntry);
 
@@ -84,7 +90,8 @@ public class OutcomeUIManager : MonoBehaviour
 
     private void TriggerEvaluation()
     {
-        //_buttonRequestEvaluation.clicked -= TriggerEvaluation;
-        Debug.Log("Show Evaluation");
+        _buttonRequestEvaluation.clicked -= TriggerEvaluation;
+        _backGround.Remove(_overviewContainer);
+        EvaluationTriggered.Invoke(_outcomes);
     }
 }

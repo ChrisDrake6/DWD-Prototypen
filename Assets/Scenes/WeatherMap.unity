@@ -256,6 +256,61 @@ MonoBehaviour:
     m_VarianceClampScale: 0.9
     m_ContrastAdaptiveSharpening: 0
   m_Version: 2
+--- !u!1 &920690130
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 920690132}
+  - component: {fileID: 920690131}
+  m_Layer: 5
+  m_Name: UIDocument_Helper
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &920690131
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 920690130}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 19102, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.dll::UnityEngine.UIElements.UIDocument
+  m_PanelSettings: {fileID: 11400000, guid: 7d823124cc9a7c647b6834c19dd033a7, type: 2}
+  m_ParentUI: {fileID: 0}
+  sourceAsset: {fileID: 9197481963319205126, guid: 2889f6db25ab37f48b38fc8871e6e573, type: 3}
+  m_SortingOrder: 1
+  m_Position: 0
+  m_WorldSpaceSizeMode: 1
+  m_WorldSpaceWidth: 1920
+  m_WorldSpaceHeight: 1080
+  m_PivotReferenceSize: 0
+  m_Pivot: 0
+  m_WorldSpaceCollider: {fileID: 0}
+--- !u!4 &920690132
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 920690130}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1623453363
 GameObject:
   m_ObjectHideFlags: 0
@@ -326,6 +381,7 @@ GameObject:
   - component: {fileID: 1824079179}
   - component: {fileID: 1824079180}
   - component: {fileID: 1824079181}
+  - component: {fileID: 1824079182}
   m_Layer: 0
   m_Name: UiManagers
   m_TagString: Untagged
@@ -419,8 +475,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ceb9859f8605d6844bb3f13094a9983c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::HelperUIManager
-  ui: {fileID: 1623453364}
-  helperAsset: {fileID: 9197481963319205126, guid: 2889f6db25ab37f48b38fc8871e6e573, type: 3}
+  ui: {fileID: 920690131}
   helperData: {fileID: 11400000, guid: cf430a2d0f99c004d9bc735004cb9734, type: 2}
 --- !u!114 &1824079181
 MonoBehaviour:
@@ -436,6 +491,29 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::TransitionUIManager
   ui: {fileID: 1623453364}
   transitionAsset: {fileID: 9197481963319205126, guid: 5bc0ff055cf5f5643b359346350e35df, type: 3}
+--- !u!114 &1824079182
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1824079174}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c1edbca9432a20d42acdc1861bcfe89b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::FinalScreenUIManager
+  ui: {fileID: 1623453364}
+  finalScreenAsset: {fileID: 9197481963319205126, guid: cbb120d8d118e924abfc9606efca68a8, type: 3}
+  lowOutcomeLowDecisionBackGround: {fileID: 2602046460791130374, guid: f723df89646f2444b85c29e2263341f0, type: 3}
+  lowOutcomeMediumDecisionBackGround: {fileID: -7660317013956748403, guid: add2040c7a6fc86458d8ac222cdd56b9, type: 3}
+  lowOutcomeHighDecisionBackGround: {fileID: -2445784665911359351, guid: e9c8eb07352536645b6adb6643731390, type: 3}
+  mediumOutcomeLowDecisionBackGround: {fileID: -5118977553044069374, guid: 9e332227997a84549970202417e63533, type: 3}
+  mediumOutcomeMediumDecisionBackGround: {fileID: 1978055722172047082, guid: 5c56f801bd6d02b4d928518b7dc80d9d, type: 3}
+  mediumOutcomeHighDecisionBackGround: {fileID: 6402310409725578585, guid: 6ad85b37e0a679c4380fe36450eb4782, type: 3}
+  highOutcomeLowDecisionBackGround: {fileID: -226082533151882822, guid: c3f499c0ed851d744862911487758a90, type: 3}
+  highOutcomeMediumDecisionBackGround: {fileID: 6294223580499331004, guid: 2f5943cf8212e0d4c8d18871edc52693, type: 3}
+  highOutcomeHighDecisionBackGround: {fileID: 1065943995367567190, guid: bbc353eb2c8f97845a7d6ea6059c1e05, type: 3}
 --- !u!1 &2023416331
 GameObject:
   m_ObjectHideFlags: 0
@@ -486,5 +564,6 @@ SceneRoots:
   m_Roots:
   - {fileID: 914479174}
   - {fileID: 1623453365}
+  - {fileID: 920690132}
   - {fileID: 1824079175}
   - {fileID: 2023416333}

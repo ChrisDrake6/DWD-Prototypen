@@ -1,6 +1,4 @@
 <ui:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
     <Style src="project://database/Assets/UI%20Toolkit/WeatherMapStyles.uss?fileID=7433441132597879392&amp;guid=541fc910459ef3e408a8d20e8fdc2cf4&amp;type=3#WeatherMapStyles" />
-    <ui:VisualElement name="BackGround" style="flex-grow: 1; background-image: url(&quot;project://database/Assets/Images/BackGround/BG.png?fileID=2800000&amp;guid=5633e5aeff189264ea07036e9ccbe638&amp;type=3#BG&quot;); -unity-background-scale-mode: scale-to-fit;">
-        <ui:VisualElement name="VisualElement" style="flex-grow: 1; background-image: url(&quot;project://database/Assets/Images/BackGround/House.png?fileID=2800000&amp;guid=bedb3a413a266b648b7ec32082d68895&amp;type=3#House&quot;); position: absolute; width: 32.4%; height: 40%; top: 43%; left: 25%; -unity-background-scale-mode: scale-to-fit; right: auto; bottom: auto; align-self: center;" />
-    </ui:VisualElement>
+    <ui:VisualElement name="BackGround" style="flex-grow: 1; background-image: url(&quot;project://database/Assets/Images/BackGround/Background.png?fileID=2800000&amp;guid=fe643e1a810642e40b2ac1b793c0fc01&amp;type=3#Background&quot;); -unity-background-scale-mode: scale-to-fit;" />
 </ui:UXML>
