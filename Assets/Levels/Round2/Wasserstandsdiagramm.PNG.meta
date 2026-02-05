@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: c3e92b8b95264384aa580e36efbe8bcd
+guid: ed2c5fd8311c04b489e171b2c1a9e237
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 2621629892452951829
-    second: Pegel2_0
+      213: 3939686532758486491
+    second: Slide2_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Pegel2_0
+      name: Slide2_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 836
-        height: 448
+        width: 1280
+        height: 720
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 51724384f76e16420800000000000000
-      internalID: 2621629892452951829
+      spriteID: bddb57737049ca630800000000000000
+      internalID: 3939686532758486491
       vertices: []
       indices: 
       edges: []
@@ -148,7 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Pegel2_0: 2621629892452951829
+      Slide2_0: 3939686532758486491
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

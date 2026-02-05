@@ -1,13 +1,10 @@
 fileFormatVersion: 2
-guid: 3d96d32788241144fb93cc3e2bb0d969
+guid: b12dd4dcd0f76f449a395849108ca57f
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -8916226910383172946
-    second: Pegel1_0
-  - first:
-      213: -2007110598594894247
-    second: Pegel1_1
+      213: 5837829297762069037
+    second: Slide1_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -116,35 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Pegel1_0
+      name: Slide1_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 76
-        width: 2711
-        height: 1586
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: ea215dd7dd2334480800000000000000
-      internalID: -8916226910383172946
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Pegel1_1
-      rect:
-        serializedVersion: 2
-        x: 3
         y: 0
-        width: 2674
-        height: 69
+        width: 1280
+        height: 720
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -153,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 95664d17b8f4524e0800000000000000
-      internalID: -2007110598594894247
+      spriteID: d2ae970f0d2240150800000000000000
+      internalID: 5837829297762069037
       vertices: []
       indices: 
       edges: []
@@ -173,8 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Pegel1_0: -8916226910383172946
-      Pegel1_1: -2007110598594894247
+      Slide1_0: 5837829297762069037
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

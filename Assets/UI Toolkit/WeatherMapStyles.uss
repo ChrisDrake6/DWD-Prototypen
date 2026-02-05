@@ -7,6 +7,9 @@
     position: absolute;
     align-self: center;
     background-color: rgb(0, 99, 255);
+    left: 8.1%;
+    width: 67%;
+    justify-content: center;
 }
 
 .indicator_nob {
@@ -16,37 +19,41 @@
     flex-direction: column-reverse;
     justify-content: flex-start;
     position: absolute;
-    bottom: 0;
-    right: 0;
-    top: -13px;
-    left: 1271px;
-    width: 25px;
-    height: 25px;
     background-color: rgba(188, 188, 188, 0);
+    background-position-x: center;
+    background-position-y: center;
 }
 
-.color_red {
-    background-color: rgb(219, 32, 33);
+.color_Tier1 {
+    background-color: rgb(255, 255, 137);
 }
 
-.color_red Button {
-    -unity-background-image-tint-color: rgb(219, 32, 33);
+.color_Tier1 Button {
+    -unity-background-image-tint-color: rgb(255, 255, 137);
 }
 
-.color_orange {
-    background-color: rgb(225, 153, 88);
+.color_Tier2 {
+    background-color: rgb(255, 215, 87);
 }
 
-.color_orange Button {
-    -unity-background-image-tint-color: rgb(225, 153, 88);
+.color_Tier2 Button {
+    -unity-background-image-tint-color: rgb(255, 215, 87);
 }
 
-.color_yellow {
-    background-color: rgb(244, 232, 42);
+.color_Tier3 {
+    background-color: rgb(255, 137, 137);
 }
 
-.color_yellow Button {
-    -unity-background-image-tint-color: rgb(244, 232, 42);
+.color_Tier3 Button {
+    -unity-background-image-tint-color: rgb(255, 137, 137);
+}
+
+.color_Tier4 {
+    background-color: rgb(169, 131, 198);
+}
+
+.color_Tier4 Button {
+    -unity-background-image-tint-color: rgb(169, 131, 198);
 }
 
 .modal_entry {
@@ -71,7 +78,7 @@
 
 .main_window {
     flex-grow: 1;
-    background-image: url("project://database/Assets/Images/Maps/Pegel1.png?fileID=2800000&guid=3d96d32788241144fb93cc3e2bb0d969&type=3#Pegel1");
+    background-image: url('project://database/Assets/Images/Maps/Pegel1.png?fileID=2800000&guid=3d96d32788241144fb93cc3e2bb0d969&type=3#Pegel1');
     width: 80%;
     height: auto;
     align-self: center;
