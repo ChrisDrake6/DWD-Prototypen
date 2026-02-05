@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UIElements;
@@ -42,38 +43,10 @@ public class FinalScreenUIManager : MonoBehaviour
         _buttonRestart.clicked += RestartGame;
         _buttonQuit.clicked += QuitGame;
 
-        // TODO: Replace this with a more variable version, possibly using Cost / Lost
-        var dangerLevels = new Tuple<DangerLevel, DangerLevel>(outcomes[0].Outcome, outcomes[1].Outcome);
-        DangerLevel generalOutcome = dangerLevels switch
-        {
-            (DangerLevel.low, DangerLevel.low) => DangerLevel.low,
-            (DangerLevel.low, DangerLevel.medium) => DangerLevel.medium,
-            (DangerLevel.low, DangerLevel.high) => DangerLevel.high,
-            (DangerLevel.medium, DangerLevel.low) => DangerLevel.low,
-            (DangerLevel.medium, DangerLevel.medium) => DangerLevel.medium,
-            (DangerLevel.medium, DangerLevel.high) => DangerLevel.high,
-            (DangerLevel.high, DangerLevel.low) => DangerLevel.medium,
-            (DangerLevel.high, DangerLevel.medium) => DangerLevel.medium,
-            (DangerLevel.high, DangerLevel.high) => DangerLevel.high,
-            _ => DangerLevel.high
-        };
+        DangerLevel generalOutcome = (DangerLevel)Math.Round(outcomes.Average(a => (int)a.Outcome));
+        DangerLevel generalDecisionLevel = (DangerLevel)Math.Round(outcomes.Average(a => (int)a.Decision.DangerLevel));
 
-        dangerLevels = new Tuple<DangerLevel, DangerLevel>(outcomes[0].Decision.DangerLevel, outcomes[1].Decision.DangerLevel);
-        DangerLevel generalDecisionLevel = dangerLevels switch
-        {
-            (DangerLevel.low, DangerLevel.low) => DangerLevel.low,
-            (DangerLevel.low, DangerLevel.medium) => DangerLevel.medium,
-            (DangerLevel.low, DangerLevel.high) => DangerLevel.high,
-            (DangerLevel.medium, DangerLevel.low) => DangerLevel.low,
-            (DangerLevel.medium, DangerLevel.medium) => DangerLevel.medium,
-            (DangerLevel.medium, DangerLevel.high) => DangerLevel.high,
-            (DangerLevel.high, DangerLevel.low) => DangerLevel.medium,
-            (DangerLevel.high, DangerLevel.medium) => DangerLevel.medium,
-            (DangerLevel.high, DangerLevel.high) => DangerLevel.high,
-            _ => DangerLevel.high
-        };
-
-        dangerLevels = new Tuple<DangerLevel, DangerLevel>(outcomes[0].Decision.DangerLevel, outcomes[1].Decision.DangerLevel);
+        var dangerLevels = new Tuple<DangerLevel, DangerLevel>(generalOutcome, generalDecisionLevel);
         backGround.style.backgroundImage = dangerLevels switch
         {
             (DangerLevel.low, DangerLevel.low) => new StyleBackground(lowOutcomeLowDecisionBackGround),
