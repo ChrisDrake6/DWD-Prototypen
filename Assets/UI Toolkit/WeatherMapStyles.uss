@@ -7,8 +7,7 @@
     position: absolute;
     align-self: center;
     background-color: rgb(0, 99, 255);
-    left: 8.1%;
-    width: 67%;
+    width: 66%;
     justify-content: center;
 }
 

@@ -18,7 +18,7 @@ MonoBehaviour:
   - Text: 'Heute sehen wir uns Karten wie diese hier an:'
     Image: {fileID: 2808399913298776779, guid: ee6e365834e287641bb45c17b2dbe07d, type: 3}
   - Text: "Klick einfach auf mich, wenn du nicht weiter wei\xDFt."
-    Image: {fileID: 0}
+    Image: {fileID: 5837829297762069037, guid: 3cb01725a83076c4fae37f247b5f8388, type: 3}
   WeatherMapLines:
   - Text: WeatherMapHelpText
     Image: {fileID: 0}
