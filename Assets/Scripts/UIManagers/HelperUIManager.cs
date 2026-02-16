@@ -96,11 +96,12 @@ public class HelperUIManager : MonoBehaviour
         {
             _image.style.display = DisplayStyle.Flex;
             _image.style.backgroundImage = new StyleBackground(_currectHelperDataEntries[_index].Image);
-
+            _text.AddToClassList("text_flowing_small");
         }
         else
         {
             _image.style.display = DisplayStyle.None;
+            _text.RemoveFromClassList("text_flowing_small");
         }
         _index++;
     }

@@ -14,7 +14,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::DecisionData
   DangerLevel: 2
   Contents:
-  - ActionDescription: Katastrophenalarm ausrufen
+  - ActionDescription: "Vorbereitung weiterer Schutz- und Rettungs-Ma\xDFnahmen (z.B.
+      Errichtung von Notunterk\xFCnften)"
+    LowDangerOutcome: Katastrophenalarm Low 1
+    MediumDangerOutcome: Katastrophenalarm Medium 1
+    HighDangerOutcome: Katastrophenalarm High 1
+  - ActionDescription: Einleitung von Evakuierungen (z.B. Seniorenheim)
+    LowDangerOutcome: Katastrophenalarm Low 1
+    MediumDangerOutcome: Katastrophenalarm Medium 1
+    HighDangerOutcome: Katastrophenalarm High 1
+  - ActionDescription: "Anforderung weiterer Einsatzkr\xE4fte und Hilfsorganisationen"
+    LowDangerOutcome: Katastrophenalarm Low 1
+    MediumDangerOutcome: Katastrophenalarm Medium 1
+    HighDangerOutcome: Katastrophenalarm High 1
+  - ActionDescription: "Vorbereitung von Ma\xDFnahmen f\xFCr den Ausfall kritischer
+      Infrastruktur"
     LowDangerOutcome: Katastrophenalarm Low 1
     MediumDangerOutcome: Katastrophenalarm Medium 1
     HighDangerOutcome: Katastrophenalarm High 1

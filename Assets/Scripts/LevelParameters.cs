@@ -20,15 +20,24 @@ public class LevelParameters : ScriptableObject
     public string LowOutcomeDescription;
 
     [Header("Transition Text Lines")]
+    [TextArea(10, 15)]
     public string LowOutComeLowDecisionTransitionText;
+    [TextArea(10, 15)]
     public string LowOutComeMediumDecisionTransitionText;
+    [TextArea(10, 15)]
     public string LowOutComeHighDecisionTransitionText;
 
+    [TextArea(10, 15)]
     public string MediumOutComeLowDecisionTransitionText;
+    [TextArea(10, 15)]
     public string MediumOutComeMediumDecisionTransitionText;
+    [TextArea(10, 15)]
     public string MediumOutComeHighDecisionTransitionText;
 
+    [TextArea(10, 15)]
     public string HighOutComeLowDecisionTransitionText;
+    [TextArea(10, 15)]
     public string HighOutComeMediumDecisionTransitionText;
+    [TextArea(10, 15)]
     public string HighOutComeHighDecisionTransitionText;
 }

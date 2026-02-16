@@ -12,5 +12,6 @@ public class ConsequencePreview : ScriptableObject
 public class ConsequencePreviewEntry
 {
     public Sprite ProfileImage;
+    [TextArea(10, 15)]
     public string Text;
 }

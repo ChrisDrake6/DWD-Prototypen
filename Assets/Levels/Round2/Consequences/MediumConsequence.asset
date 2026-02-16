@@ -15,6 +15,10 @@ MonoBehaviour:
   DangerLevel: 1
   entries:
   - ProfileImage: {fileID: 7491907802156415290, guid: 1405fca40784d99499ef22044bd9fc0a, type: 3}
-    Text: Mann, was treiben die da oben eigentlich?
+    Text: "Okay. Es ist wohl doch ernster. Ich bringe die Fotos und Papiere nach
+      oben und lege die Sands\xE4cke vor die Kellert\xFCr \u2013 das hab ich schon
+      einmal zu sp\xE4t gemacht."
   - ProfileImage: {fileID: -2850196725305720190, guid: e5c860020823f4b4c8112e3c515792a0, type: 3}
-    Text: Wir kommen grad so hinterher
+    Text: "Wir sind jetzt in Bereitschaft. Sands\xE4cke werden verteilt, gef\xE4hrdete
+      Stra\xDFen gesperrt. Bitte bleibt nicht neugierig am Ufer stehen, sondern lasst
+      den Platz frei f\xFCr die Feuerwehrleute."

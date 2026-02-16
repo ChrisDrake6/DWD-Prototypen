@@ -15,6 +15,10 @@ MonoBehaviour:
   DangerLevel: 0
   entries:
   - ProfileImage: {fileID: 7491907802156415290, guid: 1405fca40784d99499ef22044bd9fc0a, type: 3}
-    Text: Haste das Spiel von Schalke gesehen?
+    Text: "Ach, Hochwasserwarnungen gibt\xB4s ja alle paar Wochen. Im letzten Winter
+      ist der Bach ein bisschen \xFCber die Ufer getreten, aber da war nach zwei
+      Tagen wieder alles gut. Trotzdem \u2026 ich stell schon mal die Gummistiefel
+      bereit."
   - ProfileImage: {fileID: -2850196725305720190, guid: e5c860020823f4b4c8112e3c515792a0, type: 3}
-    Text: "So viel Papierkram f\xFCr so einen Kinderkram..."
+    Text: "Die Wetterlage siehtnicht gut aus. Noch gibt es kein Einsatz, aber wir
+      pr\xFCfen schon mal Sands\xE4cke und Material."

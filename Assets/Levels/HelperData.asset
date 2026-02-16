@@ -13,27 +13,82 @@ MonoBehaviour:
   m_Name: HelperData
   m_EditorClassIdentifier: Assembly-CSharp::HelperData
   OnBoardingLines:
-  - Text: Hallo! Ich bin dein Mentor. Ich werde dich durch dieses Spiel begleiten.
+  - Text: "Hallo! Ich bin dein Mentor. Ich werde dich durch dieses Spiel begleiten.
+      Du kannst jederzeit auf mich klicken, f\xFCr n\xE4here Informationen und Hilfestellungen."
     Image: {fileID: 0}
-  - Text: 'Heute sehen wir uns Karten wie diese hier an:'
+  - Text: "Wir befinden uns in der 10.000 Einwohner Gemeinde Burgdorf. Eine angespannte
+      Wetterlage mit Starkregen und m\xF6glichem Hochwasser droht. <br>\nDu leitest
+      die Einsatzzentrale der Feuerwehr und bist verantwortlich f\xFCr die Koordination
+      von Warnungen, Ma\xDFnahmen und Einsatzkr\xE4ften.<br>\nDir stehen aktuelle
+      Wetter- und Hochwasserinformationen sowie Erfahrungsberichte aus der Bev\xF6lkerung
+      zur Verf\xFCgung. <br>\nDeine Aufgabe ist es, auf Grundlage dieser Informationen
+      <b>angemessene Entscheidungen</b> zu treffen \u2013 <b>unter Unsicherheit und
+      Zeitdruck.</b><br>\n <b>Jede Entscheidung hat Konsequenzen.</b>"
     Image: {fileID: 2808399913298776779, guid: ee6e365834e287641bb45c17b2dbe07d, type: 3}
-  - Text: "Klick einfach auf mich, wenn du nicht weiter wei\xDFt."
+  - Text: "Du kommst morgens in der Zentrale an und triffst auf folgende Szene:<br>\r\n-
+      Gedimmtes Licht, Monitore laufen<br>\r\n- Auf einem Bildschirm: Wetterradar<br>\r\n-
+      Kaffeemaschine brummt im Hintergrund<br>\r\n- Fr\xFChschicht hat angefangen
+      zu arbeiten.\n"
+    Image: {fileID: 0}
+  - Text: "Du siehst folgene Grafik zu den <b>Niederschlagsmengen:</b> <br>\n- Die
+      Grafik zeigt den Verlauf der akkumulierten Niederschlagsmenge in Burgdorf.
+      Die <b>blaue Linie</b>\r\nbeschreibt den bereits gemessenen Niederschlag. Am
+      2. und 3. Januar ist kein Niederschlag\r\ngefallen. Am 4. Januar fielen zwischen
+      0 Uhr und 6 Uhr insgesamt bereits ca. 37 l/m2\r\nNiederschlag.<br>\r\n- Die
+      <b>blauen Balken</b> zeigen die st\xFCndlichen Niederschlagsmengen f\xFCr die
+      einzelnen Stunden und\r\nliegen zwischen ca. 1 l/m2 und ca. 11l/m2 pro Stunde.<br>\r\n-
+      Die <b>rote Linie</b> zeigt die Modellvorhersage f\xFCr den zu erwartenden
+      Niederschlag am 4. und 5.\r\nJanuar. Die Werte wurden mit einem numerischen
+      Wettervorhersagemodell berechnet.<br>\r\n- Das <b>hellblaue Band</b> zeigt
+      das Spektrum der m\xF6glichen Niederschlagsmengen und ist eine\r\nIndikator
+      f\xFCr die Unsicherheit in der Vorhersage. In den meisten F\xE4llen werden
+      die gemessenen\r\nNiederschlagsmengen innerhalb des <b>hellblauen Bereichs</b>
+      liegen, in Einzelf\xE4llen k\xF6nnen die real\r\ngemessenen Werte jedoch auch
+      dar\xFCber oder darunter liegen. Die <b>rote Linie</b> stellt den Median dar\r\nund
+      kann als Beispiel f\xFCr einen m\xF6glichen Verlauf angesehen werden."
     Image: {fileID: 5837829297762069037, guid: 3cb01725a83076c4fae37f247b5f8388, type: 3}
   WeatherMapLines:
-  - Text: WeatherMapHelpText
+  - Text: "Du hast hier eine <b>Wasserstandsgrafik</b> vor dir.<br>\n- Die Grafik
+      zeigt den Verlauf des Wasserstands an einem Pegel mitten in Burgdorf. Die Vorhersage\r\nf\xFCr
+      die kommenden zwei Tage wird mit einem Niederschlags-Abfluss-Modell berechnet.
+      Dieses\r\nModell verwendet gemessene und von Wetterdiensten vorhergesagte Niederschl\xE4ge
+      und\r\nber\xFCcksichtigt die Gebietseigenschaften wie z.B. die Steilheit des
+      Gel\xE4ndes, die Bodenfeuchte und\r\nden Versiegelungsgrad.<br>\r\n- Eine Vorhersage
+      ist jedoch immer unsicher, was durch das <b>hellblaue Band</b> dargestellt
+      wird. Dieses\r\nBand zeigt die m\xF6gliche Entwicklung des Wasserstands je
+      nachdem wie sich das Wetter,\r\ninsbesondere die Niederschlagsmenge entwickelt.<br>\r\n-Wichtig
+      ist: Die tats\xE4chlich eintretenden Wasserst\xE4nde k\xF6nnen mit einer geringen\r\nWahrscheinlichkeit
+      auch au\xDFerhalb des hellblauen Bandes liegen!<br>\n(Hier kannst du auf die
+      kleinen Kn\xF6pfe an den Linien klicken, um dir Erfahrungsberichte anzusehen.
+      Diese k\xF6nnten deine Entscheidung vielleicht beeinflussen...)"
     Image: {fileID: 0}
   DangerPreviewLines:
-  - Text: DangerPreviewHelpText
+  - Text: "Hier werden dir Erfahrungen aus der Vergangenheit oder Empfindungen zur
+      Situation von verschiedenen Personen angezeigt.<br>\nDiese unterscheiden sich
+      je nach gew\xE4hltem Schweregrad."
     Image: {fileID: 0}
   DecisionLines:
-  - Text: DecisionHelpText
+  - Text: "Hier kannst du nun ein 'Paket' an Ma\xDFnahmen ausw\xE4hlen, die du in
+      der aktuellen Sitation f\xFCr sinnvoll erachten w\xFCrdest.<br>\nDiese Ma\xDFnahmen
+      werden dann im Anschluss durchgef\xFChrt.<br>\n<b>Achtung!</b> Jedes Ma\xDFnahmenpaket
+      beinhaltet auch die Ma\xDFnahmen aller weniger exremen Pakete!"
     Image: {fileID: 0}
   TransitionLines:
-  - Text: TransitionHelpText
+  - Text: Die kompetente Reporterin des renomierten Senders NettDF sagt dir hier,
+      was in der kurzen Zeit nach deiner Entscheidung passiert ist.
     Image: {fileID: 0}
   OutcomeLines:
-  - Text: OutcomeHelpText
+  - Text: "Hier siehst du nochmal eine Zusammenfassung der Ereignisse und deiner
+      Entscheidungen.<br>\nWie angek\xFCndigt, haben Entscheidungen Konsequenzen.
+      Schau dir an, was deine Ma\xDFnahmen f\xFCr Auswirkungen hatten."
     Image: {fileID: 0}
   FinalScreenLines:
-  - Text: FinalScreenHelpText
+  - Text: "Die Ortschaft Burgdorf. Hier siehst du, wie der Ort aussehen k\xF6nnte,
+      nachdem du deinen Teil beigetragen hast.<br>\nNicht zufrieden? Dann versuche
+      es gerne nochmal!<br> \nVergiss nicht: <b>Das Wetter schert sich nicht um Statistiken!</b>
+      Was dieses Mal passiert ist, k\xF6nnte n\xE4chstes Mal andere Auswirkungen
+      haben.<br>\nBitte nimm dir auch die Zeit, dieses Spiel zu bewerten. Es ist
+      nur ein erster Ansatz, diese schwerwiegende Thematik in diesem Format anzugehen.
+      Jedes Feedback kann einer Entwicklung einer vollwertigen Trainingssoftware
+      extrem helfen!"
     Image: {fileID: 0}

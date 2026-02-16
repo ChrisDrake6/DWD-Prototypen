@@ -15,7 +15,15 @@ MonoBehaviour:
   DangerLevel: 2
   entries:
   - ProfileImage: {fileID: 7491907802156415290, guid: 1405fca40784d99499ef22044bd9fc0a, type: 3}
-    Text: Und dann wurde ich evakuiert! Musste dir mal vorstellen! Ist mir noch nie
-      passiert.
+    Text: "Das schlimmste Hochwasser kam am Ende meiner Ausbildung vor 52 Jahren.
+      Der Keller war auf einmal egal. Ich stand nur noch an der Haust\xFCr und hab
+      geschaut, wie das Wasser die Stra\xDFe herunter geschossen kam und sie in einen
+      Fluss verwandelte. Ich war froh, dass ich mich noch zu Onkel Erwin in sein
+      h\xF6hergelegenes Haus retten konnte."
   - ProfileImage: {fileID: -2850196725305720190, guid: e5c860020823f4b4c8112e3c515792a0, type: 3}
-    Text: Wir hatten wirklich Pech
+    Text: "Beim gro\xDFen Hochwasser im Norden vor 20 Jahren wurden wir zur Unterst\xFCtzung
+      gerufen. Es war sehr wild und zeitweise ging alles durcheinander. Eins\xE4tze,
+      bei denen man manche der Arbeiten schon kennt, aber mit viel mehr Personal,
+      gr\xF6\xDFeren Herausforderungen und in einer Dichte, die wir so noch nie hatten.
+      Ich wei\xDF nur noch, dass mein Handy st\xE4ndig vibrierte. Wir mussten 12
+      Menschen mit Schlauchbooten retten."

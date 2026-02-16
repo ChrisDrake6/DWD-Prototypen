@@ -112,7 +112,7 @@
 }
 
 .text_flowing {
-    font-size: 40px;
+    font-size: 36px;
     -unity-text-align: upper-left;
     -unity-font-definition: url("project://database/Assets/Fonts/Kalam/Kalam-Regular.ttf?fileID=12800000&guid=016b80f4b804f0f45870f0e8dda05e4f&type=3#Kalam-Regular");
     white-space: normal;
@@ -157,4 +157,11 @@
     border-top-right-radius: 20px;
     border-bottom-right-radius: 20px;
     border-bottom-left-radius: 20px;
+}
+
+.text_flowing_small {
+    font-size: 20px;
+    -unity-text-align: upper-left;
+    -unity-font-definition: url("project://database/Assets/Fonts/Kalam/Kalam-Regular.ttf?fileID=12800000&guid=016b80f4b804f0f45870f0e8dda05e4f&type=3#Kalam-Regular");
+    white-space: normal;
 }

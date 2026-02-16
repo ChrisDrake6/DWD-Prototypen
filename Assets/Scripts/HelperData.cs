@@ -16,6 +16,7 @@ public class HelperData : ScriptableObject
 [Serializable]
 public class HelperDataEntry
 {
+    [TextArea(10, 15)]
     public string Text;
     public Sprite Image;
 }

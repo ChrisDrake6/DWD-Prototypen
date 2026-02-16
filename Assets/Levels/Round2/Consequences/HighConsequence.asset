@@ -15,6 +15,8 @@ MonoBehaviour:
   DangerLevel: 2
   entries:
   - ProfileImage: {fileID: 7491907802156415290, guid: 1405fca40784d99499ef22044bd9fc0a, type: 3}
-    Text: Vollkatastrophe!
+    Text: "Jetzt \xFCberlege ich nicht mehr. Wenn die Feuerwehr heute \"raus\" sagt,
+      dann geh ich."
   - ProfileImage: {fileID: -2850196725305720190, guid: e5c860020823f4b4c8112e3c515792a0, type: 3}
-    Text: Ich hab Angst um meinen Job.
+    Text: "Wir retten jetzt Menschen, nicht mehr Gegenst\xE4nde. Wer jetzt noch im
+      Haus ist: hoch in sichere Etagen oder sofort raus, wenn wir es sagen."

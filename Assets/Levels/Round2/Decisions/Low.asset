@@ -14,11 +14,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::DecisionData
   DangerLevel: 0
   Contents:
-  - ActionDescription: Warnung ausgeben
+  - ActionDescription: Abwarten und Kaffee trinken
     LowDangerOutcome: Warnung Low 2
     MediumDangerOutcome: Warnung Medium 2
     HighDangerOutcome: Warnung High 2
-  - ActionDescription: Personal beschaffen.
+  - ActionDescription: "\xDCberpr\xFCfung Einsatzbereitschaft f\xFCr Hochwasserschutzma\xDFnahmen,
+      Ger\xE4te und Personal"
+    LowDangerOutcome: Personal Low 2
+    MediumDangerOutcome: Personal Medium 2
+    HighDangerOutcome: Personal High 2
+  - ActionDescription: "Vorbereitung Verkehrslenkung (z.B. Sperrung Bundesstra\xDFe)"
+    LowDangerOutcome: Personal Low 2
+    MediumDangerOutcome: Personal Medium 2
+    HighDangerOutcome: Personal High 2
+  - ActionDescription: "Vorbereitung ortsbezogener Ma\xDFnahmen (z.B. Abbau von Flie\xDFhindernissen,
+      R\xE4umung Uferbereich)"
     LowDangerOutcome: Personal Low 2
     MediumDangerOutcome: Personal Medium 2
     HighDangerOutcome: Personal High 2
