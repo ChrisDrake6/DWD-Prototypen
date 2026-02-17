@@ -6,6 +6,7 @@
         </ui:VisualElement>
         <ui:VisualElement style="flex-grow: 1; flex-direction: row; justify-content: space-between; width: 37%; align-content: auto; align-items: center;">
             <ui:Button text="Neustart" name="Button_Restart" class="button_main interactable" style="align-self: flex-end;" />
+            <ui:Button text="Bewerten" name="Button_Evaluate" class="button_main interactable" style="align-self: flex-end;" />
             <ui:Button text="Beenden" name="Button_Quit" class="button_main interactable" style="align-self: flex-end;" />
         </ui:VisualElement>
     </ui:VisualElement>

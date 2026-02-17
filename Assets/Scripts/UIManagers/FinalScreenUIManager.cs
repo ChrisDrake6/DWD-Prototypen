@@ -21,6 +21,7 @@ public class FinalScreenUIManager : MonoBehaviour
     [SerializeField] private Sprite highOutcomeHighDecisionBackGround;
 
     private Button _buttonRestart;
+    private Button _buttonEvaluate;
     private Button _buttonQuit;
 
     private void OnEnable()
@@ -39,8 +40,10 @@ public class FinalScreenUIManager : MonoBehaviour
         VisualElement finalScreenContainer = finalScreenAsset.Instantiate().Q<VisualElement>("FinalScreenContainer");
         backGround.Add(finalScreenContainer);
         _buttonRestart = finalScreenContainer.Q<Button>("Button_Restart");
+        _buttonEvaluate = finalScreenContainer.Q<Button>("Button_Evaluate");
         _buttonQuit = finalScreenContainer.Q<Button>("Button_Quit");
         _buttonRestart.clicked += RestartGame;
+        _buttonEvaluate.clicked += OpenEvaluation;
         _buttonQuit.clicked += QuitGame;
 
         DangerLevel generalOutcome = (DangerLevel)Math.Round(outcomes.Average(a => (int)a.Outcome));
@@ -65,8 +68,14 @@ public class FinalScreenUIManager : MonoBehaviour
     private void RestartGame()
     {
         _buttonRestart.clicked -= RestartGame;
+        _buttonEvaluate.clicked -= OpenEvaluation;
         _buttonQuit.clicked -= QuitGame;
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+    }
+
+    private void OpenEvaluation()
+    {
+        System.Diagnostics.Process.Start("https://www.empirio.de/s/0W2ibtW1FV");
     }
 
     private void QuitGame() 
