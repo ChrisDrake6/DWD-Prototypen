@@ -64,13 +64,15 @@ public class GameManager : MonoBehaviour
         };
         propabilities.OrderBy(a => a.Value);
         float d100 = UnityEngine.Random.Range(0, 100);
+        float rangeOffset = 0;
         foreach (KeyValuePair<DangerLevel, float> prop in propabilities)
         {
-            if (prop.Value <= d100)
+            if (prop.Value + rangeOffset <= d100)
             {
                 outcome = prop.Key;
                 break;
             }
+            rangeOffset += prop.Value;
         }
 
         OutcomeData outcomeData = new OutcomeData()
