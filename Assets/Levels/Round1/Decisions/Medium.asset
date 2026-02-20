@@ -13,24 +13,10 @@ MonoBehaviour:
   m_Name: Medium
   m_EditorClassIdentifier: Assembly-CSharp::DecisionData
   DangerLevel: 1
-  Contents:
-  - ActionDescription: Einrichtung erweiterter Kommunikations- und Einsatzstrukturen
-    LowDangerOutcome: "Sands\xE4cke Low 1"
-    MediumDangerOutcome: "Sands\xE4cke Medium 1"
-    HighDangerOutcome: "Sands\xE4cke High 1"
-  - ActionDescription: "Vorwarnung der Bev\xF6lkerung \xFCber Warn-Apps und Radio"
-    LowDangerOutcome: THW Low 1
-    MediumDangerOutcome: THW Medium 1
-    HighDangerOutcome: THW High 1
-  - ActionDescription: "Durchf\xFChrung ortsbezogener Ma\xDFnahmen, z.B. Auslegen
-      von Sands\xE4cken"
-    LowDangerOutcome: THW Low 1
-    MediumDangerOutcome: THW Medium 1
-    HighDangerOutcome: THW High 1
-  - ActionDescription: "Vorbereitung weiterer Schutz- und Rettungs-Ma\xDFnahmen (z.B.
-      Errichtung von Notunterk\xFCnften)"
-    LowDangerOutcome: THW Low 1
-    MediumDangerOutcome: THW Medium 1
-    HighDangerOutcome: THW High 1
-  Cost: 1200
-  LostReduction: 300
+  ActionDescription: "- Einrichtung erweiterter Kommunikations- und Einsatzstrukturen\r\n-
+    Vorwarnung der Bev\xF6lkerung \xFCber Warn-Apps und Radio\n- Durchf\xFChrung
+    ortsbezogener Ma\xDFnahmen, z.B. Auslegen von Sands\xE4cken\r\n- Vorbereitung
+    weiterer Schutz- und Rettungs-Ma\xDFnahmen (z.B. Errichtung von Notunterk\xFCnften)"
+  LowDangerOutcome: Outcome Low
+  MediumDangerOutcome: Outcome medium
+  HighDangerOutcome: Outcome high

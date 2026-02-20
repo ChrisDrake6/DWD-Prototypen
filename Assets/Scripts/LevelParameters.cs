@@ -10,9 +10,6 @@ public class LevelParameters : ScriptableObject
     public float HighDangerPropability;
     public float MediumDangerPropability;
 
-    [Header("Expected Lost Values")]
-    public float LostAtHighDangerOutcome;
-    public float LostAtMediumDangerOutcome;
 
     [Header("Genereal Outcome Descriptions")]
     public string HighOutcomeDescription;

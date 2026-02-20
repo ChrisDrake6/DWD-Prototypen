@@ -8,7 +8,6 @@ public class OutcomeUIManager : MonoBehaviour
     [SerializeField] private UIDocument ui;
     [SerializeField] private VisualTreeAsset outcomeOverviewAsset;
     [SerializeField] private VisualTreeAsset outcomeEntryAsset;
-    [SerializeField] private VisualTreeAsset outcomeSubEntryAsset;
 
     public static event Action<List<OutcomeData>> EvaluationTriggered;
 
@@ -60,31 +59,28 @@ public class OutcomeUIManager : MonoBehaviour
                     break;
             }
 
-            VisualElement subEntryList = outcomeEntry.Q<VisualElement>("SubEntryList");
-            foreach (DecisionDataEntry decisionEntry in outcome.Decision.Contents)
-            {
-                VisualElement outcomeSubEntry = outcomeSubEntryAsset.Instantiate().Q<VisualElement>("OutcomeSubEntry");
-                subEntryList.Add(outcomeSubEntry);
+            //foreach (DecisionDataEntry decisionEntry in outcome.Decision.Contents)
+            //{
 
-                Label decision = outcomeSubEntry.Q<Label>("Decision");
-                decision.text = decisionEntry.ActionDescription;
+                Label decision = outcomeEntry.Q<Label>("Decision");
+                decision.text = outcome.Decision.ActionDescription;
 
-                Label decicionOutcome = outcomeSubEntry.Q<Label>("DecisionOutcome");
+                Label decicionOutcome = outcomeEntry.Q<Label>("DecisionOutcome");
                 switch (outcome.Outcome)
                 {
                     case DangerLevel.high:
-                        decicionOutcome.text = decisionEntry.HighDangerOutcome;
+                        decicionOutcome.text = outcome.Decision.HighDangerOutcome;
                         break;
 
                     case DangerLevel.medium:
-                        decicionOutcome.text = decisionEntry.MediumDangerOutcome;
+                        decicionOutcome.text = outcome.Decision.MediumDangerOutcome;
                         break;
 
                     case DangerLevel.low:
-                        decicionOutcome.text = decisionEntry.LowDangerOutcome;
+                        decicionOutcome.text = outcome.Decision.LowDangerOutcome;
                         break;
                 }
-            }
+            //}
         }
     }
 

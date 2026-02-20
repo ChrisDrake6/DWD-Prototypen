@@ -66,10 +66,7 @@ public class DecisionsUIManager : MonoBehaviour
             }
 
             Label text = decisionUIElement.Q<Label>("Text");
-            foreach (DecisionDataEntry entry in decision.Contents)
-            {
-                text.text += $"- {entry.ActionDescription}\n";
-            }
+            text.text = decision.ActionDescription;
             decisionList.Add(decisionUIElement);
         }
 

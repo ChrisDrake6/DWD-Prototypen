@@ -13,24 +13,10 @@ MonoBehaviour:
   m_Name: Low
   m_EditorClassIdentifier: Assembly-CSharp::DecisionData
   DangerLevel: 0
-  Contents:
-  - ActionDescription: Abwarten und Tee trinken
-    LowDangerOutcome: Abwarten und Tee trinken Low 1
-    MediumDangerOutcome: Abwarten und Tee trinken Medium 1
-    HighDangerOutcome: Abwarten und Tee trinken High 1
-  - ActionDescription: "\xDCberpr\xFCfung Einsatzbereitschaft f\xFCr Hochwasserschutzma\xDFnahmen,
-      Ger\xE4te und Personal"
-    LowDangerOutcome: Personal Low 1
-    MediumDangerOutcome: Personal Medium 1
-    HighDangerOutcome: Personal High 1
-  - ActionDescription: "Vorbereitung Verkehrslenkung (z.B. Sperrung Bundesstra\xDFe)"
-    LowDangerOutcome: Verkehrslenkung Low 1
-    MediumDangerOutcome: Verkehrslenkung Medium 1
-    HighDangerOutcome: Verkehrslenkung High 1
-  - ActionDescription: "Vorbereitung ortsbezogener Ma\xDFnahmen (z.B. Abbau von Flie\xDFhindernissen,
-      R\xE4umung Uferbereich)"
-    LowDangerOutcome: Abbau Low 1
-    MediumDangerOutcome: Abbau Medium 1
-    HighDangerOutcome: Abbau High 1
-  Cost: 120
-  LostReduction: 0
+  ActionDescription: "- Abwarten und Tee trinken\r\n- \xDCberpr\xFCfung Einsatzbereitschaft
+    f\xFCr Hochwasserschutzma\xDFnahmen, Ger\xE4te und Personal\r\n- Vorbereitung
+    Verkehrslenkung (z.B. Sperrung Bundesstra\xDFe)\r\n- Vorbereitung ortsbezogener
+    Ma\xDFnahmen (z.B. Abbau von Flie\xDFhindernissen, R\xE4umung Uferbereich)"
+  LowDangerOutcome: Outcome low
+  MediumDangerOutcome: Outcome medium
+  HighDangerOutcome: Outcome High

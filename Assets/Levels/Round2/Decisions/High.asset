@@ -13,24 +13,10 @@ MonoBehaviour:
   m_Name: High
   m_EditorClassIdentifier: Assembly-CSharp::DecisionData
   DangerLevel: 2
-  Contents:
-  - ActionDescription: "Ausrufung des Katastrophenfalls, Ausl\xF6sung von Sirenenalarm"
-    LowDangerOutcome: Katastrophenalarm Low 2
-    MediumDangerOutcome: Katastrophenalarm Medium 2
-    HighDangerOutcome: Katastrophenalarm High 2
-  - ActionDescription: "Durchf\xFChrung umfangreicher Evakuierungen (z.B. Seniorenheim)"
-    LowDangerOutcome: Katastrophenalarm Low 2
-    MediumDangerOutcome: Katastrophenalarm Medium 2
-    HighDangerOutcome: Katastrophenalarm High 2
-  - ActionDescription: "Anforderung landesweiter Einsatzkr\xE4fte und Hilfsorganisationen
-      (z.B. THW)"
-    LowDangerOutcome: Katastrophenalarm Low 2
-    MediumDangerOutcome: Katastrophenalarm Medium 2
-    HighDangerOutcome: Katastrophenalarm High 2
-  - ActionDescription: "Durchf\xFChrung akuter Ma\xDFnahmen zur Sicherung kritischer
-      Infrastruktur"
-    LowDangerOutcome: Katastrophenalarm Low 2
-    MediumDangerOutcome: Katastrophenalarm Medium 2
-    HighDangerOutcome: Katastrophenalarm High 2
-  Cost: 400
-  LostReduction: 1200
+  ActionDescription: "- Ausrufung des Katastrophenfalls, Ausl\xF6sung von Sirenenalarm\r\n-
+    Durchf\xFChrung umfangreicher Evakuierungen (z.B. Seniorenheim)\r\n- Anforderung
+    landesweiter Einsatzkr\xE4fte und Hilfsorganisationen (z.B. THW)\r\n- Durchf\xFChrung
+    akuter Ma\xDFnahmen zur Sicherung kritischer Infrastruktur"
+  LowDangerOutcome: Outcome low
+  MediumDangerOutcome: Outcome medium
+  HighDangerOutcome: Outcome high

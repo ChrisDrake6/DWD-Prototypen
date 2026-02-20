@@ -13,19 +13,9 @@ MonoBehaviour:
   m_Name: Medium
   m_EditorClassIdentifier: Assembly-CSharp::DecisionData
   DangerLevel: 1
-  Contents:
-  - ActionDescription: "Warnung der Bev\xF6lkerung \xFCber Medien und Warn-Apps"
-    LowDangerOutcome: "Sands\xE4cke Low 2"
-    MediumDangerOutcome: "Sands\xE4cke Medium 2"
-    HighDangerOutcome: "Sands\xE4cke High 2"
-  - ActionDescription: "Sperrung der \xFCberflutungsgef\xE4hrdeten Autobahn"
-    LowDangerOutcome: THW Low 2
-    MediumDangerOutcome: THW Medium 2
-    HighDangerOutcome: THW High 2
-  - ActionDescription: "Aktivierung von Hilfsorganisationen (z.B. Malteser), bei
-      Bedarf \xD6ffnung von Notunterk\xFCnften"
-    LowDangerOutcome: THW Low 2
-    MediumDangerOutcome: THW Medium 2
-    HighDangerOutcome: THW High 2
-  Cost: 1200
-  LostReduction: 300
+  ActionDescription: "- Warnung der Bev\xF6lkerung \xFCber Medien und Warn-Apps\r\n-
+    Sperrung der \xFCberflutungsgef\xE4hrdeten Autobahn\r\n- Aktivierung von Hilfsorganisationen
+    (z.B. Malteser), bei Bedarf\r\n- \xD6ffnung von Notunterk\xFCnften"
+  LowDangerOutcome: Outcome low
+  MediumDangerOutcome: Outcome medium
+  HighDangerOutcome: Outcome high

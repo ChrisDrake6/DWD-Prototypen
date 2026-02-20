@@ -5,16 +5,12 @@ using UnityEngine;
 public class DecisionData : ScriptableObject
 {
     public DangerLevel DangerLevel;
-    public DecisionDataEntry[] Contents;
-    public float Cost;
-    public float LostReduction;
-}
-
-[Serializable]
-public class DecisionDataEntry
-{
+    [TextArea(10, 15)]
     public string ActionDescription;
+    [TextArea(10, 15)]
     public string LowDangerOutcome;
+    [TextArea(10, 15)]
     public string MediumDangerOutcome;
+    [TextArea(10, 15)]
     public string HighDangerOutcome;
 }
