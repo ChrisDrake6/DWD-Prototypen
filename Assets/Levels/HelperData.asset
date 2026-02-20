@@ -71,7 +71,7 @@ MonoBehaviour:
   - Text: "Hier kannst du nun ein 'Paket' an Ma\xDFnahmen ausw\xE4hlen, die du in
       der aktuellen Sitation f\xFCr sinnvoll erachten w\xFCrdest.<br>\nDiese Ma\xDFnahmen
       werden dann im Anschluss durchgef\xFChrt.<br>\n<b>Achtung!</b> Jedes Ma\xDFnahmenpaket
-      beinhaltet auch die Ma\xDFnahmen aller weniger exremen Pakete!"
+      beinhaltet auch die Ma\xDFnahmen aller weniger extremen Pakete!"
     Image: {fileID: 0}
   TransitionLines:
   - Text: Die kompetente Reporterin des renomierten Senders NettDF sagt dir hier,
@@ -89,6 +89,6 @@ MonoBehaviour:
       Was dieses Mal passiert ist, k\xF6nnte n\xE4chstes Mal andere Auswirkungen
       haben.<br>\nBitte nimm dir auch die Zeit, dieses Spiel zu bewerten. Es ist
       nur ein erster Ansatz, diese schwerwiegende Thematik in diesem Format anzugehen.
-      Jedes Feedback kann einer Entwicklung einer vollwertigen Trainingssoftware
+      Jedes Feedback kann bei einer Entwicklung einer vollwertigen Trainingssoftware
       extrem helfen!"
     Image: {fileID: 0}

@@ -21,7 +21,7 @@ MonoBehaviour:
   MediumOutcomeDescription: "Kr\xE4ftiger Starkregen"
   LowOutcomeDescription: Leichter Regenfall
   LowOutComeLowDecisionTransitionText: Es ist ein regnerischer Tag und recht ereignislos.
-  LowOutComeMediumDecisionTransitionText: "Die Ma\xDFnnahmen des Kat-Schutzes waren
+  LowOutComeMediumDecisionTransitionText: "Die Ma\xDFnahmen des Kat-Schutzes waren
     gl\xFCcklicherweise nicht n\xF6tig, denn es gab nur leichten Regen."
   LowOutComeHighDecisionTransitionText: "Nur leichter Regen \xFCberraschte die Bev\xF6lkerung,
     die in Aufrur versetzt wurde, durch die v\xF6llig \xFCberzogenen Ma\xDFnahmen
