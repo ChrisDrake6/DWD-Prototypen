@@ -17,6 +17,21 @@ MonoBehaviour:
     Vorwarnung der Bev\xF6lkerung \xFCber Warn-Apps und Radio\n- Durchf\xFChrung
     ortsbezogener Ma\xDFnahmen, z.B. Auslegen von Sands\xE4cken\r\n- Vorbereitung
     weiterer Schutz- und Rettungs-Ma\xDFnahmen (z.B. Errichtung von Notunterk\xFCnften)"
-  LowDangerOutcome: Outcome Low
-  MediumDangerOutcome: Outcome medium
-  HighDangerOutcome: Outcome high
+  LowDangerOutcome: "- An bekannten Hochwasserhotspots legt die Feuerwehr Sands\xE4cke
+    aus. Die Lage wirkt koordiniert.\n- Ein lokaler Hochwasserstab mit Vertreter:innen
+    von Feuerwehr, Landratsamt und Polizei wird einberufen; vorerst hei\xDFt es jedoch: 
+    abwarten\n- Die Warnung vor dem bevorstehenden Ereignis \xFCber Warn-Apps und
+    das Lokalradio erreicht 40% der Bev\xF6lkerung; eine gewisse Unruhe ist auf der
+    Stra\xDFe sp\xFCrbar."
+  MediumDangerOutcome: "- An bekannten Hochwasserhotspots legt die Feuerwehr Sands\xE4cke
+    aus. Die Lage wirkt koordiniert.\n- Ein lokaler Hochwasserstab mit Vertreter:innen
+    von Feuerwehr, Landratsamt und Polizei wird einberufen; vorerst hei\xDFt es jedoch: 
+    abwarten\n- Die Warnung vor dem bevorstehenden Ereignis \xFCber Warn-Apps und
+    das Lokalradio erreicht 40% der Bev\xF6lkerung; eine gewisse Unruhe ist auf der
+    Stra\xDFe sp\xFCrbar."
+  HighDangerOutcome: "- An bekannten Hochwasserhotspots legt die Feuerwehr Sands\xE4cke
+    aus. Die Lage wirkt koordiniert.\n- Ein lokaler Hochwasserstab mit Vertreter:innen
+    von Feuerwehr, Landratsamt und Polizei wird einberufen; vorerst hei\xDFt es jedoch: 
+    abwarten\n- Die Warnung vor dem bevorstehenden Ereignis \xFCber Warn-Apps und
+    das Lokalradio erreicht 40% der Bev\xF6lkerung; eine gewisse Unruhe ist auf der
+    Stra\xDFe sp\xFCrbar."

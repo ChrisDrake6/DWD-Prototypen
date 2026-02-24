@@ -17,6 +17,30 @@ MonoBehaviour:
     f\xFCr Hochwasserschutzma\xDFnahmen, Ger\xE4te und Personal\r\n- Vorbereitung
     Verkehrslenkung (z.B. Sperrung Bundesstra\xDFe)\r\n- Vorbereitung ortsbezogener
     Ma\xDFnahmen (z.B. Abbau von Flie\xDFhindernissen, R\xE4umung Uferbereich)"
-  LowDangerOutcome: Outcome low
-  MediumDangerOutcome: Outcome medium
-  HighDangerOutcome: Outcome High
+  LowDangerOutcome: "- Die Freiwillige Feuer beruft einen kleinen Teil der Einsatzkr\xE4fte
+    ein; mit einer Flasche Almdudler in der Hand werden die Ger\xE4tschaften im Keller
+    der Feuerwache gepr\xFCft\n- Die Polizei wurde \xFCber eine m\xF6gliche Sperrung
+    der Bundesstra\xDFe informiert, aber das Gespr\xE4ch hinterl\xE4sst bei Hauptkommisar
+    Waldemar viele Fragezeichen. Scheinbar rechnet niemand mit einem gr\xF6\xDFeren
+    Hochwasser.\n- Ein Mitarbeiter der Gemeindeverwaltung holt Absperrband aus dem
+    Schrank und plant in 2 Stunden an den Spielplatz am Fluss zu fahren, um diesen
+    abzusperren. Vielleicht auch erst in 3 Stunden. Nun hei\xDFt es erst mal K\xE4ffchen
+    trinken."
+  MediumDangerOutcome: "- Die Freiwillige Feuer beruft einen kleinen Teil der Einsatzkr\xE4fte
+    ein; mit einer Flasche Almdudler in der Hand werden die Ger\xE4tschaften im Keller
+    der Feuerwache gepr\xFCft\n- Die Polizei wurde \xFCber eine m\xF6gliche Sperrung
+    der Bundesstra\xDFe informiert, aber das Gespr\xE4ch hinterl\xE4sst bei Hauptkommisar
+    Waldemar viele Fragezeichen. Scheinbar rechnet niemand mit einem gr\xF6\xDFeren
+    Hochwasser.\n- Ein Mitarbeiter der Gemeindeverwaltung holt Absperrband aus dem
+    Schrank und plant in 2 Stunden an den Spielplatz am Fluss zu fahren, um diesen
+    abzusperren. Vielleicht auch erst in 3 Stunden. Nun hei\xDFt es erst mal K\xE4ffchen
+    trinken."
+  HighDangerOutcome: "- Die Freiwillige Feuer beruft einen kleinen Teil der Einsatzkr\xE4fte
+    ein; mit einer Flasche Almdudler in der Hand werden die Ger\xE4tschaften im Keller
+    der Feuerwache gepr\xFCft\n- Die Polizei wurde \xFCber eine m\xF6gliche Sperrung
+    der Bundesstra\xDFe informiert, aber das Gespr\xE4ch hinterl\xE4sst bei Hauptkommisar
+    Waldemar viele Fragezeichen. Scheinbar rechnet niemand mit einem gr\xF6\xDFeren
+    Hochwasser.\n- Ein Mitarbeiter der Gemeindeverwaltung holt Absperrband aus dem
+    Schrank und plant in 2 Stunden an den Spielplatz am Fluss zu fahren, um diesen
+    abzusperren. Vielleicht auch erst in 3 Stunden. Nun hei\xDFt es erst mal K\xE4ffchen
+    trinken."

@@ -17,6 +17,25 @@ MonoBehaviour:
     f\xFCr Hochwasserschutzma\xDFnahmen, Ger\xE4te und Personal\r\n- Vorbereitung
     Verkehrslenkung (z.B. Sperrung Bundesstra\xDFe)\r\n- Vorbereitung ortsbezogener
     Ma\xDFnahmen (z.B. Abbau von Flie\xDFhindernissen, R\xE4umung Uferbereich)"
-  LowDangerOutcome: Outcome low
-  MediumDangerOutcome: Outcome medium
-  HighDangerOutcome: Outcome high
+  LowDangerOutcome: "- Begrenztes Hochwasser\r\n- Ort weitgehend unbeeintr\xE4chtigt\n-
+    Nur wenige Ma\xDFnahmen eingeleitet \u2013 sie reichten in dieser Lage aus.\r\n-
+    Eindruck: Du hast die Risiken realistisch eingesch\xE4tzt. Gleichzeitig blieb
+    unklar, ob diese Zur\xFCckhaltung bei einem st\xE4rkeren Ereignis tragf\xE4hig
+    gewesen w\xE4re.\n- Keine Kritik \n- Interne Schulungen zur Lageeinsch\xE4tzung
+    unter Unsicherheit werden von Politik und Stadtverwaltung vorgeschlagen, um auch
+    bei zuk\xFCnftigen Ereignissen gut zu entscheiden."
+  MediumDangerOutcome: "- Das Hochwasser erreicht bewohnte Bereiche.\n- Unter deiner
+    Koordination wurden Risiken untersch\xE4tzt. \n- Sch\xE4den und Belastungen h\xE4tten
+    durch fr\xFChere Ma\xDFnahmen reduziert werden k\xF6nnen. \n- In der Nachbetrachtung
+    gilt diese Lage als verpasste Chance zur Vorsorge.\n- Du beh\xE4ltst deine Position,
+    stehst jedoch intern in der Kritik. Du musst an einer verpflichtenden Fortbildung
+    in Eskalationsmanagement und Szenarioplanung teilnehmen.\n"
+  HighDangerOutcome: "- Das Wasser hat Stra\xDFen und Pl\xE4tze \xFCbernommen. Geb\xE4ude
+    sind umsp\xFClt, Verkehrszeichen ragen aus dem Wasser. Es gibt keine sichtbare
+    Struktur, die dem Wasser etwas entgegensetzt.\n- Das extreme Hochwasser traf
+    auf einen unzureichend vorbereiteten Ort. \n- Unter deiner Koordination fehlten
+    fr\xFChzeitige Schutzund Lenkungsma\xDFnahmen. Die Lage geriet au\xDFer Kontrolle.\n-
+    Du verlierst deine Position als Leitstellenkoordinator.\r\n- Du musst dich m\xF6glichen
+    rechtlichen Konsequenzen aufgrund von fehlenden Ma\xDFnahmen, die m\xF6glicherweise
+    zu dem Verlust zweier Menschenleben und zu hohem Sachschaden gef\xFChrt haben,
+    stellen."

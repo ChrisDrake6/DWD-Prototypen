@@ -17,6 +17,29 @@ MonoBehaviour:
     Durchf\xFChrung umfangreicher Evakuierungen (z.B. Seniorenheim)\r\n- Anforderung
     landesweiter Einsatzkr\xE4fte und Hilfsorganisationen (z.B. THW)\r\n- Durchf\xFChrung
     akuter Ma\xDFnahmen zur Sicherung kritischer Infrastruktur"
-  LowDangerOutcome: Outcome low
-  MediumDangerOutcome: Outcome medium
-  HighDangerOutcome: Outcome high
+  LowDangerOutcome: "- Begrenztes Hochwasser\n- Ort unbeeintr\xE4chtigt\n- Du hast
+    fr\xFCh und umfassend reagiert. Die Ma\xDFnahmen waren sichtbar, strukturiert
+    und einsatzbereit.\r\n- Eindruck: Deine Entscheidung wird trotz moderatem Hochwassers
+    als fachlich korrekt eingeordnet. Gleichzeitig entsteht Diskussionsbedarf \xFCber
+    Verh\xE4ltnism\xE4\xDFigkeit und Kommunikation.\n- Du wirst intern als (\xFCber-)vorsichtige
+    F\xFChrungskraft wahrgenommen. In den sozialen Medien gibt es heftige Kritik
+    an den als zu umfangreich empfundenen Ma\xDFnahmen.\r\n- Du sollst Schulungen
+    zur Lageeinsch\xE4tzung sowie Fachveranstaltungen zu Resilienzstrategien besuchen,
+    um bei zuk\xFCnftigen Ereignissen m\xF6glichst angemessen zu entscheiden.\n\n"
+  MediumDangerOutcome: "- Das Hochwasser dr\xFCckt gegen Sands\xE4cke und Sperren.
+    Das Wasser steht hoch, aber geordnet. Der Ort mit allen Bereichen ist durch die\r\nMa\xDFnahmenpakete
+    mehrfach gesch\xFCtzt. Die durchgef\xFChrten Evakuierungen erscheinen unn\xF6tig.\n-
+    Durch deine konsequente Koordination konnten gr\xF6\xDFere Sch\xE4den komplett
+    verhindert werden. \n- Die Schutzma\xDFnahmen hatten ein sehr gro\xDFes Ausma\xDF.
+    Auch bei einen deutlich st\xE4rken Ereignis w\xE4re wahrscheinlich der Ort wahrscheinlich
+    komplett gesch\xFCtzt geblieben.\n- Deine Rolle als Leitstellenkoordinator wurde
+    als zentral und verl\xE4sslich wahrgenommen.\n- Du gehst gest\xE4rkt aus der
+    Lage heraus und hast die volle R\xFCckendeckung deiner Chefs. In der Bev\xF6lkerung
+    gibt es ein geteiltes Echo \xFCber dein Handeln."
+  HighDangerOutcome: "- Das Hochwasser steht hoch, dr\xFCckt massiv gegen Schutzlinien.
+    Die Ma\xDFnahmen halten weitgehend stand. Alle notwendigen Evakuierungen waren
+    erfolgreich.\n- Unter deiner Koordination wurden alle verf\xFCgbaren Ma\xDFnahmen
+    aktiviert, Abl\xE4ufe griffen, Priorit\xE4ten waren klar. Sch\xE4den entstanden,
+    aber alle Menschen konnten gesch\xFCtzt werden.\r\n- Deine Rolle als Leitstellenkoordinator
+    erwies sich als entscheidend.\n- Du wirst bef\xF6rdert und zum Koordinator f\xFCr
+    Extremwetter auf Kreisebene berufen."

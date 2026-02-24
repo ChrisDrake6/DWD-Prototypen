@@ -12,8 +12,11 @@ public class LevelParameters : ScriptableObject
 
 
     [Header("Genereal Outcome Descriptions")]
+    [TextArea(10, 15)]
     public string HighOutcomeDescription;
+    [TextArea(10, 15)]
     public string MediumOutcomeDescription;
+    [TextArea(10, 15)]
     public string LowOutcomeDescription;
 
     [Header("Transition Text Lines")]

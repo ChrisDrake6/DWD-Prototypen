@@ -17,6 +17,24 @@ MonoBehaviour:
     von Evakuierungen (z.B. Seniorenheim)\r\n- Anforderung weiterer Einsatzkr\xE4fte
     undHilfsorganisationen\r\n- Vorbereitung von Ma\xDFnahmen f\xFCr den Ausfall
     kritischer Infrastruktur"
-  LowDangerOutcome: Outcome low
-  MediumDangerOutcome: Outcome medium
-  HighDangerOutcome: Outcome high
+  LowDangerOutcome: "- \xDCberall in der Gemeinde sieht man Einsatzkr\xE4fte von
+    Feuerwehr und THW, die Sands\xE4cke verteilen und Hochwasserschutzw\xE4nde aufbauen\n-
+    Im Seniorenheim herrscht reges Treiben; die Pflegekr\xE4fte packen die Habseligkeiten
+    der Bewohner:innen zusammen. Eine demente \xE4ltere Dame fragt zum 7. Mal, ob
+    sie nun wegen des Angriffs vertrieben wird oder ob sie wieder nach Hause darf\n-
+    Bei allen Einrichtungen der kritischen Infrastruktur werden Notstromaggregate
+    getestet und alle Bereitschaftsdienste sofort einbestellt.  "
+  MediumDangerOutcome: "- \xDCberall in der Gemeinde sieht man Einsatzkr\xE4fte von
+    Feuerwehr und THW, die Sands\xE4cke verteilen und Hochwasserschutzw\xE4nde aufbauen\n-
+    Im Seniorenheim herrscht reges Treiben; die Pflegekr\xE4fte packen die Habseligkeiten
+    der Bewohner:innen zusammen. Eine demente \xE4ltere Dame fragt zum 7. Mal, ob
+    sie nun wegen des Angriffs vertrieben wird oder ob sie wieder nach Hause darf\n-
+    Bei allen Einrichtungen der kritischen Infrastruktur werden Notstromaggregate
+    getestet und alle Bereitschaftsdienste sofort einbestellt.  "
+  HighDangerOutcome: "- \xDCberall in der Gemeinde sieht man Einsatzkr\xE4fte von
+    Feuerwehr und THW, die Sands\xE4cke verteilen und Hochwasserschutzw\xE4nde aufbauen\n-
+    Im Seniorenheim herrscht reges Treiben; die Pflegekr\xE4fte packen die Habseligkeiten
+    der Bewohner:innen zusammen. Eine demente \xE4ltere Dame fragt zum 7. Mal, ob
+    sie nun wegen des Angriffs vertrieben wird oder ob sie wieder nach Hause darf\n-
+    Bei allen Einrichtungen der kritischen Infrastruktur werden Notstromaggregate
+    getestet und alle Bereitschaftsdienste sofort einbestellt.  "

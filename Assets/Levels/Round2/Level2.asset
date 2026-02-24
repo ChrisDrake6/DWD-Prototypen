@@ -15,11 +15,15 @@ MonoBehaviour:
   MapAsset: {fileID: 9197481963319205126, guid: 0cd4b1fe540f9404f85d5f6f43e54079, type: 3}
   HighDangerPropability: 20
   MediumDangerPropability: 30
-  LostAtHighDangerOutcome: 20000
-  LostAtMediumDangerOutcome: 2000
-  HighOutcomeDescription: "Katastrophale \xDCberschwemmungen"
-  MediumOutcomeDescription: "Leichte \xDCberschw\xE4mmungen"
-  LowOutcomeDescription: "Keine \xDCberschwemmungen."
+  HighOutcomeDescription: "Es ist das \"mittleres\" Szenario eingetreten. Die Niederschlagsmengen
+    lagen ca. beim 50. Perzentil des Unsicherheitsbereichs und der Pegel erreichte
+    einen H\xF6chststand von 350cm."
+  MediumOutcomeDescription: "Es ist das \"mittleres\" Szenario eingetreten. Die Niederschlagsmengen
+    lagen ca. beim 50. Perzentil des Unsicherheitsbereichs und der Pegel erreichte
+    einen H\xF6chststand von 350cm."
+  LowOutcomeDescription: "Es ist das \"leichtere\" Szenario eingetreten. Die Niederschlagsmengen
+    lagen ca. beim 10. Perzentil des Unsicherheitsbereichs und der Pegel erreichte
+    einen H\xF6chststand von 290cm."
   LowOutComeLowDecisionTransitionText: "Der Tag ist zwar ein bisschen nass, aber
     man ihn trotzdem mit sch\xF6nen Dingen verbringen."
   LowOutComeMediumDecisionTransitionText: "Gl\xFCcklicherweise erwiesen sich die

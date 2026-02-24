@@ -16,6 +16,23 @@ MonoBehaviour:
   ActionDescription: "- Warnung der Bev\xF6lkerung \xFCber Medien und Warn-Apps\r\n-
     Sperrung der \xFCberflutungsgef\xE4hrdeten Autobahn\r\n- Aktivierung von Hilfsorganisationen
     (z.B. Malteser), bei Bedarf\r\n- \xD6ffnung von Notunterk\xFCnften"
-  LowDangerOutcome: Outcome low
-  MediumDangerOutcome: Outcome medium
-  HighDangerOutcome: Outcome high
+  LowDangerOutcome: "- Begrenztes Hochwasser\r\n- Ort unbeeintr\xE4chtigt\r\n- Du
+    hast Ressourcen schonend vorbereitet ohne zu eskalieren\r\n- Eindruck: Deine
+    Koordination wird im Ort als umsichtig und ausgewogen wahrgenommen.\r\n- Du wirst
+    in eine regionale Arbeitsgruppe f\xFCr Risiko- und Vorsorgeplanung aufgenommen."
+  MediumDangerOutcome: "- Das Wasserstand erreicht die H\xF6he bewohnter Bereiche.
+    Alle Bereiche des Ortes konnten aber durchdie Ma\xDFnahmen gesch\xFCtzt werden.\r\n-
+    Die Koordination war aktiv, die Ma\xDFnahmen waren ausreichend.\r\n- Im Ort wird
+    anerkannt, dass du gut gehandelt hast. \n- Gleichzeitig beginnt ein Diskurs \xFCber
+    die Notwendigkeit, m\xF6gliche Strukturen zu st\xE4rken, um f\xFCr gr\xF6\xDFere
+    Hochwasser auch wirklich gut gewappnet zu sein.\r\n- Du erh\xE4ltst eine Anerkennung
+    durch die Verwaltungsspitze (Leistungspr\xE4mie) und wirst f\xFCr eine erweiterte
+    Mitwirkung an der Katastrophenschutzplanung vorgeschlagen."
+  HighDangerOutcome: "- Das Wasser trifft auf Schutzma\xDFnahmen, die teilweise nachgeben.
+    Es entstehen Br\xFCche und Umleitungen. Einige Bereiche bleiben trocken, andere
+    nicht.\n- Deine Entscheidungen verschafften Zeit, reichten aber nicht aus, um
+    die Lage vollst\xE4ndig zu stabilisieren. Der Katastrophenschutz konnte Schlimmeres
+    verhindern, stie\xDF jedoch sichtbar an Grenzen.\r\n- Deine Koordination wird
+    als engagiert, aber \xFCberlastet wahrgenommen.\n- Du beh\xE4ltst deine Position
+    als Leitstellenkoordinator, stehst aber in der Kritik und bist verpflichtet eine
+    tempor\xE4re Begleitung durch erfahrene Fachberater anzunehmen."

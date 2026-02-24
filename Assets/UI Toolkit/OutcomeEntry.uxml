@@ -1,12 +1,16 @@
 <ui:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
     <Style src="project://database/Assets/UI%20Toolkit/WeatherMapStyles.uss?fileID=7433441132597879392&amp;guid=541fc910459ef3e408a8d20e8fdc2cf4&amp;type=3#WeatherMapStyles" />
-    <ui:VisualElement name="OutcomeEntry" style="flex-grow: 0; background-image: url(&quot;project://database/Assets/Images/UIElements/Frame.png?fileID=2800000&amp;guid=667066bb5a64a004f9d78398363fa229&amp;type=3#Frame&quot;); -unity-background-image-tint-color: rgb(92, 151, 236); width: auto; margin-bottom: 3%;">
-        <ui:Label name="OutcomeDescription" text="Label" class="text_medium" style="left: 1%; color: rgb(255, 255, 255); min-height: auto; -unity-font-style: bold;" />
-        <ui:Label text="Sie haben entschieden:" class="text_medium" style="margin-bottom: 1%;" />
-        <ui:VisualElement name="OutcomeSubEntry" style="flex-grow: 1; flex-direction: row; max-height: none; justify-content: space-between; margin-bottom: 3%; border-top-color: rgb(255, 255, 255); border-top-width: 0; margin-right: 2%; padding-top: 2%; padding-right: 2%; padding-bottom: 2%; padding-left: 2%;">
-            <ui:Label name="Decision" text="Label" class="text_flowing" style="min-width: 40%; left: auto; -unity-text-align: middle-left; color: rgb(255, 255, 255); max-width: 40%; flex-grow: 1;" />
-            <ui:VisualElement style="flex-grow: 1; background-image: url(&quot;project://database/Assets/Images/UIElements/Symbol_Arrow_Right.png?fileID=2800000&amp;guid=f0cd00bf33585c24882d0ec854e3d606&amp;type=3#Symbol_Arrow_Right&quot;); max-width: 3%; height: 30px; min-height: auto; align-self: center; background-size: 100% 100%;" />
-            <ui:Label name="DecisionOutcome" text="Label&#10;" class="text_flowing" style="min-width: 40%; align-self: auto; left: auto; -unity-text-align: middle-left; color: rgb(255, 255, 255); max-width: 40%; flex-grow: 1;" />
+    <ui:VisualElement name="OutcomeEntry" style="flex-grow: 0; background-image: url(&quot;project://database/Assets/Images/UIElements/Frame.png?fileID=2800000&amp;guid=667066bb5a64a004f9d78398363fa229&amp;type=3#Frame&quot;); -unity-background-image-tint-color: rgb(92, 151, 236); width: auto; margin-bottom: 1%; padding-top: 2%; padding-right: 2%; padding-bottom: 2%; padding-left: 2%; margin-top: 0; margin-right: 0%; margin-left: 0;">
+        <ui:Label name="OutcomeDescription" text="Label" class="text_flowing" style="left: 1%; color: rgb(255, 255, 255); min-height: auto; -unity-font-style: bold; border-bottom-width: 3px; border-left-color: rgb(255, 255, 255); border-right-color: rgb(255, 255, 255); border-top-color: rgb(255, 255, 255); border-bottom-color: rgb(255, 255, 255);" />
+        <ui:Label text="Sie haben entschieden:" class="text_medium" style="margin-bottom: 1px;" />
+        <ui:VisualElement name="OutcomeSubEntry" style="flex-grow: 1; flex-direction: row; max-height: none; justify-content: space-between; margin-bottom: 0; border-top-color: rgb(255, 255, 255); border-top-width: 0; margin-right: 0; padding-top: 2%; padding-right: 2%; padding-bottom: 2%; padding-left: 2%; align-content: auto; margin-top: 0; margin-left: 0;">
+            <ui:Label name="Decision" text="Label" class="text_flowing" style="min-width: 45%; left: auto; -unity-text-align: upper-left; color: rgb(255, 255, 255); max-width: 45%; flex-grow: 1;" />
+            <ui:VisualElement style="flex-grow: 1; max-width: none; justify-content: space-evenly; align-items: center; align-content: stretch; align-self: flex-start; height: 100%; padding-top: 2%; padding-right: 2%; padding-bottom: 2%; padding-left: 2%;">
+                <ui:VisualElement class="arrow" />
+                <ui:VisualElement class="arrow" />
+                <ui:VisualElement class="arrow" />
+            </ui:VisualElement>
+            <ui:Label name="DecisionOutcome" text="Label&#10;" class="text_flowing_small" style="min-width: 45%; align-self: auto; left: auto; -unity-text-align: upper-left; color: rgb(255, 255, 255); max-width: 45%; flex-grow: 1; font-size: 30px;" />
         </ui:VisualElement>
     </ui:VisualElement>
 </ui:UXML>
