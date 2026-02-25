@@ -181,3 +181,34 @@
     width: 100%;
     max-height: 50px;
 }
+
+.helperIndicatorActive {
+    flex-grow: 1;
+    position: absolute;
+    background-image: url("project://database/Assets/Images/UIElements/Symbol_ExMark.png?fileID=2800000&guid=a7f8ae547c724ed43b584d7f0640a38b&type=3#Symbol_ExMark");
+    -unity-background-scale-mode: scale-to-fit;
+    width: 10%;
+    height: 25%;
+    top: 42%;
+    left: 2%;
+    -unity-background-image-tint-color: rgb(255, 247, 88);
+    visibility: visible;
+    transform-origin: bottom;
+}
+
+.helperIndicatorInactive {
+    flex-grow: 1;
+    position: absolute;
+    background-image: url("project://database/Assets/Images/UIElements/Symbol_ExMark.png?fileID=2800000&guid=a7f8ae547c724ed43b584d7f0640a38b&type=3#Symbol_ExMark");
+    -unity-background-scale-mode: scale-to-fit;
+    width: 10%;
+    height: 25%;
+    top: 42%;
+    left: 2%;
+    -unity-background-image-tint-color: rgb(255, 247, 88);
+    visibility: visible;
+    transition-property: scale;
+    transition-duration: 0.25s;
+    transition-timing-function: ease-in-bounce;
+    scale: 0 0 0;
+}

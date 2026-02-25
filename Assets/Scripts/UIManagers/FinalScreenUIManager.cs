@@ -75,7 +75,8 @@ public class FinalScreenUIManager : MonoBehaviour
 
     private void OpenEvaluation()
     {
-        System.Diagnostics.Process.Start("https://www.empirio.de/s/0W2ibtW1FV");
+        //System.Diagnostics.Process.Start("https://www.empirio.de/s/0W2ibtW1FV");
+        Application.OpenURL("https://www.empirio.de/s/0W2ibtW1FV");
     }
 
     private void QuitGame() 

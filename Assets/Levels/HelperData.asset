@@ -14,7 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::HelperData
   OnBoardingLines:
   - Text: "Hallo! Ich bin dein Mentor. Ich werde dich durch dieses Spiel begleiten.
-      Du kannst jederzeit auf mich klicken, f\xFCr n\xE4here Informationen und Hilfestellungen."
+      Du kannst jederzeit auf mich klicken, f\xFCr n\xE4here Informationen und Hilfestellungen.<br>\nIch
+      <b>melde</b> mich auch, wenn es etwas Neues gibt."
     Image: {fileID: 0}
   - Text: "Wir befinden uns in der 10.000 Einwohner Gemeinde Burgdorf. Eine angespannte
       Wetterlage mit Starkregen und m\xF6glichem Hochwasser droht. <br>\nDu leitest

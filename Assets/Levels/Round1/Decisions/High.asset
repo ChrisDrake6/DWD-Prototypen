@@ -15,7 +15,7 @@ MonoBehaviour:
   DangerLevel: 2
   ActionDescription: "- Vorbereitung Ausrufung des Katastrophenfalls\r\n- Einleitung
     von Evakuierungen (z.B. Seniorenheim)\r\n- Anforderung weiterer Einsatzkr\xE4fte
-    undHilfsorganisationen\r\n- Vorbereitung von Ma\xDFnahmen f\xFCr den Ausfall
+    und Hilfsorganisationen\r\n- Vorbereitung von Ma\xDFnahmen f\xFCr den Ausfall
     kritischer Infrastruktur"
   LowDangerOutcome: "- \xDCberall in der Gemeinde sieht man Einsatzkr\xE4fte von
     Feuerwehr und THW, die Sands\xE4cke verteilen und Hochwasserschutzw\xE4nde aufbauen\n-

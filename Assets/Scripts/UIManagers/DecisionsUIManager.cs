@@ -17,7 +17,6 @@ public class DecisionsUIManager : MonoBehaviour
     private VisualElement _modalContainer;
     private Button _buttonClose;
     private List<DecisionData> _decisions = new List<DecisionData>();
-    private List<Button> _decisionButtons;
 
     private void OnEnable()
     {
@@ -55,13 +54,15 @@ public class DecisionsUIManager : MonoBehaviour
             {
                 case DangerLevel.high:
                     dangerLevel.text = "Extreme Maﬂnahmen:";
+                    decisionUIElement.RegisterCallbackOnce<ClickEvent>(OnHighAlertDecisionClick);
                     break;
                 case DangerLevel.medium:
                     dangerLevel.text = "Versch‰rfte Maﬂnahmen:";
-
+                    decisionUIElement.RegisterCallbackOnce<ClickEvent>(OnMediumAlertDecisionClick);
                     break;
                 case DangerLevel.low:
                     dangerLevel.text = "Leichte Maﬂnahmen:";
+                    decisionUIElement.RegisterCallbackOnce<ClickEvent>(OnLowAlertDecisionClick);
                     break;
             }
 
@@ -69,34 +70,26 @@ public class DecisionsUIManager : MonoBehaviour
             text.text = decision.ActionDescription;
             decisionList.Add(decisionUIElement);
         }
-
-        _decisionButtons = decisionList.Query<Button>("Button_Choose").ToList();
-        _decisionButtons[0].clicked += OnHighAlertDecisionClick;
-        _decisionButtons[1].clicked += OnMediumAlertDecisionClick;
-        _decisionButtons[2].clicked += OnLowAlertDecisionClick;
     }
 
     private void OnCloseDecisionsClick()
     {
         _buttonClose.clicked -= OnCloseDecisionsClick;
-        _decisionButtons[0].clicked -= OnHighAlertDecisionClick;
-        _decisionButtons[1].clicked -= OnMediumAlertDecisionClick;
-        _decisionButtons[2].clicked -= OnLowAlertDecisionClick;
         _backGround.Remove(_modalContainer);
         WindowClosed.Invoke();
     }
 
-    private void OnHighAlertDecisionClick()
+    private void OnHighAlertDecisionClick(ClickEvent ev)
     {
         OnCloseDecisionsClick();
         DecisionMade.Invoke(DangerLevel.high);
     }
-    private void OnMediumAlertDecisionClick()
+    private void OnMediumAlertDecisionClick(ClickEvent ev)
     {
         OnCloseDecisionsClick();
         DecisionMade.Invoke(DangerLevel.medium);
     }
-    private void OnLowAlertDecisionClick()
+    private void OnLowAlertDecisionClick(ClickEvent ev)
     {
         OnCloseDecisionsClick();
         DecisionMade.Invoke(DangerLevel.low);
