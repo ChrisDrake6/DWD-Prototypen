@@ -149,6 +149,7 @@ public class HelperUIManager : MonoBehaviour
 
     private void DisableHelper(List<OutcomeData> outcomes)
     {
-        _helperContainer.style.display = DisplayStyle.None;
+        _currectHelperDataEntries = helperData.FinalScreenLines;
+        //_helperContainer.style.display = DisplayStyle.None;
     }
 }

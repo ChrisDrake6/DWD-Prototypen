@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: f723df89646f2444b85c29e2263341f0
+guid: 328f9366a0e558b4582827e95190016e
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 2602046460791130374
-    second: BackgroundLowLow_0
+      213: 3003360908536956493
+    second: DailyBusiness_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,7 +113,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: BackgroundLowLow_0
+      name: DailyBusiness_0
       rect:
         serializedVersion: 2
         x: 0
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 609848848735c1420800000000000000
-      internalID: 2602046460791130374
+      spriteID: d46c3a575d41ea920800000000000000
+      internalID: 3003360908536956493
       vertices: []
       indices: 
       edges: []
@@ -148,7 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      BackgroundLowLow_0: 2602046460791130374
+      DailyBusiness_0: 3003360908536956493
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

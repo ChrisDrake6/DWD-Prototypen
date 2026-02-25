@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: bbc353eb2c8f97845a7d6ea6059c1e05
+guid: 0105f3999645f5c44a09257e4baf0cc6
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 1065943995367567190
-    second: BackgroundHighHigh_0
+      213: 2194836805764322369
+    second: HQ 100 3_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,7 +113,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: BackgroundHighHigh_0
+      name: HQ 100 3_0
       rect:
         serializedVersion: 2
         x: 0
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 65f285a8a6eface00800000000000000
-      internalID: 1065943995367567190
+      spriteID: 14419833270a57e10800000000000000
+      internalID: 2194836805764322369
       vertices: []
       indices: 
       edges: []
@@ -148,7 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      BackgroundHighHigh_0: 1065943995367567190
+      HQ 100 3_0: 2194836805764322369
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: bedb3a413a266b648b7ec32082d68895
+guid: 0f763c10f9cf6ec45874dbdeacaae175
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -7411974349392773033
-    second: House_0
+      213: -8193939652024234592
+    second: HQ 20 3_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: House_0
+      name: HQ 20 3_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 1306
-        height: 916
+        width: 3840
+        height: 2160
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 750032c7990632990800000000000000
-      internalID: -7411974349392773033
+      spriteID: 0ad8b12cc47494e80800000000000000
+      internalID: -8193939652024234592
       vertices: []
       indices: 
       edges: []
@@ -148,7 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      House_0: -7411974349392773033
+      HQ 20 3_0: -8193939652024234592
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

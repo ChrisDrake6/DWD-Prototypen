@@ -462,7 +462,6 @@ MonoBehaviour:
   ui: {fileID: 1623453364}
   outcomeOverviewAsset: {fileID: 9197481963319205126, guid: 26d0c648fb26a2d4ca501fa3a9b045ce, type: 3}
   outcomeEntryAsset: {fileID: 9197481963319205126, guid: 98475f9666ab6b74a930feb2ebd8aa8f, type: 3}
-  outcomeSubEntryAsset: {fileID: 9197481963319205126, guid: 9952b46a6d78fb841bb8ecb6d5c82bee, type: 3}
 --- !u!114 &1824079180
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -505,15 +504,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::FinalScreenUIManager
   ui: {fileID: 1623453364}
   finalScreenAsset: {fileID: 9197481963319205126, guid: cbb120d8d118e924abfc9606efca68a8, type: 3}
-  lowOutcomeLowDecisionBackGround: {fileID: 2602046460791130374, guid: f723df89646f2444b85c29e2263341f0, type: 3}
-  lowOutcomeMediumDecisionBackGround: {fileID: -7660317013956748403, guid: add2040c7a6fc86458d8ac222cdd56b9, type: 3}
-  lowOutcomeHighDecisionBackGround: {fileID: -2445784665911359351, guid: e9c8eb07352536645b6adb6643731390, type: 3}
-  mediumOutcomeLowDecisionBackGround: {fileID: -5118977553044069374, guid: 9e332227997a84549970202417e63533, type: 3}
-  mediumOutcomeMediumDecisionBackGround: {fileID: 1978055722172047082, guid: 5c56f801bd6d02b4d928518b7dc80d9d, type: 3}
-  mediumOutcomeHighDecisionBackGround: {fileID: 6402310409725578585, guid: 6ad85b37e0a679c4380fe36450eb4782, type: 3}
-  highOutcomeLowDecisionBackGround: {fileID: -226082533151882822, guid: c3f499c0ed851d744862911487758a90, type: 3}
-  highOutcomeMediumDecisionBackGround: {fileID: 6294223580499331004, guid: 2f5943cf8212e0d4c8d18871edc52693, type: 3}
-  highOutcomeHighDecisionBackGround: {fileID: 1065943995367567190, guid: bbc353eb2c8f97845a7d6ea6059c1e05, type: 3}
+  lowOutcomeLowDecisionBackGround: {fileID: 1640949143820256001, guid: ba324053018074846b18193c1613137a, type: 3}
+  lowOutcomeMediumDecisionBackGround: {fileID: 3518226615274032186, guid: a9d0661f40aab4542901217995290cff, type: 3}
+  lowOutcomeHighDecisionBackGround: {fileID: 4473363176782605734, guid: 04b774a347113ca44b9c0b038694bad1, type: 3}
+  mediumOutcomeLowDecisionBackGround: {fileID: -1772711085058473603, guid: d6050e3e0a2d34d46841da8bc858f50f, type: 3}
+  mediumOutcomeMediumDecisionBackGround: {fileID: -7606441577775312829, guid: d3cb4744e1338dd458a04e5fbc3ee519, type: 3}
+  mediumOutcomeHighDecisionBackGround: {fileID: -8193939652024234592, guid: 0f763c10f9cf6ec45874dbdeacaae175, type: 3}
+  highOutcomeLowDecisionBackGround: {fileID: -606594148756156965, guid: 2e1bbc8c901f9b9428f7c7f4a3219ed9, type: 3}
+  highOutcomeMediumDecisionBackGround: {fileID: -3085730762885256835, guid: 867e5b779fe594948a7263486f951f7b, type: 3}
+  highOutcomeHighDecisionBackGround: {fileID: 2194836805764322369, guid: 0105f3999645f5c44a09257e4baf0cc6, type: 3}
 --- !u!1 &2023416331
 GameObject:
   m_ObjectHideFlags: 0
