@@ -13,7 +13,7 @@ public class DangerPreviewUIManager : MonoBehaviour
     private VisualElement _backGround;
     private VisualElement _modalContainer;
     private Button _buttonClose;
-    List<ConsequencePreview> _consequences;
+    ConsequencePreview[] _consequences;
 
     public static event Action WindowClosed;
 

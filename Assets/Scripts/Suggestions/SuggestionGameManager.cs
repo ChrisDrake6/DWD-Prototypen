@@ -26,12 +26,13 @@ public class SuggestionGameManager : MonoBehaviour
 
         _chosenSuggestions = new List<SuggestionData>();
         List<SuggestionData> allSuggestions = new List<SuggestionData>();
-        string[] assetNames = AssetDatabase.FindAssets("", new[] { Path.Combine("Assets", "Suggestions") });
-        foreach (string assetName in assetNames)
-        {
-            string pathToSO = AssetDatabase.GUIDToAssetPath(assetName);
-            allSuggestions.Add(AssetDatabase.LoadAssetAtPath<SuggestionData>(pathToSO));
-        }
+        // TODO: REPLACE THIS
+        //string[] assetNames = AssetDatabase.FindAssets("", new[] { Path.Combine("Assets", "Suggestions") });
+        //foreach (string assetName in assetNames)
+        //{
+        //    string pathToSO = AssetDatabase.GUIDToAssetPath(assetName);
+        //    allSuggestions.Add(AssetDatabase.LoadAssetAtPath<SuggestionData>(pathToSO));
+        //}
 
         for (int i = 0; i < SuggestionAmount; i++)
         {

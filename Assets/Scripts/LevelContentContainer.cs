@@ -1,8 +1,9 @@
-using System.Collections.Generic;
+using System;
 
+[Serializable]
 public class LevelContentContainer
 {
-    public LevelParameters LevelParameters { get; set; }
-    public List<ConsequencePreview> Consequences { get; set; }
-    public List<DecisionData> Decisions { get; set; }
+    public LevelParameters LevelParameters;
+    public ConsequencePreview[] Consequences;
+    public DecisionData[] Decisions;
 }

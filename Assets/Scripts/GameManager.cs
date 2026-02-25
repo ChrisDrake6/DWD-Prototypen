@@ -12,9 +12,10 @@ public class GameManager : MonoBehaviour
 
     private string _path;
     private string[] directories;
-    private int _currentRound;
+    private int _currentRound = -1;
 
-    private LevelContentContainer _levelContentContainer = new LevelContentContainer();
+
+    [SerializeField] private LevelContentContainer[] levelContentContainers;
 
     private List<OutcomeData> _outcomes = new List<OutcomeData>();
 
@@ -36,16 +37,10 @@ public class GameManager : MonoBehaviour
 
     private void StartNewRound()
     {
-        if (_currentRound < directories.Length)
+        if (_currentRound < levelContentContainers.Length - 1)
         {
-            // Get Files and distribute Data.
-            _levelContentContainer.LevelParameters = CustomUtils.GetSOAssets<LevelParameters>(directories[_currentRound])[0];
-            _levelContentContainer.Consequences = CustomUtils.GetSOAssets<ConsequencePreview>(Path.Combine(directories[_currentRound], "Consequences"));
-            _levelContentContainer.Decisions = CustomUtils.GetSOAssets<DecisionData>(Path.Combine(directories[_currentRound], "Decisions"));
-
-            RoundStarted.Invoke(_levelContentContainer);
-
             _currentRound++;
+            RoundStarted.Invoke(levelContentContainers[_currentRound]);
         }
         else
         {
@@ -59,8 +54,8 @@ public class GameManager : MonoBehaviour
         DangerLevel outcome = DangerLevel.low;
         Dictionary<DangerLevel, float> propabilities = new Dictionary<DangerLevel, float>()
         {
-            { DangerLevel.medium, _levelContentContainer.LevelParameters.MediumDangerPropability},
-            { DangerLevel.high, _levelContentContainer.LevelParameters.HighDangerPropability}
+            { DangerLevel.medium, levelContentContainers[_currentRound].LevelParameters.MediumDangerPropability},
+            { DangerLevel.high, levelContentContainers[_currentRound].LevelParameters.HighDangerPropability}
         };
         propabilities.OrderBy(a => a.Value);
         float d100 = UnityEngine.Random.Range(0, 100);
@@ -78,8 +73,8 @@ public class GameManager : MonoBehaviour
         OutcomeData outcomeData = new OutcomeData()
         {
             Outcome = outcome,
-            Decision = _levelContentContainer.Decisions.FirstOrDefault(a => a.DangerLevel == dangerLevel),
-            Level = _levelContentContainer.LevelParameters
+            Decision = levelContentContainers[_currentRound].Decisions.FirstOrDefault(a => a.DangerLevel == dangerLevel),
+            Level = levelContentContainers[_currentRound].LevelParameters
         };
         _outcomes.Add(outcomeData);
 

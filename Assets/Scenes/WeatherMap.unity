@@ -542,6 +542,25 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5d9c2453295736149bc732a07c27bef5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::GameManager
+  levelContentContainers:
+  - LevelParameters: {fileID: 11400000, guid: 1bc21e8cc08d6814292182fa67de8cee, type: 2}
+    Consequences:
+    - {fileID: 11400000, guid: e6edadcbc3e20084b8024347541a27ba, type: 2}
+    - {fileID: 11400000, guid: 49b6efef2c6ff0d4fae90446c30d032f, type: 2}
+    - {fileID: 11400000, guid: 3f55b34246f219b4cb481de832abe395, type: 2}
+    Decisions:
+    - {fileID: 11400000, guid: 2ae94aec1e3802a48b268f570d7dc499, type: 2}
+    - {fileID: 11400000, guid: d2b6de237baa5a845bb76ecff5aaeedb, type: 2}
+    - {fileID: 11400000, guid: 5c01f28367027584abd6785037164cf7, type: 2}
+  - LevelParameters: {fileID: 11400000, guid: 67be9c9672e6ef7469caff7eadacf339, type: 2}
+    Consequences:
+    - {fileID: 11400000, guid: f73ffdebde8fd7f40adb305e4977188d, type: 2}
+    - {fileID: 11400000, guid: 8461a9f8f4d6c454cb912623b85758d5, type: 2}
+    - {fileID: 11400000, guid: a3cc16853b85436448793cead1b17035, type: 2}
+    Decisions:
+    - {fileID: 11400000, guid: 0c8b354a3cc496340a09d99ea46b00c3, type: 2}
+    - {fileID: 11400000, guid: 7331ebb819c48e246821510cb057d5a6, type: 2}
+    - {fileID: 11400000, guid: e7857ce813cc0e84ba0a2c273d1f1fe7, type: 2}
 --- !u!4 &2023416333
 Transform:
   m_ObjectHideFlags: 0
