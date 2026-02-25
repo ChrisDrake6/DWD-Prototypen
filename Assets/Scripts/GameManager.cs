@@ -1,6 +1,5 @@
 using System;
 using System.Collections.Generic;
-using System.IO;
 using System.Linq;
 using UnityEngine;
 
@@ -10,8 +9,6 @@ public class GameManager : MonoBehaviour
     public static event Action<List<OutcomeData>> LastDecisionMade;
     public static event Action<OutcomeData> OutcomeCalculated;
 
-    private string _path;
-    private string[] directories;
     private int _currentRound = -1;
 
 
@@ -21,8 +18,6 @@ public class GameManager : MonoBehaviour
 
     void Start()
     {
-        _path = Path.Combine("Assets", "Levels");
-        directories = Directory.GetDirectories(_path);
         DecisionsUIManager.DecisionMade += OnDecisionMade;
         HelperUIManager.OnBoardingDone += StartNewRound;
         TransitionUIManager.TransitionClosed += StartNewRound;
