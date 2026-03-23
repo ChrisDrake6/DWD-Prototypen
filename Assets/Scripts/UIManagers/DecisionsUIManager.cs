@@ -31,11 +31,19 @@ public class DecisionsUIManager : MonoBehaviour
         WeatherMapUIManager.DecisionButtonClicked -= OnShowDecisionsClick;
     }
 
+    /// <summary>
+    /// Gets triggered when the gamemanager starts a new round.
+    /// </summary>
+    /// <param name="levelData"></param>
     private void OnNewDataIncoming(LevelContentContainer levelData)
     {
         _decisions = levelData.Decisions.OrderByDescending(a => a.DangerLevel).ToList();
     }
 
+    /// <summary>
+    /// Gets triggered on click of the button below the weather map.
+    /// Build modal window displaying one decision package for each danger level.
+    /// </summary>
     private void OnShowDecisionsClick()
     {
         _modalContainer = modalContainerAsset.Instantiate().Q<VisualElement>("ModalContainer");

@@ -31,6 +31,10 @@ public class WeatherMapUIManager : MonoBehaviour
         GameManager.LastDecisionMade -= RemoveWeatherMap;
     }
 
+    /// <summary>
+    /// Gets triggered when the GameManager starts a new round
+    /// </summary>
+    /// <param name="levelData"></param>
     private void OnNewDataIncoming(LevelContentContainer levelData)
     {
         _weatherMap = levelData.LevelParameters.MapAsset.Instantiate().Q<VisualElement>("WeatherMap");
@@ -48,6 +52,7 @@ public class WeatherMapUIManager : MonoBehaviour
         _buttonDecision.clicked += OnShowDecisionsClick;
     }
 
+    // Open the Consequences modal window
     private void OnHighDangerButtonClicked()
     {
         ClearModal();
@@ -87,6 +92,9 @@ public class WeatherMapUIManager : MonoBehaviour
         }
     }
 
+    /// <summary>
+    /// This removes any modal window present, so that only one can be open at any time.
+    /// </summary>
     private void ClearModal()
     {
         VisualElement modalContainer = _backGround.Q<VisualElement>("ModalContainer");

@@ -9,11 +9,9 @@ public class GameManager : MonoBehaviour
     public static event Action<List<OutcomeData>> LastDecisionMade;
     public static event Action<OutcomeData> OutcomeCalculated;
 
-    private int _currentRound = -1;
-
-
     [SerializeField] private LevelContentContainer[] levelContentContainers;
 
+    private int _currentRound = -1;
     private List<OutcomeData> _outcomes = new List<OutcomeData>();
 
     void Start()
@@ -30,6 +28,10 @@ public class GameManager : MonoBehaviour
         TransitionUIManager.TransitionClosed -= StartNewRound;
     }
 
+    /// <summary>
+    /// Checks if there is another round left, starts next round if there is, triggers evaluation if not.
+    /// Gets triggered on completion of the onboarding segment or on continuing from the transition page.
+    /// </summary>
     private void StartNewRound()
     {
         if (_currentRound < levelContentContainers.Length - 1)
@@ -43,9 +45,16 @@ public class GameManager : MonoBehaviour
         }
     }
 
+
+    /// <summary>
+    /// Gets called once the player chooses a decision package.
+    /// </summary>
+    /// <param name="dangerLevel"></param>
     private void OnDecisionMade(DangerLevel dangerLevel)
     {
-        // Calculate outcome
+        // Calculate outcome: Imagine a scale from 0 to 100. Each Dangerlevel gets a distinct range on this scale, in the amount of its propability.
+        // For example: High danger has 10 % propabality of happening, medium has 40, low has 50. Roll a D100 and check the value on the scale. If the calue of the die is below 40, it is a medium Outcome.
+        // If it is between 40 and 50, it is a high outcome. If it is neither, its low by default.
         DangerLevel outcome = DangerLevel.low;
         Dictionary<DangerLevel, float> propabilities = new Dictionary<DangerLevel, float>()
         {
@@ -64,6 +73,7 @@ public class GameManager : MonoBehaviour
             rangeOffset += prop.Value;
         }
 
+        // Build data structure for evaluation.
         OutcomeData outcomeData = new OutcomeData()
         {
             Outcome = outcome,

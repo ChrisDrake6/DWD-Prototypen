@@ -34,6 +34,11 @@ public class FinalScreenUIManager : MonoBehaviour
         OutcomeUIManager.EvaluationTriggered -= SetBackGround;
     }
 
+    /// <summary>
+    /// Gets triggered on continuing from the outcome page.
+    /// Pick the correct image according to the weather incidents and the decisions made.
+    /// </summary>
+    /// <param name="outcomes"></param>
     private void SetBackGround(List<OutcomeData> outcomes)
     {
         VisualElement backGround = ui.rootVisualElement.Q<VisualElement>("BackGround");
@@ -46,9 +51,12 @@ public class FinalScreenUIManager : MonoBehaviour
         _buttonEvaluate.clicked += OpenEvaluation;
         _buttonQuit.clicked += QuitGame;
 
+        // In order to avoid having to use 3^x images and to use only 9, we need a way to determine the average result of either the outcome of the weather and the decisions.
+        // For that, we use the fact, that any enum is stored as an integer by default. We convert the Dangerlevels to int, take the average, round it, so that the result is either 1, 2 or 3 and convert it back into the enum. 
         DangerLevel generalOutcome = (DangerLevel)Math.Round(outcomes.Average(a => (int)a.Outcome));
         DangerLevel generalDecisionLevel = (DangerLevel)Math.Round(outcomes.Average(a => (int)a.Decision.DangerLevel));
 
+        // Create a 'matrix' of outcomes and decisions, 3 rows by 3 collums, resulting in 9 entries. Each entry of the matrix is one image.
         var dangerLevels = new Tuple<DangerLevel, DangerLevel>(generalOutcome, generalDecisionLevel);
         backGround.style.backgroundImage = dangerLevels switch
         {
@@ -65,6 +73,9 @@ public class FinalScreenUIManager : MonoBehaviour
         };
     }
 
+    /// <summary>
+    /// Restarts level
+    /// </summary>
     private void RestartGame()
     {
         _buttonRestart.clicked -= RestartGame;
@@ -73,12 +84,18 @@ public class FinalScreenUIManager : MonoBehaviour
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 
+    /// <summary>
+    /// Opens a online survey for testing
+    /// TODO: REMOVE THIS, ONCE TESTING IS DONE!!!
+    /// </summary>
     private void OpenEvaluation()
     {
-        //System.Diagnostics.Process.Start("https://www.empirio.de/s/0W2ibtW1FV");
         Application.OpenURL("https://www.empirio.de/s/0W2ibtW1FV");
     }
 
+    /// <summary>
+    /// Will return to main menu, since this is a web build.
+    /// </summary>
     private void QuitGame() 
     {
         _buttonRestart.clicked -= RestartGame;

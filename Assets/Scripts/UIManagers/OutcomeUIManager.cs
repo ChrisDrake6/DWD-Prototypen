@@ -27,10 +27,14 @@ public class OutcomeUIManager : MonoBehaviour
         GameManager.LastDecisionMade -= ShowOutcomes;
     }
 
+    /// <summary>
+    /// Gets triggered if last round is played.
+    /// Show an entry for each played round. Display the weather event, the decision made and the consequences.
+    /// </summary>
+    /// <param name="outcomes"></param>
     private void ShowOutcomes(List<OutcomeData> outcomes)
     {
         _outcomes = outcomes;
-        // Assemble Outcome Overview
         _overviewContainer = outcomeOverviewAsset.Instantiate().Q<VisualElement>("OverviewContainer");
         _backGround.Add(_overviewContainer);
         _buttonRequestEvaluation = _overviewContainer.Q<Button>("Button_RequestEvaluation");
@@ -43,6 +47,7 @@ public class OutcomeUIManager : MonoBehaviour
 
             entryList.Add(outcomeEntry);
 
+            // First, show the weather event.
             Label outcomeDescription = outcomeEntry.Q<Label>("OutcomeDescription");
             switch (outcome.Outcome)
             {
@@ -59,41 +64,56 @@ public class OutcomeUIManager : MonoBehaviour
                     break;
             }
 
+            // Then the decision made.
             Label decision = outcomeEntry.Q<Label>("Decision");
             decision.text = outcome.Decision.ActionDescription;
 
-
-            Label extraText = outcomeEntry.Q<Label>("ExtraText");
-            VisualElement outcomeSubEntry = outcomeEntry.Q<VisualElement>("OutcomeSubEntry");
-            Label decicionOutcome = outcomeEntry.Q<Label>("DecisionOutcome");
+            // Finally, determine the consequences and show them.
+            Label decisionOutcome = outcomeEntry.Q<Label>("DecisionOutcome");
             switch (outcome.Outcome)
             {
                 case DangerLevel.high:
-                    CheckForMissingText(outcome.Decision.HighDangerOutcome, outcomeEntry);
-                    decicionOutcome.text = outcome.Decision.HighDangerOutcome;
+                    if (CheckForMissingText(outcome.Decision.HighDangerOutcome, outcomeEntry))
+                    {
+                        decisionOutcome.text = outcome.Decision.HighDangerOutcome;
+                    }
                     break;
 
                 case DangerLevel.medium:
-                    CheckForMissingText(outcome.Decision.MediumDangerOutcome, outcomeEntry);
-                    decicionOutcome.text = outcome.Decision.MediumDangerOutcome;
+                    if (CheckForMissingText(outcome.Decision.MediumDangerOutcome, outcomeEntry))
+                    {
+                        decisionOutcome.text = outcome.Decision.MediumDangerOutcome;
+                    }
                     break;
 
                 case DangerLevel.low:
-                    CheckForMissingText(outcome.Decision.LowDangerOutcome, outcomeEntry);
-                    decicionOutcome.text = outcome.Decision.LowDangerOutcome;
+                    if (CheckForMissingText(outcome.Decision.LowDangerOutcome, outcomeEntry))
+                    {
+                        decisionOutcome.text = outcome.Decision.LowDangerOutcome;
+                    }
                     break;
             }
         }
     }
 
-    private void CheckForMissingText(string text, VisualElement outcomeEntry)
+    /// <summary>
+    /// If no text is given, it should not show more than the weather event.
+    /// </summary>
+    /// <param name="text"></param>
+    /// <param name="outcomeEntry"></param>
+    private bool CheckForMissingText(string text, VisualElement outcomeEntry)
     {
-        if(string.IsNullOrEmpty(text))
+        if (string.IsNullOrEmpty(text))
         {
             Label extraText = outcomeEntry.Q<Label>("ExtraText");
             VisualElement outcomeSubEntry = outcomeEntry.Q<VisualElement>("OutcomeSubEntry");
             extraText.style.display = DisplayStyle.None;
             outcomeSubEntry.style.display = DisplayStyle.None;
+            return false;
+        }
+        else
+        {
+            return true;
         }
     }
 

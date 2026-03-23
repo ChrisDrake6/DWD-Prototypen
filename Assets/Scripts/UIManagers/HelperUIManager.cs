@@ -29,6 +29,9 @@ public class HelperUIManager : MonoBehaviour
     private int _alreadySeenMask = 0;
     private int _currentPositionInMask = 0;
 
+    /// <summary>
+    /// Build Helper UI
+    /// </summary>
     private void OnEnable()
     {
         _helperContainer = ui.rootVisualElement.Q<VisualElement>("HelperContainer");
@@ -43,7 +46,7 @@ public class HelperUIManager : MonoBehaviour
         _speechBubble.RegisterCallback<ClickEvent>(OnBubbleClick);
         _indicator.RegisterCallback<TransitionEndEvent>(AnimateIndicator);
 
-
+        // Start with Onboarding
         _currectHelperDataEntries = helperData.OnBoardingLines;
         SetBubbleContent();
 
@@ -73,6 +76,10 @@ public class HelperUIManager : MonoBehaviour
         OutcomeUIManager.EvaluationTriggered -= SetFinalScreenLines;
     }
 
+    /// <summary>
+    /// Either hides or shows bubble - this will cancel any chain of entries.
+    /// </summary>
+    /// <param name="ev"></param>
     private void OnHelperClick(ClickEvent ev)
     {
         if (!_speechBubble.visible)
@@ -87,6 +94,10 @@ public class HelperUIManager : MonoBehaviour
         }
     }
 
+    /// <summary>
+    /// Show next line entry or hide bubble if none are left.
+    /// </summary>
+    /// <param name="ev"></param>
     private void OnBubbleClick(ClickEvent ev)
     {
         if (_index < _currectHelperDataEntries.Length)
@@ -99,14 +110,22 @@ public class HelperUIManager : MonoBehaviour
         }
     }
 
+    /// <summary>
+    /// Manages Text and Indicator
+    /// </summary>
     private void SetBubbleContent()
     {
         _text.text = _currectHelperDataEntries[_index].Text;
         _indicator.AddToClassList("helperIndicatorInactive");
+
+        // Once OnBoarding is over, we can use the bit mask.
         if (!_isOnBoarding)
         {
+            // Set the bit of the current entry to 1. (for example, if the current position is 2, set the 3rd bit from the end to 1. (0 is also a position.))
             _alreadySeenMask |= 1 << _currentPositionInMask;
         }
+
+        // If there is an image, show it.
         if (_currectHelperDataEntries[_index].Image != null)
         {
             _image.style.display = DisplayStyle.Flex;
@@ -127,11 +146,16 @@ public class HelperUIManager : MonoBehaviour
         _index = 0;
         if (_isOnBoarding)
         {
+            // Gives the gamemanager an event, so the game can start.
             OnBoardingDone.Invoke();
             _isOnBoarding = false;
         }
     }
 
+    /// <summary>
+    /// Gets triggered, if Gamemanager starts new round.
+    /// </summary>
+    /// <param name="levelData"></param>
     private void OnNewRoundStarted(LevelContentContainer levelData)
     {
         SetWeatherMapLines();
@@ -179,8 +203,13 @@ public class HelperUIManager : MonoBehaviour
         _currectHelperDataEntries = helperData.FinalScreenLines;
     }
 
+    /// <summary>
+    /// This checks, if the helpertext, which is ready to be shown, has already been read or not. The indicator should only show up, if there is new content to read.
+    /// In order to do that, we use a bitmask. Each entry gets assigned to a bit in the mask. If it has never been shown, its bit is set to 0 by default (false). Once it has been shown, we manually set it to 1 (true).
+    /// </summary>
     private void CheckForNewLines()
     {
+        // check if the corresponding bit of the current entry is set to 0.
         if ((_alreadySeenMask & 1 << _currentPositionInMask) == 0)
         {
             _indicator.RemoveFromClassList("helperIndicatorInactive");
@@ -191,6 +220,10 @@ public class HelperUIManager : MonoBehaviour
         }
     }
 
+    /// <summary>
+    /// This provides an animation loop for the indicator.
+    /// </summary>
+    /// <param name="endEvent"></param>
     private void AnimateIndicator(TransitionEndEvent endEvent)
     {
         _indicator.ToggleInClassList("helperIndicatorUp");

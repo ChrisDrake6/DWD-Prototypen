@@ -24,6 +24,11 @@ public class TransitionUIManager : MonoBehaviour
         GameManager.OutcomeCalculated -= OnOutcomeCalculated;
     }
 
+    /// <summary>
+    /// Show transition text. 
+    /// Gets triggered on choosing a decision, after the GameManager has processed the input.
+    /// </summary>
+    /// <param name="outcome"></param>
     private void OnOutcomeCalculated(OutcomeData outcome)
     {
         _backGround = ui.rootVisualElement.Q<VisualElement>("BackGround");
@@ -36,6 +41,7 @@ public class TransitionUIManager : MonoBehaviour
         _text = _transitionContainer.Q<Label>("Text");
 
         // Nifty: https://stackoverflow.com/questions/44355630/how-to-use-c-sharp-tuple-value-types-in-a-switch-statement
+        // Create a 'matrix' of outcomes and decisions, 3 rows by 3 collums, resulting in 9 entries. Each entry of the matrix is one text.
         var dangerLevels = new Tuple<DangerLevel, DangerLevel>(outcome.Outcome, outcome.Decision.DangerLevel);
         _text.text = dangerLevels switch
         {
