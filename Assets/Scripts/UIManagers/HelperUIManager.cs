@@ -41,6 +41,8 @@ public class HelperUIManager : MonoBehaviour
 
         _helperProfile.RegisterCallback<ClickEvent>(OnHelperClick);
         _speechBubble.RegisterCallback<ClickEvent>(OnBubbleClick);
+        _indicator.RegisterCallback<TransitionEndEvent>(AnimateIndicator);
+
 
         _currectHelperDataEntries = helperData.OnBoardingLines;
         SetBubbleContent();
@@ -59,6 +61,7 @@ public class HelperUIManager : MonoBehaviour
     {
         _helperProfile.UnregisterCallback<ClickEvent>(OnHelperClick);
         _speechBubble.UnregisterCallback<ClickEvent>(OnBubbleClick);
+        _indicator.UnregisterCallback<TransitionEndEvent>(AnimateIndicator);
 
         GameManager.RoundStarted -= OnNewRoundStarted;
         GameManager.OutcomeCalculated -= SetTransitionLines;
@@ -186,5 +189,10 @@ public class HelperUIManager : MonoBehaviour
         {
             _indicator.AddToClassList("helperIndicatorInactive");
         }
+    }
+
+    private void AnimateIndicator(TransitionEndEvent endEvent)
+    {
+        _indicator.ToggleInClassList("helperIndicatorUp");
     }
 }
