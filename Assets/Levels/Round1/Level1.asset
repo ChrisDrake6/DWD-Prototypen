@@ -13,10 +13,9 @@ MonoBehaviour:
   m_Name: Level1
   m_EditorClassIdentifier: Assembly-CSharp::LevelData
   MapAsset: {fileID: 9197481963319205126, guid: 7f759dc692a12f54a9a268a53cb94b88, type: 3}
-  HighDangerPropability: 25
-  MediumDangerPropability: 35
-  LostAtHighDangerOutcome: 1200
-  LostAtMediumDangerOutcome: 120
+  TimeDisplayed: Mo, 23.03.2026, 16:00 Uhr
+  HighDangerPropability: 30
+  MediumDangerPropability: 60
   HighOutcomeDescription: Extremer Starkregen
   MediumOutcomeDescription: "Kr\xE4ftiger Starkregen"
   LowOutcomeDescription: Leichter Regenfall

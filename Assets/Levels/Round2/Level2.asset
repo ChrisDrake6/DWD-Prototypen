@@ -13,8 +13,9 @@ MonoBehaviour:
   m_Name: Level2
   m_EditorClassIdentifier: Assembly-CSharp::LevelData
   MapAsset: {fileID: 9197481963319205126, guid: 0cd4b1fe540f9404f85d5f6f43e54079, type: 3}
-  HighDangerPropability: 20
-  MediumDangerPropability: 30
+  TimeDisplayed: Mo, 23.03.2026, 18:00 Uhr
+  HighDangerPropability: 10
+  MediumDangerPropability: 90
   HighOutcomeDescription: "Es ist das \"mittleres\" Szenario eingetreten. Die Niederschlagsmengen
     lagen ca. beim 50. Perzentil des Unsicherheitsbereichs und der Pegel erreichte
     einen H\xF6chststand von 350cm."

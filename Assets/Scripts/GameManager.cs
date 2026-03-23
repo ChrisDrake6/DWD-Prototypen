@@ -52,7 +52,6 @@ public class GameManager : MonoBehaviour
             { DangerLevel.medium, levelContentContainers[_currentRound].LevelParameters.MediumDangerPropability},
             { DangerLevel.high, levelContentContainers[_currentRound].LevelParameters.HighDangerPropability}
         };
-        propabilities.OrderBy(a => a.Value);
         float d100 = UnityEngine.Random.Range(0, 100);
         float rangeOffset = 0;
         foreach (KeyValuePair<DangerLevel, float> prop in propabilities)

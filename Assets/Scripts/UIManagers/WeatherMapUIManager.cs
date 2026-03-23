@@ -36,6 +36,9 @@ public class WeatherMapUIManager : MonoBehaviour
         _weatherMap = levelData.LevelParameters.MapAsset.Instantiate().Q<VisualElement>("WeatherMap");
         _backGround.Add(_weatherMap);
 
+        Label time = _weatherMap.Q<Label>("Time");
+        time.text = levelData.LevelParameters.TimeDisplayed;
+
         _indicatorButtons = _weatherMap.Query<Button>("Indicator_Nob").ToList();
         _indicatorButtons[0].clicked += OnHighDangerButtonClicked;
         _indicatorButtons[1].clicked += OnMediumDangerButtonClicked;

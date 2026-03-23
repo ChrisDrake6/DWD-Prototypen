@@ -12,6 +12,7 @@
                 <ui:Button name="Indicator_Nob" selectable="true" enable-rich-text="true" class="indicator_nob interactable" style="left: 77.8%;" />
             </ui:VisualElement>
             <ui:Button text="Entscheidung treffen" name="Button_Decision" class="button_main interactable" style="bottom: -103%; right: auto; left: auto; align-self: center; width: 46%; height: 8%; color: rgb(0, 0, 0);" />
+            <ui:Label text="Mo, 23.03.2026, 16:00 Uhr" name="Time" class="text_medium" style="margin-top: 0%; margin-right: 0%; margin-bottom: 0%; margin-left: 0%; color: rgb(0, 0, 0); align-self: center; height: auto; padding-top: 1%; padding-right: 1%; padding-bottom: 1%; padding-left: 1%; white-space: nowrap; text-overflow: clip; -unity-text-align: middle-center; -unity-background-scale-mode: stretch-to-fill; background-image: url(&quot;project://database/Assets/Images/UIElements/Button.png?fileID=2800000&amp;guid=bc133329dc83a1449953ab0d3044ba87&amp;type=3#Button&quot;); position: absolute; left: 558px; top: 18px; right: auto; bottom: auto; justify-content: center; align-content: stretch; align-items: center;" />
         </ui:VisualElement>
     </ui:VisualElement>
 </ui:UXML>

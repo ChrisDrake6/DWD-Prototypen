@@ -6,6 +6,8 @@ public class LevelParameters : ScriptableObject
 {
     public VisualTreeAsset MapAsset;
 
+    public string TimeDisplayed;
+
     [Header("Propabilities")]
     public float HighDangerPropability;
     public float MediumDangerPropability;
