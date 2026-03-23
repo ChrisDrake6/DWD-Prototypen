@@ -16,30 +16,29 @@ MonoBehaviour:
   TimeDisplayed: Mo, 23.03.2026, 18:00 Uhr
   HighDangerPropability: 10
   MediumDangerPropability: 90
-  HighOutcomeDescription: "Es ist das \"mittleres\" Szenario eingetreten. Die Niederschlagsmengen
-    lagen ca. beim 50. Perzentil des Unsicherheitsbereichs und der Pegel erreichte
-    einen H\xF6chststand von 350cm."
+  HighOutcomeDescription: "Es ist das \"Worst Case\" Szenario eingetreten. Die Niederschlagsmengen
+    lagen \xFCber dem 90. Perzentile des Unsicherheitsbereichs und der Pegel erreichte
+    einen H\xF6chststand von 391cm. "
   MediumOutcomeDescription: "Es ist das \"mittleres\" Szenario eingetreten. Die Niederschlagsmengen
     lagen ca. beim 50. Perzentil des Unsicherheitsbereichs und der Pegel erreichte
     einen H\xF6chststand von 350cm."
   LowOutcomeDescription: "Es ist das \"leichtere\" Szenario eingetreten. Die Niederschlagsmengen
     lagen ca. beim 10. Perzentil des Unsicherheitsbereichs und der Pegel erreichte
     einen H\xF6chststand von 290cm."
-  LowOutComeLowDecisionTransitionText: "Der Tag ist zwar ein bisschen nass, aber
-    man ihn trotzdem mit sch\xF6nen Dingen verbringen."
-  LowOutComeMediumDecisionTransitionText: "Gl\xFCcklicherweise erwiesen sich die
-    Warnungen der Kat-Sch\xFCtzer als unbegr\xFCndet."
-  LowOutComeHighDecisionTransitionText: "Kat-Schutz verbreitet Panik - Meterhohe
-    W\xE4lle an Sands\xE4cken und kein Tropfen Wasser zu sehen."
-  MediumOutComeLowDecisionTransitionText: "Leichte \xDCberschwemmungen trafen die
-    Bev\xF6lkerung unvorbereitet."
-  MediumOutComeMediumDecisionTransitionText: "Heute kam es zu leichen \xDCberschwemmungen,
-    aber der Kat-Schutz hat die Lage unter Kontrolle."
-  MediumOutComeHighDecisionTransitionText: "Mit Kanonen auf Spatzen: Kat-Schutz versch\xE4tzt
-    sich kr\xE4ftig in der Intensit\xE4t der doch eher kleinen \xDCberschwemmungen."
-  HighOutComeLowDecisionTransitionText: "Katastrophale \xDCberschwemmungen fordern
-    Todesopfer - Katschutz hat versagt."
-  HighOutComeMediumDecisionTransitionText: Es kam an mehreren Stellen zum Dammbruch
-    - die Reaktion des Kat-Schutzes war nicht schnell genug.
-  HighOutComeHighDecisionTransitionText: "Heldenhafter Einsatz! Mit einer Glanzleistung
-    in Zusammenarbeit wurde die Katastrophe durch die \xDCberschwemmungen abgewendet!"
+  LowOutComeLowDecisionTransitionText: "Leichte Regenf\xE4lle verzeichnet. Das Wasser
+    steigt nur knapp \xFCber die Ufer."
+  LowOutComeMediumDecisionTransitionText: "Leichte Regenf\xE4lle verzeichnet. Das
+    Wasser steigt nur knapp \xFCber die Ufer."
+  LowOutComeHighDecisionTransitionText: "Leichte Regenf\xE4lle verzeichnet. Das Wasser
+    steigt nur knapp \xFCber die Ufer."
+  MediumOutComeLowDecisionTransitionText: "Heute Nachmittag kam es zu mittleren \xDCberschw\xE4mmungen."
+  MediumOutComeMediumDecisionTransitionText: "Heute Nachmittag kam es zu mittleren
+    \xDCberschw\xE4mmungen."
+  MediumOutComeHighDecisionTransitionText: "Heute Nachmittag kam es zu mittleren
+    \xDCberschw\xE4mmungen."
+  HighOutComeLowDecisionTransitionText: "Katastrophale \xDCberschwemmungen treffen
+    den Ort."
+  HighOutComeMediumDecisionTransitionText: "Katastrophale \xDCberschwemmungen treffen
+    den Ort."
+  HighOutComeHighDecisionTransitionText: "Katastrophale \xDCberschwemmungen treffen
+    den Ort."

@@ -47,40 +47,53 @@ public class OutcomeUIManager : MonoBehaviour
             switch (outcome.Outcome)
             {
                 case DangerLevel.high:
-                    outcomeDescription.text = outcome.Level.HighOutcomeDescription;
+                    outcomeDescription.text = outcome.Level.TimeDisplayed + ": " + outcome.Level.HighOutcomeDescription;
                     break;
 
                 case DangerLevel.medium:
-                    outcomeDescription.text = outcome.Level.MediumOutcomeDescription;
+                    outcomeDescription.text = outcome.Level.TimeDisplayed + ": " + outcome.Level.MediumOutcomeDescription;
                     break;
 
                 case DangerLevel.low:
-                    outcomeDescription.text = outcome.Level.LowOutcomeDescription;
+                    outcomeDescription.text = outcome.Level.TimeDisplayed + ": " + outcome.Level.LowOutcomeDescription;
                     break;
             }
 
-            //foreach (DecisionDataEntry decisionEntry in outcome.Decision.Contents)
-            //{
+            Label decision = outcomeEntry.Q<Label>("Decision");
+            decision.text = outcome.Decision.ActionDescription;
 
-                Label decision = outcomeEntry.Q<Label>("Decision");
-                decision.text = outcome.Decision.ActionDescription;
 
-                Label decicionOutcome = outcomeEntry.Q<Label>("DecisionOutcome");
-                switch (outcome.Outcome)
-                {
-                    case DangerLevel.high:
-                        decicionOutcome.text = outcome.Decision.HighDangerOutcome;
-                        break;
+            Label extraText = outcomeEntry.Q<Label>("ExtraText");
+            VisualElement outcomeSubEntry = outcomeEntry.Q<VisualElement>("OutcomeSubEntry");
+            Label decicionOutcome = outcomeEntry.Q<Label>("DecisionOutcome");
+            switch (outcome.Outcome)
+            {
+                case DangerLevel.high:
+                    CheckForMissingText(outcome.Decision.HighDangerOutcome, outcomeEntry);
+                    decicionOutcome.text = outcome.Decision.HighDangerOutcome;
+                    break;
 
-                    case DangerLevel.medium:
-                        decicionOutcome.text = outcome.Decision.MediumDangerOutcome;
-                        break;
+                case DangerLevel.medium:
+                    CheckForMissingText(outcome.Decision.MediumDangerOutcome, outcomeEntry);
+                    decicionOutcome.text = outcome.Decision.MediumDangerOutcome;
+                    break;
 
-                    case DangerLevel.low:
-                        decicionOutcome.text = outcome.Decision.LowDangerOutcome;
-                        break;
-                }
-            //}
+                case DangerLevel.low:
+                    CheckForMissingText(outcome.Decision.LowDangerOutcome, outcomeEntry);
+                    decicionOutcome.text = outcome.Decision.LowDangerOutcome;
+                    break;
+            }
+        }
+    }
+
+    private void CheckForMissingText(string text, VisualElement outcomeEntry)
+    {
+        if(string.IsNullOrEmpty(text))
+        {
+            Label extraText = outcomeEntry.Q<Label>("ExtraText");
+            VisualElement outcomeSubEntry = outcomeEntry.Q<VisualElement>("OutcomeSubEntry");
+            extraText.style.display = DisplayStyle.None;
+            outcomeSubEntry.style.display = DisplayStyle.None;
         }
     }
 

@@ -45,7 +45,7 @@ public class DecisionsUIManager : MonoBehaviour
         _buttonClose.clicked += OnCloseDecisionsClick;
 
         ScrollView decisionList = _modalContainer.Q<ScrollView>("EntryList");
-        foreach (DecisionData decision in _decisions)
+        foreach (DecisionData decision in _decisions.OrderBy(a => a.DangerLevel))
         {
             VisualElement decisionUIElement = decisionEntryAsset.Instantiate().Q<VisualElement>("Entry");
 
@@ -53,15 +53,15 @@ public class DecisionsUIManager : MonoBehaviour
             switch (decision.DangerLevel)
             {
                 case DangerLevel.high:
-                    dangerLevel.text = "Extreme Maﬂnahmen:";
+                    dangerLevel.text = "Umfassende Einsatzmaﬂnahmen \n(inkludiert alle Maﬂnahmen der Stufe I+II):";
                     decisionUIElement.RegisterCallbackOnce<ClickEvent>(OnHighAlertDecisionClick);
                     break;
                 case DangerLevel.medium:
-                    dangerLevel.text = "Versch‰rfte Maﬂnahmen:";
+                    dangerLevel.text = "Erweiterte Einsatzmaﬂnahmen \n(inkludiert alle Maﬂnahmen der Stufe I):";
                     decisionUIElement.RegisterCallbackOnce<ClickEvent>(OnMediumAlertDecisionClick);
                     break;
                 case DangerLevel.low:
-                    dangerLevel.text = "Leichte Maﬂnahmen:";
+                    dangerLevel.text = "Basismaﬂnahmen:";
                     decisionUIElement.RegisterCallbackOnce<ClickEvent>(OnLowAlertDecisionClick);
                     break;
             }

@@ -19,24 +19,69 @@ MonoBehaviour:
   HighOutcomeDescription: Extremer Starkregen
   MediumOutcomeDescription: "Kr\xE4ftiger Starkregen"
   LowOutcomeDescription: Leichter Regenfall
-  LowOutComeLowDecisionTransitionText: Es ist ein regnerischer Tag und recht ereignislos.
-  LowOutComeMediumDecisionTransitionText: "Die Ma\xDFnahmen des Kat-Schutzes waren
-    gl\xFCcklicherweise nicht n\xF6tig, denn es gab nur leichten Regen."
-  LowOutComeHighDecisionTransitionText: "Nur leichter Regen \xFCberraschte die Bev\xF6lkerung,
-    die in Aufrur versetzt wurde, durch die v\xF6llig \xFCberzogenen Ma\xDFnahmen
-    des Kat-Schutzes"
-  MediumOutComeLowDecisionTransitionText: "Kr\xE4ftige Regenf\xE4lle haben die Bev\xF6lkerung
-    \xFCberrascht, es kam zu leichten Sch\xE4den."
-  MediumOutComeMediumDecisionTransitionText: "Das Land wird durch kr\xE4ftige Regenf\xE4lle
-    heimgesucht, aber die klugen Vorbereitungen unserer Kat-Sch\xFCtzer haben Schlimmeres
-    verhindert."
-  MediumOutComeHighDecisionTransitionText: "Die getroffenen Ma\xDFnahmen m\xF6gen
-    etwas \xFCbereilt gewesen sein, aber der starke Regen zeigte deutlich, dass es
-    auch schlimmer h\xE4tte sein k\xF6nnen."
-  HighOutComeLowDecisionTransitionText: "Katastrophaler Starkregen! Die Tunnel und
-    Stra\xDFen sind \xFCberflutet! Warum ist niemand gewarnt worden? Jemand wird
-    sich daf\xFCr verantworten m\xFCssen!"
-  HighOutComeMediumDecisionTransitionText: "Leider waren die Ma\xDFnahmen der Kat-Sch\xFCtzer
-    nicht ausreichend, um die Sch\xE4den des extremen Wetters einzud\xE4mmen."
-  HighOutComeHighDecisionTransitionText: Durch den heldenhaften Einsatz unserer Leute
-    konnten die Folgen der Katastrophe auf ein Minimum gehalten werden.
+  LowOutComeLowDecisionTransitionText: "- Die Freiwillige Feuer beruft einen kleinen
+    Teil der Einsatzkr\xE4fte ein; mit einer Flasche Almdudler in der Hand werden
+    die Ger\xE4tschaften im Keller der Feuerwache gepr\xFCft.\n- Die Polizei wurde
+    \xFCber eine m\xF6gliche Sperrung der Bundesstra\xDFe informiert, aber das Gespr\xE4ch
+    hinterl\xE4sst bei Hauptkommisar Waldemar viele Fragezeichen. Scheinbar rechnet
+    niemand mit einem gr\xF6\xDFeren Hochwasser.\n- Ein Mitarbeiter der Gemeindeverwaltung
+    holt Absperrband aus dem Schrank und plant in 2 Stunden an den Spielplatz am
+    Fluss zu fahren, um diesen abzusperren. Vielleicht auch erst in 3 Stunden. Nun
+    hei\xDFt es erst mal K\xE4ffchen trinken."
+  LowOutComeMediumDecisionTransitionText: "- An bekannten Hochwasserhotspots legt
+    die Feuerwehr Sands\xE4cke aus. Die Lage wirkt koordiniert.\n- Ein lokaler Hochwasserstab
+    mit Vertreter:innen von Feuerwehr, Landratsamt und Polizei wird einberufen; vorerst
+    hei\xDFt es jedoch:  abwarten.\n- Die Warnung vor dem bevorstehenden Ereignis
+    \xFCber Warn-Apps und das Lokalradio erreicht 40% der Bev\xF6lkerung; eine gewisse
+    Unruhe ist auf der Stra\xDFe sp\xFCrbar."
+  LowOutComeHighDecisionTransitionText: "- \xDCberall in der Gemeinde sieht man Einsatzkr\xE4fte
+    von Feuerwehr und THW, die Sands\xE4cke verteilen und Hochwasserschutzw\xE4nde
+    aufbauen.\n- Im Seniorenheim herrscht reges Treiben; die Pflegekr\xE4fte packen
+    die Habseligkeiten der Bewohner:innen zusammen. Eine demente \xE4ltere Dame fragt
+    zum 7. Mal, ob sie nun wegen des Angriffs vertrieben wird oder ob sie wieder
+    nach Hause darf.\n- Bei allen Einrichtungen der kritischen Infrastruktur werden
+    Notstromaggregate getestet und alle Bereitschaftsdienste sofort einbestellt. "
+  MediumOutComeLowDecisionTransitionText: "- Die Freiwillige Feuer beruft einen kleinen
+    Teil der Einsatzkr\xE4fte ein; mit einer Flasche Almdudler in der Hand werden
+    die Ger\xE4tschaften im Keller der Feuerwache gepr\xFCft.\n- Die Polizei wurde
+    \xFCber eine m\xF6gliche Sperrung der Bundesstra\xDFe informiert, aber das Gespr\xE4ch
+    hinterl\xE4sst bei Hauptkommisar Waldemar viele Fragezeichen. Scheinbar rechnet
+    niemand mit einem gr\xF6\xDFeren Hochwasser.\n- Ein Mitarbeiter der Gemeindeverwaltung
+    holt Absperrband aus dem Schrank und plant in 2 Stunden an den Spielplatz am
+    Fluss zu fahren, um diesen abzusperren. Vielleicht auch erst in 3 Stunden. Nun
+    hei\xDFt es erst mal K\xE4ffchen trinken."
+  MediumOutComeMediumDecisionTransitionText: "- An bekannten Hochwasserhotspots legt
+    die Feuerwehr Sands\xE4cke aus. Die Lage wirkt koordiniert.\n- Ein lokaler Hochwasserstab
+    mit Vertreter:innen von Feuerwehr, Landratsamt und Polizei wird einberufen; vorerst
+    hei\xDFt es jedoch:  abwarten.\n- Die Warnung vor dem bevorstehenden Ereignis
+    \xFCber Warn-Apps und das Lokalradio erreicht 40% der Bev\xF6lkerung; eine gewisse
+    Unruhe ist auf der Stra\xDFe sp\xFCrbar."
+  MediumOutComeHighDecisionTransitionText: "- \xDCberall in der Gemeinde sieht man
+    Einsatzkr\xE4fte von Feuerwehr und THW, die Sands\xE4cke verteilen und Hochwasserschutzw\xE4nde
+    aufbauen.\n- Im Seniorenheim herrscht reges Treiben; die Pflegekr\xE4fte packen
+    die Habseligkeiten der Bewohner:innen zusammen. Eine demente \xE4ltere Dame fragt
+    zum 7. Mal, ob sie nun wegen des Angriffs vertrieben wird oder ob sie wieder
+    nach Hause darf.\n- Bei allen Einrichtungen der kritischen Infrastruktur werden
+    Notstromaggregate getestet und alle Bereitschaftsdienste sofort einbestellt. "
+  HighOutComeLowDecisionTransitionText: "- Die Freiwillige Feuer beruft einen kleinen
+    Teil der Einsatzkr\xE4fte ein; mit einer Flasche Almdudler in der Hand werden
+    die Ger\xE4tschaften im Keller der Feuerwache gepr\xFCft.\n- Die Polizei wurde
+    \xFCber eine m\xF6gliche Sperrung der Bundesstra\xDFe informiert, aber das Gespr\xE4ch
+    hinterl\xE4sst bei Hauptkommisar Waldemar viele Fragezeichen. Scheinbar rechnet
+    niemand mit einem gr\xF6\xDFeren Hochwasser.\n- Ein Mitarbeiter der Gemeindeverwaltung
+    holt Absperrband aus dem Schrank und plant in 2 Stunden an den Spielplatz am
+    Fluss zu fahren, um diesen abzusperren. Vielleicht auch erst in 3 Stunden. Nun
+    hei\xDFt es erst mal K\xE4ffchen trinken."
+  HighOutComeMediumDecisionTransitionText: "- An bekannten Hochwasserhotspots legt
+    die Feuerwehr Sands\xE4cke aus. Die Lage wirkt koordiniert.\n- Ein lokaler Hochwasserstab
+    mit Vertreter:innen von Feuerwehr, Landratsamt und Polizei wird einberufen; vorerst
+    hei\xDFt es jedoch:  abwarten.\n- Die Warnung vor dem bevorstehenden Ereignis
+    \xFCber Warn-Apps und das Lokalradio erreicht 40% der Bev\xF6lkerung; eine gewisse
+    Unruhe ist auf der Stra\xDFe sp\xFCrbar."
+  HighOutComeHighDecisionTransitionText: "- \xDCberall in der Gemeinde sieht man
+    Einsatzkr\xE4fte von Feuerwehr und THW, die Sands\xE4cke verteilen und Hochwasserschutzw\xE4nde
+    aufbauen.\n- Im Seniorenheim herrscht reges Treiben; die Pflegekr\xE4fte packen
+    die Habseligkeiten der Bewohner:innen zusammen. Eine demente \xE4ltere Dame fragt
+    zum 7. Mal, ob sie nun wegen des Angriffs vertrieben wird oder ob sie wieder
+    nach Hause darf.\n- Bei allen Einrichtungen der kritischen Infrastruktur werden
+    Notstromaggregate getestet und alle Bereitschaftsdienste sofort einbestellt. "
