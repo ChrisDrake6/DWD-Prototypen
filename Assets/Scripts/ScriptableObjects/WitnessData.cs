@@ -2,14 +2,14 @@ using System;
 using UnityEngine;
 
 [CreateAssetMenu(fileName = "ConsequencePreview", menuName = "Scriptable Objects/ConsequencePreview")]
-public class ConsequencePreview : ScriptableObject
+public class WitnessData : ScriptableObject
 {
     public DangerLevel DangerLevel;
-    public ConsequencePreviewEntry[] entries;
+    public WitnessDataEntry[] entries;
 }
 
 [Serializable]
-public class ConsequencePreviewEntry
+public class WitnessDataEntry
 {
     public Sprite ProfileImage;
     [TextArea(10, 15)]

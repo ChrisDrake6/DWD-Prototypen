@@ -3,16 +3,16 @@ using System.Linq;
 using UnityEngine;
 using UnityEngine.UIElements;
 
-public class DangerPreviewUIManager : MonoBehaviour
+public class WitnessListUIManager : MonoBehaviour
 {
     [SerializeField] private UIDocument ui;
     [SerializeField] private VisualTreeAsset modalContainerAsset;
-    [SerializeField] private VisualTreeAsset previewEntryAsset;
+    [SerializeField] private VisualTreeAsset witnessEntryAsset;
 
     private VisualElement _backGround;
     private VisualElement _modalContainer;
     private Button _buttonClose;
-    ConsequencePreview[] _consequences;
+    WitnessData[] _witnesses;
 
     public static event Action WindowClosed;
 
@@ -35,7 +35,7 @@ public class DangerPreviewUIManager : MonoBehaviour
     /// <param name="levelData"></param>
     private void OnNewDataIncoming(LevelContentContainer levelData)
     {
-        _consequences = levelData.Consequences;
+        _witnesses = levelData.witnesses;
     }
 
     /// <summary>
@@ -46,7 +46,7 @@ public class DangerPreviewUIManager : MonoBehaviour
     private void OnIndicatorClick(DangerLevel dangerLevel)
     {
         // Pick the correct entry corresponding to the button clicked.
-        ConsequencePreview currentPreview = _consequences.FirstOrDefault(a => a.DangerLevel == dangerLevel);
+        WitnessData currentWitness = _witnesses.FirstOrDefault(a => a.DangerLevel == dangerLevel);
 
         _modalContainer = modalContainerAsset.Instantiate().Q<VisualElement>("ModalContainer");
         _backGround.Add(_modalContainer);
@@ -56,9 +56,9 @@ public class DangerPreviewUIManager : MonoBehaviour
 
         ScrollView previewList = _modalContainer.Q<ScrollView>("EntryList");
 
-        foreach (ConsequencePreviewEntry entry in currentPreview.entries)
+        foreach (WitnessDataEntry entry in currentWitness.entries)
         {
-            VisualElement previewUIElement = previewEntryAsset.Instantiate().Q<VisualElement>("Entry");
+            VisualElement previewUIElement = witnessEntryAsset.Instantiate().Q<VisualElement>("Entry");
 
             VisualElement profilePic = previewUIElement.Q<VisualElement>("ProfilePic");
             Label text = previewUIElement.Q<Label>("Text");

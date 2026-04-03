@@ -65,7 +65,7 @@ public class GameManager : MonoBehaviour
         float rangeOffset = 0;
         foreach (KeyValuePair<DangerLevel, float> prop in propabilities)
         {
-            if (prop.Value + rangeOffset <= d100)
+            if (prop.Value + rangeOffset >= d100)
             {
                 outcome = prop.Key;
                 break;

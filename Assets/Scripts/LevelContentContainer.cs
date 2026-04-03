@@ -4,6 +4,6 @@ using System;
 public class LevelContentContainer
 {
     public LevelParameters LevelParameters;
-    public ConsequencePreview[] Consequences;
+    public WitnessData[] witnesses;
     public DecisionData[] Decisions;
 }

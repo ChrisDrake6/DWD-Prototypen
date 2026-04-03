@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Level2
   m_EditorClassIdentifier: Assembly-CSharp::LevelData
   MapAsset: {fileID: 9197481963319205126, guid: 0cd4b1fe540f9404f85d5f6f43e54079, type: 3}
-  TimeDisplayed: Mo, 23.03.2026, 18:00 Uhr
+  TimeDisplayed: So, 04.01.2026, 11:00 Uhr
   HighDangerPropability: 10
   MediumDangerPropability: 90
   HighOutcomeDescription: "Es ist das \"Worst Case\" Szenario eingetreten. Die Niederschlagsmengen

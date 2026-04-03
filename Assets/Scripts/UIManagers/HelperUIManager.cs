@@ -55,7 +55,7 @@ public class HelperUIManager : MonoBehaviour
         GameManager.LastDecisionMade += SetOutcomeLines;
         WeatherMapUIManager.IndicatorClicked += SetDangerPreviewLines;
         WeatherMapUIManager.DecisionButtonClicked += SetDecisionLines;
-        DangerPreviewUIManager.WindowClosed += SetWeatherMapLines;
+        WitnessListUIManager.WindowClosed += SetWeatherMapLines;
         DecisionsUIManager.WindowClosed += SetWeatherMapLines;
         OutcomeUIManager.EvaluationTriggered += SetFinalScreenLines;
     }
@@ -71,7 +71,7 @@ public class HelperUIManager : MonoBehaviour
         GameManager.LastDecisionMade -= SetOutcomeLines;
         WeatherMapUIManager.IndicatorClicked -= SetDangerPreviewLines;
         WeatherMapUIManager.DecisionButtonClicked -= SetDecisionLines;
-        DangerPreviewUIManager.WindowClosed -= SetWeatherMapLines;
+        WitnessListUIManager.WindowClosed -= SetWeatherMapLines;
         DecisionsUIManager.WindowClosed -= SetWeatherMapLines;
         OutcomeUIManager.EvaluationTriggered -= SetFinalScreenLines;
     }

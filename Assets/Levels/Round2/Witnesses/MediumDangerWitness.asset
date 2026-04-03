@@ -10,13 +10,15 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c6ff8248b8cf39042843f0227eaa39dc, type: 3}
-  m_Name: HighConsequence
+  m_Name: MediumDangerWitness
   m_EditorClassIdentifier: Assembly-CSharp::ConsequencePreview
-  DangerLevel: 2
+  DangerLevel: 1
   entries:
   - ProfileImage: {fileID: 7491907802156415290, guid: 1405fca40784d99499ef22044bd9fc0a, type: 3}
-    Text: "Jetzt \xFCberlege ich nicht mehr. Wenn die Feuerwehr heute \"raus\" sagt,
-      dann geh ich."
+    Text: "Okay. Es ist wohl doch ernster. Ich bringe die Fotos und Papiere nach
+      oben und lege die Sands\xE4cke vor die Kellert\xFCr \u2013 das hab ich schon
+      einmal zu sp\xE4t gemacht."
   - ProfileImage: {fileID: -2850196725305720190, guid: e5c860020823f4b4c8112e3c515792a0, type: 3}
-    Text: "Wir retten jetzt Menschen, nicht mehr Gegenst\xE4nde. Wer jetzt noch im
-      Haus ist: hoch in sichere Etagen oder sofort raus, wenn wir es sagen."
+    Text: "Wir sind jetzt in Bereitschaft. Sands\xE4cke werden verteilt, gef\xE4hrdete
+      Stra\xDFen gesperrt. Bitte bleibt nicht neugierig am Ufer stehen, sondern lasst
+      den Platz frei f\xFCr die Feuerwehrleute."
