@@ -1,6 +1,9 @@
 using UnityEngine;
 using UnityEngine.UIElements;
 
+/// <summary>
+/// Contains all data for given level. 
+/// </summary>
 [CreateAssetMenu(fileName = "LevelParameters", menuName = "Scriptable Objects/LevelData")]
 public class LevelParameters : ScriptableObject
 {
@@ -12,7 +15,7 @@ public class LevelParameters : ScriptableObject
     public float HighDangerPropability;
     public float MediumDangerPropability;
 
-
+    // Texts for the transition page
     [Header("Genereal Outcome Descriptions")]
     [TextArea(10, 15)]
     public string HighOutcomeDescription;

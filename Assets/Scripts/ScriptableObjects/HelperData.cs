@@ -1,6 +1,9 @@
 using System;
 using UnityEngine;
 
+/// <summary>
+/// Contains all Helper texts and images.
+/// </summary>
 [CreateAssetMenu(fileName = "HelperData", menuName = "Scriptable Objects/HelperData")]
 public class HelperData : ScriptableObject
 {
