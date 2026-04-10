@@ -53,7 +53,8 @@ public class GameManager : MonoBehaviour
     private void OnDecisionMade(DangerLevel dangerLevel)
     {
         // Calculate outcome: Imagine a scale from 0 to 100. Each Dangerlevel gets a distinct range on this scale, in the amount of its propability.
-        // For example: High danger has 10 % propabality of happening, medium has 40, low has 50. Roll a D100 and check the value on the scale. If the calue of the die is below 40, it is a medium Outcome.
+        // For example: High danger has 10 % propabality of happening, medium has 40, low has 50. Roll a D100 and check the value on the scale.
+        // If the calue of the die is below 40, it is a medium Outcome.
         // If it is between 40 and 50, it is a high outcome. If it is neither, its low by default.
         DangerLevel outcome = DangerLevel.low;
         Dictionary<DangerLevel, float> propabilities = new Dictionary<DangerLevel, float>()

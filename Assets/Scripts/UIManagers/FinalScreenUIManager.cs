@@ -51,8 +51,9 @@ public class FinalScreenUIManager : MonoBehaviour
         _buttonEvaluate.clicked += OpenEvaluation;
         _buttonQuit.clicked += QuitGame;
 
-        // In order to avoid having to use 3^x images and to use only 9, we need a way to determine the average result of either the outcome of the weather and the decisions.
-        // For that, we use the fact, that any enum is stored as an integer by default. We convert the Dangerlevels to int, take the average, round it, so that the result is either 1, 2 or 3 and convert it back into the enum. 
+        // In order to avoid having to use 9^x images and to use only 9, we need a way to determine the average result of either the outcome of the weather and the decisions.
+        // For that, we use the fact, that any enum is stored as an integer by default. We convert the Dangerlevels to int, take the average, round it,
+        // so that the result is either 1, 2 or 3 and convert it back into the enum. 
         DangerLevel generalOutcome = (DangerLevel)Math.Round(outcomes.Average(a => (int)a.Outcome));
         DangerLevel generalDecisionLevel = (DangerLevel)Math.Round(outcomes.Average(a => (int)a.Decision.DangerLevel));
 
