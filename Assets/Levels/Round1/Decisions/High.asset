@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6624c453b7265c5438418c32259f4aff, type: 3}
   m_Name: High
   m_EditorClassIdentifier: Assembly-CSharp::DecisionData
-  DangerLevel: 2
+  DangerLevel: 3
   ActionDescription: "- Vorbereitung Ausrufung des Katastrophenfalls\r\n- Einleitung
     von Evakuierungen (z.B. Seniorenheim)\r\n- Anforderung weiterer Einsatzkr\xE4fte
     und Hilfsorganisationen\r\n- Vorbereitung von Ma\xDFnahmen f\xFCr den Ausfall

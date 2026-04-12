@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6624c453b7265c5438418c32259f4aff, type: 3}
   m_Name: Medium
   m_EditorClassIdentifier: Assembly-CSharp::DecisionData
-  DangerLevel: 1
+  DangerLevel: 2
   ActionDescription: "- Warnung der Bev\xF6lkerung \xFCber Medien und Warn-Apps\r\n-
     Sperrung der \xFCberflutungsgef\xE4hrdeten Autobahn\r\n- Aktivierung von Hilfsorganisationen
     (z.B. Malteser), bei Bedarf\r\n- \xD6ffnung von Notunterk\xFCnften"

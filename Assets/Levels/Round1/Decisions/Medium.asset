@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6624c453b7265c5438418c32259f4aff, type: 3}
   m_Name: Medium
   m_EditorClassIdentifier: Assembly-CSharp::DecisionData
-  DangerLevel: 1
+  DangerLevel: 2
   ActionDescription: "- Einrichtung erweiterter Kommunikations- und Einsatzstrukturen\r\n-
     Vorwarnung der Bev\xF6lkerung \xFCber Warn-Apps und Radio\n- Durchf\xFChrung
     ortsbezogener Ma\xDFnahmen, z.B. Auslegen von Sands\xE4cken\r\n- Vorbereitung

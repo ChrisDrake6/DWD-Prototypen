@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c6ff8248b8cf39042843f0227eaa39dc, type: 3}
   m_Name: HighDangerWitness
   m_EditorClassIdentifier: Assembly-CSharp::ConsequencePreview
-  DangerLevel: 2
+  DangerLevel: 3
   entries:
   - ProfileImage: {fileID: 7491907802156415290, guid: 1405fca40784d99499ef22044bd9fc0a, type: 3}
     Text: "Das schlimmste Hochwasser kam am Ende meiner Ausbildung vor 52 Jahren.

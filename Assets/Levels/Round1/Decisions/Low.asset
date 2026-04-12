@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6624c453b7265c5438418c32259f4aff, type: 3}
   m_Name: Low
   m_EditorClassIdentifier: Assembly-CSharp::DecisionData
-  DangerLevel: 0
+  DangerLevel: 1
   ActionDescription: "- Abwarten und Tee trinken\r\n- \xDCberpr\xFCfung Einsatzbereitschaft
     f\xFCr Hochwasserschutzma\xDFnahmen, Ger\xE4te und Personal\r\n- Vorbereitung
     Verkehrslenkung (z.B. Sperrung Bundesstra\xDFe)\r\n- Vorbereitung ortsbezogener

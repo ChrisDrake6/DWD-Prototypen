@@ -1,6 +1,6 @@
 public enum DangerLevel
 {
-    low,
+    low = 1,
     medium,
     high
 }
